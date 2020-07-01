@@ -1,0 +1,669 @@
+
+[
+    {
+        "CellType" : "f",
+        "Medium": "img",
+        "Ref":"0",
+        "Title": "JC PENNEY",
+        "Client": "CKS Partners / marchFIRST",
+        "JobTitle": "Art Director",
+        "Article": "A project under the Creative Direction of Johanna Clark and Tim Kain, this client required a targeted promotion that could synergize their years of in-house research in their market and customer base, their usability testing, and their in-house technical resources and rebuild the JCPenney online identity. Assimilating the available data and test-results challenged the team with frequent design changes to account for the client?s in-house user testing results during development of the site. The final design used a very light and fast navigation system that allowed wide variability per section to allow for more of the bandwidth consumption to the larger and higher quality photographs and to enable the technical capability of the sophisticated custom software package they had developed in house. I was involved in look and feel establishment and concept for the site, with special attention to the women?s, men?s, and Features section of this very large website.",
+        "URL": "",
+        "Image":[
+            "samples/comps/jcpenney1.jpg",
+            "samples/comps/jcpenney2.jpg",
+            "samples/comps/jcpenney3.jpg"
+        ]
+    },
+    {
+        "CellType" : "f",
+        "Medium": "img",
+        "Ref":"0",
+        "Title": "RITEPRO P.I.M.",
+        "Client": "QuadRite",
+        "JobTitle": "UI Designer, consultant",
+        "Article": "A proprietary web application for Product Data Management from Hewlett-Packard. The look needed to be very light and fast, with a design that could maintain integrity across all browser platforms including Unix and Solaris, and could also scale to encompass database returns of hundreds of rows and up to 20 columns in spread-sheet format. The user required that information be completely customizable and cross-reference able, that the sites layout and options and design be dynamically formable to a user?s security clearance through a comprehensive  but usable backend administrative interface as well, and that the design be future-scaleable to encompass stage-two and stage-three expansions to the application.  A thorough test-bed and use-case scenario evaluation process was required to develop this interface, which I defined through a concise needs-assessment worksheet that the client was able to fill-out on their own time and thereby describe their user for me.",
+        "URL": "",
+        "Image":[
+            "samples/comps/quadrite1.jpg",
+            "samples/comps/quadrite2.jpg",
+            "samples/comps/quadrite3.jpg"
+        ]
+    },
+    {
+        "CellType" : "f",
+        "Medium": "img",
+        "Ref":"0",
+        "Title": "DELUXE",
+        "Client": "CKS Partners / marchFIRST",
+        "JobTitle": "Art Director",
+        "Article": "A very different design developed under the Art Direction of Marcia Linwood. The eDeluxe project was built and designed exclusively for a European marketplace that connected users in buying and selling of goods in much the way that Ebay does in the USA however targeted to a higher level of transaction like collectible cars, houses and Art. The look and feel of the site promote a sense of refined taste and elegance in a way that our studies of European markets tended to dictate in our research and discovery.  User Interface principles had to be heavily relied upon yet be tastefully concealed within the folds of the design for thorough server-side customizability.",
+        "URL": "",
+        "Image":[
+            "samples/comps/deluxe1.jpg",
+            "samples/comps/deluxe2.jpg",
+            "samples/comps/deluxe3.jpg"
+        ]
+    },
+    {
+        "CellType" : "f",
+        "Medium": "img",
+        "Ref":"0",
+        "Title": "GOODHOME",
+        "Client": "CKS Partners / marchFIRST",
+        "JobTitle": "Art Director",
+        "Article": "A USWEB/CKS project, under the Creative Direction of Tim Kain. I was hired to develop a Flash navigation system for the site, as well as site design and production for the lower levels of the site to fill in. The overall look and feel is airy and clean and achieved the client?s expectations by suggesting a desirable lifestyle to the user. This project was also delivered on an extremely tight schedule of about 8 weeks for both design and development.",
+        "URL": "",
+        "Image":[
+            "samples/comps/goodhome1.jpg",
+            "samples/comps/goodhome2.jpg",
+            "samples/comps/goodhome3.jpg"
+        ]
+    },
+    {
+        "CellType" : "f",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "ADIDAS THE STORE",
+        "Client": "U.S.Interactive",
+        "JobTitle": "Production Designer, Animator",
+        "Article": "My position was as a flash artist and production designer as support to the Art Direction team. Animated Homepage.",
+        "URL": "samples/flash/adidas/adidas_intro.html",
+        "Dimensions":"660,332",
+        "Image":[
+            "img/screens/adidas1.jpg",
+            "img/screens/adidas2.jpg",
+            "img/screens/adidas3.jpg"
+        ]
+    },
+
+    {
+        "CellType" : "f",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "CALL OF DUTY:ELITE",
+        "Client": "Activision, Code Particle",
+        "JobTitle": "Front-End Developer",
+        "Article": "Very complex Java SpringMVC front-end. I did javascript/CSS requiring Ubuntu / git / Jira / Atlassian and heavy quality-assurance coordination.",
+        "URL": "samples/comps/cod_elite1.jpg",
+        "Dimensions":"1280,720",
+        "Image":[
+            "img/screens/cod_elite1.jpg",
+            "img/screens/cod_elite2.jpg",
+            "img/screens/cod_elite3.jpg",
+            "img/screens/cod_elite4.jpg",
+            "img/screens/cod_elite5.jpg"
+        ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "CellType" : "b",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "DOCKERS ZEN BLUES",
+        "Client": "CKS Partners / marchFIRST, SF",
+        "JobTitle": "Art Director, Animator",
+        "Article": "Levis wanted to reach out to young people of all sexual preference and have a more interactive multimedia content. An idea built further upon again later for other clients like TiVo, this project was to allow the user to create their own flash animation by making choices from a menu system. This allows a more targeted advertisement to the user and gives them control to customize the intro while also writing that data to a database for marketing metrics. (before google)",
+        "URL": "samples/flash/dockers/dockers.html",
+        "Dimensions":"530,334",
+        "Image":[
+            "img/screens/dockers1.jpg",
+            "img/screens/dockers2.jpg",
+            "img/screens/dockers3.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "GIRLCOSMETICS",
+        "Client": "Girl Cosmetics",
+        "JobTitle": "Flash Animator",
+        "Article": "My first freelance Flash 3 project, I was asked to do a design for GirlCosmetics homepage that incorporated 3D objects and flowed into the websites established look and feel. This was before any plug-ins existed to import 3DStudioMAX files. It is pretty raw and a little embarrassing to show but here it is, my first flash piece.",
+        "URL": "samples/flash/girlcosmetics/index.html",
+        "Dimensions":"600,400",
+        "Image":[
+            "img/screens/girlcosmetics.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "TIVO.COM",
+        "Client": "CKS Partners / marchFIRST, SF",
+        "JobTitle": "Lead Flash Developer",
+        "Article": "TGIFridays looked to Deutsch LA to redesign and reinvigorate their online site and menu/information architecture.  My role was in the creation of the Homepage, Drinks section, and dynamic flash menu and image throughout the site with a development schedule of two weeks. The timeline required an experienced sure-hand on the server-side and DHTML provided by Kish Hiranand, and design by Todd Swaim.",
+        "URL": "samples/flash/tivo/home/index.html",
+        "Dimensions":"1024,768",
+        "Image":[
+            "img/screens/tivo1.jpg",
+            "img/screens/tivo2.jpg",
+            "img/screens/tivo3.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "LEVIS 25YR ANTHOLOGY",
+        "Client": "Foote,Cone & Belding",
+        "JobTitle": "Designer, Flash Animator",
+        "Article": "A touch-screen and web-based display of all Levi's ads since FCB's awarding of the account, as well as metric result information.",
+        "URL": "samples/flash/levis/index.html",
+        "Dimensions":"1024,768",
+        "Image":[
+            "img/screens/levis1.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "img",
+        "Ref":"0",
+        "Title": "TOYOTA.COM REDESIGN 2006",
+        "Client": "Saatchi & Saatchi, LA",
+        "JobTitle": "UX Designer, Developer",
+        "Article": "Built and architected site-wide navigation system using flash and xml to be instantly updateable for photo, price, and link values. Navs can recieve and validate zipcode information and reflects users current location in site. Support of Omniture user-tracking, and deployment in 3 languages and in kiosk-mode (restricted and simplified) for tradeshows, while laying transparently over any flash element beneath using a tight integration with Javascript and CSS layering. Also updated all sublevel global elements like flash-based Marketing Links, Model Selector, and secure user information forms. Also built and stylized all site-wide loaders.",
+        "URL": "samples/comps/toyota_flashhome.jpg",
+        "Image":[
+            "img/screens/tcom_home_1.jpg",
+            "img/screens/tcom_home_2.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "img",
+        "Ref":"0",
+        "Title": "INFINITI.COM REDESIGN 2007",
+        "Client": "The Designory, LA",
+        "JobTitle": "Lead Flash Developer",
+        "Article": "Built and architected site-wide navigation system using flash and xml to be instantly updated for photo, price, and link values. Navs can recieve and validate zipcode information and reflects users current location in site. Support of Omniture user-tracking, and deployment in 3 languages and in kiosk-mode (restricted and simplified) for tradeshows, while laying transparently over any flash element beneath using a tight integration with Javascript and CSS layering. Also updated all sublevel global elements like flash-based Marketing Links, Model Selector, and secure user information forms. Also built and stylized all site-wide loaders.",
+        "URL": "img/comps/infiniti2.jpg",
+        "Image":[
+            "img/screens/infiniti1.jpg",
+            "img/screens/infiniti2.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "img",
+        "Ref":"0",
+        "Title": "SATURN.COM REDESIGN 2008",
+        "Client": "Deutsch, LA",
+        "JobTitle": "Designer, Flash Animator",
+        "Article": "Saturn was a new client to Deutsch LA, and I was brought aboard for my previous successes with Toyota, Nissan, and Infiniti, to concept and create the Homepage for this car client.  Using the latest FLV streaming techniques, the user experience is carefully loaded with control over the information-needs of visiting users and then delivers a user-driven video and still-photo introduction to each of the five vehicles.  This both was a way for me to repurpose the available very-rough footage that the client already had, and also help consumers identify the vehicle to the vehicles name.",
+        "URL": "samples/comps/saturn2.jpg",
+        "Image":[
+            "img/screens/saturn1.jpg",
+            "img/screens/saturn2.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "img",
+        "Ref":"0",
+        "Title": "TGIFRIDAYS.COM",
+        "Client": "Deutsch, LA",
+        "JobTitle": "Lead Flash Developer",
+        "Article": "TGIFridays looked to Deutsch LA to redesign and reinvigorate their online site and menu/information architecture.  My role was in the creation of the Homepage, Drinks section, and dynamic flash menu and image throughout the site with a development schedule of two weeks. The timeline required an experienced sure-hand on the server-side and DHTML provided by Kish Hiranand, and design by Todd Swaim.",
+        "URL": "img/comps/tgifridays2.jpg",
+        "Image":[
+            "img/screens/tgifridays1.jpg",
+            "img/screens/tgifridays2.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "FUGOO TOUCH KIOSKE",
+        "Client": "FuHu / Mitsubishi, Tokyo",
+        "JobTitle": "Flash Developer",
+        "Article": "Challenged to make a demo for CES in 3 days that showcased the amazing precision of the touch-sensitive PrecisePoint screen. Flash allows me to breakdown the different mouse events to allow dragging and selecting items to get rather tactile and instinctive.",
+        "URL": "samples/flash/fugoo/demo.html",
+        "Dimensions":"1024,600",
+        "Image":[
+            "img/screens/fugoo1.jpg",
+            "img/screens/fugoo2.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "U.S. ARMY TOUCH NAVIGATOR",
+        "Client": "Ignited, LA",
+        "JobTitle": "Flash Development",
+        "Article": "My first large-scale dynamic 3D project, a 3D wall of dynamic images and videos that could be sorted, searched, saved and explored further in terms of compensation, requirements, and soldier testament videos.",
+        "URL": "samples/flash/usarmy/demo.html",
+        "Dimensions":"1024,600",
+        "Image":[
+            "img/screens/usarmy1.jpg",
+            "img/screens/usarmy2.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "BANK OF AMERICA",
+        "Client": "Rapp",
+        "JobTitle": "Designer, Flash Animation",
+        "Article": "Rapp/Collins hired me to create a flash user-demo of how to properly use and make sense of the SiteKey security functions and enrollment requirements.",
+        "URL": "samples/flash/bankamerica/sitekey.html",
+        "Dimensions":"1024,600",
+        "Image":[
+            "img/screens/bankamerica1.jpg",
+            "img/screens/bankamerica2.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "MIAMI DOLPHINS AQUAVISION",
+        "Client": "Foundation 5",
+        "JobTitle": "Flash Developer",
+        "Article": "This was a Flash Media Server project, requiring integration into IRC chat channels, and Broadcaster/Audience inter-operabililty",
+        "URL": "samples/flash/aquavision/vplayer_container.html",
+        "Dimensions":"920,455",
+        "Image":[
+            "img/screens/aquavision1.jpg",
+            "img/screens/aquavision2.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "TOYOTA LANDCRUISER",
+        "Client": "Saatchi & Saatchi LA",
+        "JobTitle": "Flash Developer",
+        "Article": "Concepted and animated in team with print art director, Rhasaan Jackson under assocCreativeDir, Scott Muckenthaler. The substance of this project is clearly in its written content by John Bollow, as well. (winner:Belding Bowl, Cannes Cyberlion, OneShow) ",
+        "URL": "samples/flash/landcruiser/index.html",
+        "Dimensions":"1024,768",
+        "Image":[
+            "img/screens/landcruiser_heritage_1.jpg",
+            "img/screens/landcruiser_heritage_2.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "NISSAN SHIFT_2.0",
+        "Client": "TBWA / The Designory",
+        "JobTitle": "Flash Developer",
+        "Article": "SHIFT_2.0 was a TBWA/Chiat-Day campaign that sought to redefine the Nissan brand toward consumer-driven engineering . Concepted by me, under the creative direction of Amy Ivey and Tom Weisz, this project was targeted for broadband users and streams a seemless integration of multiple transparent FLV videos overlayed to meld the different Maya3D assets and AfterEffects animations by Ben Black, with fully roto-scoped greenscreen foreground vignettes filmed by PLUM/BEAU productions.",
+        "URL": "samples/flash/shift/base_remote.html",
+        "Dimensions":"1000,740",
+        "Image":[
+            "img/screens/shift1.jpg",
+            "img/screens/shift2.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "YO ROTO! CiCi's Pizza",
+        "Client": "Deutsch LA",
+        "JobTitle": "Flash Developer",
+        "Article": "The viral YouTube videos depict an underground hero who works as a sign-spinner for the CiCis pizza company and pulls seemingly impossible gymnastic and break-dance moves and has generated a following.  My role was to create the destination website that is seeded in the endtag of the videos.  The site houses the videos for replay, and also presents the user with a game, inspired by GuitarHero, and a method to challenge their friends for hi-score. Game design and code provided by Fuel, my code interfaced the game with server-side customization code and fused the different sections into a seamless user experience.",
+        "URL": "samples/flash/yoroto/index.html",
+        "Dimensions":"1200,1000",
+        "Image":[
+            "img/screens/yoroto1.jpg",
+            "img/screens/yoroto2.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "SCION Media Ads 2010",
+        "Client": "Whitmann-Hart / The Attic",
+        "JobTitle": "Creative Technologist",
+        "Article": "My concept with this banner-ad campaign was to use coded animations to reduce k-size while creating a blown-up effect to showcase how configurable and personalized your Scion can be. This was later used for the landing-page of all vehicles.",
+        "URL": "samples/banners/scion/index.html",
+        "Dimensions":"800,720",
+        "Image":[
+            "img/screens/scion1.jpg",
+            "img/screens/scion2.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "TONY HAWK : RIDE",
+        "Client": "Activision",
+        "JobTitle": "Creative Technologist",
+        "Article": "A very tight turn-around execution that integrates 360, Twitter API, GoogleMaps API, and deployed to over 18 different languages.",
+        "URL": "http://www.thride.com",
+        "Dimensions":"1280,1000",
+        "Image":[
+            "img/screens/scion1.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "Toyota FindYourMatch",
+        "Client": "Saatchi & Saatchi / RAPP",
+        "JobTitle": "Creative Technologist",
+        "Article": "This site required enterprise-level deployment demanding complete dynamic data from multiple sources, robust tracking, deep-linking, and high fidelity images in a 3D environment",
+        "URL": "http://www.toyota.com/findyourmatch",
+        "Dimensions":"1080,720",
+        "Image":[
+            "img/screens/findyourmatch.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "The Secret World",
+        "Client": "Ayzenberg Group",
+        "JobTitle": "Creative Technologist",
+        "Article": "A facebook-data driven game-site. I was brought in with a team of top-shelf developers to produce this site in a very short amount of time using a PureMVC architecture.",
+        "URL": "samples/comps/secretworld.jpg",
+        "Dimensions":"1280,720",
+        "Image":[
+            "img/screens/secretworld.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "Toyota Prius HSD",
+        "Client": "Saatchi & Saatchi HSD",
+        "JobTitle": "Multimedia Designer",
+        "Article": "Created to introduce the Prius, and a whole new kind of car, our goal was to create a surreal city of blue sky and information about the new Prius. Using parallax and filtered 3D cell-shaded objects, this site was a success and helped to start the green movement.",
+        "URL": "/samples/flash/hsd/index.html",
+        "Dimensions":"1280,720",
+        "Image":[
+            "img/screens/hsd1.jpg",
+            "img/screens/hsd2.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "DODGE SRT",
+        "Client": "Admit One Productions",
+        "JobTitle": "Creative Director",
+        "Article": "Using a cutting-edge driving-simulator from Big Block LA that creates CGI-rendered sequences with live physics, as well as the Flame-editing of Chris Nolert, we created a motion-graphics heavy introduction that leads into an SRT-centric website.",
+        "URL": "samples/html5/dodge_pitch",
+        "Dimensions":"1280,720",
+        "Image":[
+            "img/screens/dodge_srt1.jpg",
+            "img/screens/dodge_srt2.jpg",
+            "img/screens/dodge_srt3.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "STREAMING 360 VIDEO",
+        "Client": "Wemersive",
+        "JobTitle": "Front-End Developer",
+        "Article": "A Video-360 execution that I was required to build in 3 different platforms; HTML, Flash, and HaxeNME for Android.",
+        "URL": "samples/html5/spin",
+        "Dimensions":"1280,720",
+        "Image":[
+            "img/screens/wemersive1.jpg"
+        ]
+    },
+    {
+        "CellType" : "b",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "BECK, HELLO AGAIN",
+        "Client": "Wemersive, 360Heros",
+        "JobTitle": "Front-End Developer",
+        "Article": "A Video-360 execution built in Flash using pre-loading with multiple camera-source assets and dynamic audio positioning. A technology later improved with streaming.",
+        "URL": "http://www.hello-again.com/beck360/main/beck360.html",
+        "Dimensions":"1280,720",
+        "Image":[
+            "img/screens/beck360.jpg"
+        ]
+    },
+
+    {
+        "CellType" : "b",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "ORACLE INSIGHT",
+        "Client": "Quince, Amsterdam",
+        "JobTitle": "Creative Director",
+        "Article": "A presentation piece enabling Oracle sales people to discuss data-modeling without the mind-numbingly bad diagrams usually used.",
+        "URL": "samples/comps/oracle1.jpg",
+        "Dimensions":"1280,720",
+        "Image":[
+            "img/screens/oracle1.jpg"
+        ]
+    },
+
+
+
+
+
+
+
+    {
+        "CellType" : "a",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "WILLIAMS-SONOMA",
+        "Client": "U.S.Web / marchFIRST",
+        "JobTitle": "Jr. Art Director",
+        "Article": "winner, CommArts Award. Creative Direction by Tim Kain, This project taught me about the power of strong photography, and then designing around that with clean effeminate elegance and light colors.",
+        "URL": "samples/comps/williams-sonoma2.jpg",
+        "Dimensions":"1280,720",
+        "Image":[
+            "img/screens/wsonoma1.jpg",
+            "img/screens/wsonoma2.jpg",
+            "img/screens/wsonoma3.jpg"
+        ]
+    },
+    {
+        "CellType" : "a",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "BIZZED",
+        "Client": "Citibank Partners",
+        "JobTitle": "Production Designer",
+        "Article": "Bizzed was famous for paying 2 million dollars for the business.com domain name. A portal site for investors, we used a humanized touch to reach out to the Forrester Research market.",
+        "URL": "",
+        "Dimensions":"",
+        "Image":[
+            "img/screens/bizzed1.jpg"
+        ]
+    },
+    {
+        "CellType" : "a",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "REDBULL SOAP-RACE",
+        "Client": "Kastner & Partners",
+        "JobTitle": "Front-End Developer",
+        "Article": "Using a hybrid execution of Raphael.js, JQuery, and Flash for incompatible browsers, this site required the ability to drag and explore in any direction limitlessly.",
+        "URL": "samples/html5/redbull",
+        "Dimensions":"1280,720",
+        "Image":[
+            "img/screens/redbull.jpg"
+        ]
+    },
+    {
+        "CellType" : "a",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "BOLDRIDE",
+        "Client": "Code Particle",
+        "JobTitle": "Front-End Developer",
+        "Article": "Built on KohanaPHP in MVC, this site required a very modular and widget-based solution to reuse UI components through-out the site. I built the javascript and Video player logic with pre-rolls and ad management",
+        "URL": "http://www.boldride.com",
+        "Dimensions":"1280,720",
+        "Image":[
+            "img/screens/boldride1.jpg",
+            "img/screens/boldride2.jpg",
+            "img/screens/boldride3.jpg"
+        ]
+    },
+
+
+    {
+        "CellType" : "a",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "D.W.DRUMS KITBUILDER",
+        "Client": "Code Particle",
+        "JobTitle": "Front-End Developer",
+        "Article": "A pure javascript solution, this site runs entirely on JSON data, with an ASP Classic solution for saving graphics for social-sharing. This has drag-and-drop and persistent dynamic logic with bookmarking anywhere ",
+        "URL": "www.dwdrums.com/kitbuilder",
+        "Dimensions":"1280,720",
+        "Image":[
+            "img/screens/dwdrums1.jpg",
+            "img/screens/dwdrums2.jpg",
+            "img/screens/dwdrums3.jpg"
+        ]
+    },
+    {
+        "CellType" : "a",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "60 MINUTES",
+        "Client": "Code Particle",
+        "JobTitle": "Front-End Developer",
+        "Article": "Built in MVC javascript to achieve a rich-media effect that was previously only possible in Flash. My job was javascripting of social-features and optional flash-based video-logic for pre-roll advertising.",
+        "URL": "samples/html5/60minutes",
+        "Dimensions":"1280,720",
+
+            "Image":[
+                "img/screens/60minutes1.jpg",
+                "img/screens/60minutes2.jpg",
+                "img/screens/60minutes3.jpg",
+                "img/screens/60minutes3.jpg"
+            ]
+    },
+
+    {
+        "CellType" : "a",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "KPN TOUCH KIOSKE",
+        "Client": "Quince Amsterdam",
+        "JobTitle": "Creative Director",
+        "Article": "This was designed to be a table-mounted kioske that allows cellphone store customers (KPN is the largest carrier in The Netherlands) to see accessory items for their smart-phones and either purchase them from the store, or order them directly. The image depicts five phases of the unusually-shaped interface",
+        "URL": "samples/comps/kpn_kioske.jpg",
+        "Dimensions":"1600,720",
+        "Image":[
+            "img/screens/kpn_kioske.jpg"
+        ]
+    },
+    {
+        "CellType" : "a",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "HOLLAND CASINO",
+        "Client": "Quince Amsterdam",
+        "JobTitle": "Art Director, Flash Dev",
+        "Article": "The GUESS n' WIN kioske was designed to attract casino clients to participate in the Highlights-campaign's guess-the-number game. As part of a fancy molded installation box, it was topped with a giant champagne glass, filled with pearls, to guess the total number. Designed and built by me in Flash, with WebServices secure backend and card-reader functionality.",
+        "URL": "samples/comps/RaadnWin1.jpg",
+        "Dimensions":"1280,720",
+        "Image":[
+            "img/screens/RaadnWin1.jpg",
+            "img/screens/RaadnWin2.jpg",
+            "img/screens/RaadnWin3.jpg",
+            "img/screens/RaadnWin4.jpg",
+            "img/screens/RaadnWin5.jpg"
+        ]
+    },
+    {
+        "CellType" : "a",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "VODAFONE SCAN&WIN",
+        "Client": "Quince Amsterdam",
+        "JobTitle": "Creative Director",
+        "Article": "A retail below-the-line strategy for attracting consumers to participate in promotions and offers, and to give them a central mobile application to manage their information, and current events.",
+        "URL": "samples/comps/vodafone2.jpg",
+        "Dimensions":"1280,720",
+        "Image":[
+            "img/screens/vodafone1.jpg",
+            "img/screens/vodafone2.jpg",
+            "img/screens/vodafone3.jpg",
+            "img/screens/vodafone4.jpg",
+            "img/screens/vodafone5.jpg",
+            "img/screens/vodafone6.jpg"
+        ]
+    },
+    {
+        "CellType" : "a",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "HTC - THE SCORE",
+        "Client": "Quince Amsterdam",
+        "JobTitle": "Front-End Developer",
+        "Article": "The Score is a worldwide campaign to wager on the winner of the EUFA soccer matches, and to entice retail sales-people to keep a good relationship with HTC, its latest products, and to promote them to consumers. Built on Twitter Bootstrap and PHP",
+        "URL": "samples/comps/htc_the_score1.jpg",
+        "Dimensions":"1280,720",
+        "Image":[
+            "img/screens/htc_the_score1.jpg",
+            "img/screens/htc_the_score2.jpg",
+            "img/screens/htc_the_score3.jpg"
+        ]
+    },
+    {
+        "CellType": "b",
+        "Medium": "html",
+        "Ref": "0",
+        "Title": "ORACLE INSIGHT",
+        "Client": "Quince Amsterdam 2013",
+        "JobTitle": "Creative Director",
+        "Article": "A presentation piece enabling Oracle sales people to discuss data-modeling without the mind-numbingly bad diagrams usually used.",
+        "URL": [
+            "samples/comps/oracle1.jpg"
+        ],
+        "Dimensions": "1280,720",
+        "Image": [
+            "img/screens/oracle1.jpg"
+        ]
+    },
+
+    {
+        "CellType" : "a",
+        "Medium": "html",
+        "Ref":"0",
+        "Title": "HTC PRO",
+        "Client": "Quince, Amsterdam",
+        "JobTitle": "Art Director",
+        "Article": "A mobile application with accompanying website using shared assets, and built on an outdated Java framework. Understanding Retina resolution graphics was essential to make this work.",
+        "URL": "samples/comps/htc_pro.jpg",
+        "Dimensions":"1280,720",
+        "Image":[
+            "img/screens/htc_pro.jpg"
+        ]
+    }
+
+
+
+
+
+
+]
