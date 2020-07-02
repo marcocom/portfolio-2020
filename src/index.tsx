@@ -24,4 +24,4 @@ ReactDOM.render(
     </Router>
   </Layout>,
   document.getElementById("root")
-)
+);

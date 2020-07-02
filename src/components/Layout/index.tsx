@@ -4,7 +4,7 @@ interface LayoutProps {}
 
 const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
   return (
-    <main className="text-center">
+    <main className="layout-parent-container">
       {children}
     </main>
   )

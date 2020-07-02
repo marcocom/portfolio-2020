@@ -18,11 +18,12 @@ const Home: FunctionComponent<HomeProps> = () => {
         <h1 data-testid="home-title">
           marco comparato </h1>
       </header>
-      <div className="content-container">
+      <section className="content-container">
+        <nav>
+          <Link to="/about">About</Link>
+        </nav>
         <p>Random number: {state}</p>
-        <Button>I am a primary button</Button>
-        <Link to="/about">About</Link> <br/> <Link to="/nope">404 Page</Link>
-      </div>
+      </section>
 
     </div>
   )

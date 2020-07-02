@@ -10,6 +10,6 @@ const Button: FunctionComponent<ButtonProps> = ({ children, color = "primary" })
       {children}
     </button>
   )
-}
+};
 
 export { Button }
