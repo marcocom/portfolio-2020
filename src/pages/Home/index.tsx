@@ -20,7 +20,8 @@ const Home: FunctionComponent<HomeProps> = () => {
       </header>
       <section className="content-container">
         <nav>
-          <Link to="/about">About</Link>
+          <Link to="/about">About</Link><br/>
+          <Link to="/todos">Todos test</Link>
         </nav>
         <p>Random number: {state}</p>
       </section>

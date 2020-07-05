@@ -6,6 +6,7 @@ import { Home } from "./pages/Home"
 import { About } from "./pages/About"
 import { NotFound } from "./pages/NotFound"
 import { Layout } from "./components/Layout"
+import TodoList from "./components/TodoList";
 
 require("./global/styles.css");
 
@@ -19,6 +20,7 @@ ReactDOM.render(
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
+        <Route path="/todos" component={TodoList} />
         <Route path="" component={NotFound} />
       </Switch>
     </Router>
