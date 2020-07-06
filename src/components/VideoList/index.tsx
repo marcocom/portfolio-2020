@@ -1,26 +1,34 @@
 import React, {FunctionComponent, ReducerAction, useEffect, useReducer, useState} from 'react';
-import {IEpisode, Store} from './Store'
-import videoListReducer from './reducer';
+import {Store} from './Store'
+import {IEpisode, IEpisodeAction, IFetchAction} from './model'
 import './style.css'
 
 
-const VideoList:FunctionComponent = (props):JSX.Element => {
+const VideoList:FunctionComponent = ():JSX.Element => {
   const {state, dispatch} = React.useContext(Store);
 
   useEffect(() => {
-    if(!state.episodes.length)
-      fetchDataAction();
+    if(!state.episodes.length) fetchDataAction();
   }, []);
 
 const fetchDataAction = async () => {
   const url = 'https://api.tvmaze.com/singlesearch/shows?q=rick-&-morty&embed=episodes';
   const data = await fetch(url);
   const dataJSON = await data.json();
-  return dispatch({
+  return dispatch<IFetchAction>({
     type: 'FETCH_DATA',
     payload: dataJSON._embedded.episodes
   })
 };
+
+const [filtered, setFilter] = useState(false);
+
+const toggleFavAction = (episode:IEpisode):IEpisodeAction => {
+  state.favorites.includes(episode) ?
+    dispatch({type:'UNFAV', payload: episode}) :
+    dispatch({type: 'FAV', payload: episode});
+};
+const urlAction = (url: string) => window.open(url, '_blank');
 
 //experiments
 const countreducer = (state = 0, action:ReducerAction<any>) => {
@@ -45,17 +53,18 @@ return (
       <h1>Episodes</h1>
       <p>pick your favorite</p>
       {console.log('store:', state)}
+      <button onClick={() => setFilter(!filtered)}>{filtered ? `UnFilter Favs` : `Filter Favs`}</button>
       <main style={{display: 'flex', flexDirection:'row', flexWrap: 'wrap'}}>
         {
-          state.episodes.map((episode:IEpisode) => {
+          state[!filtered ? 'episodes' : 'favorites'].map((episode:IEpisode):JSX.Element => {
             return (
               <section key={episode.id} style={{display: 'block', marginRight: '10px'}}>
-                <img src={episode.image.medium} alt={episode.name}/>
-                <h4>{episode.name}</h4>
+                <a onClick={() => urlAction(episode.url)}><img src={episode.image.medium} alt={episode.name}/>
+                  <h4>{episode.name}</h4></a>
                 <p>
                   Season: {episode.season} Number: {episode.number}
                 </p>
-                <button onClick={() => dispatch({type:'FAV', payload:episode })}>Favorite</button>
+                <button onClick={() => toggleFavAction(episode)}>Favorite</button>
               </section>
             )
           })

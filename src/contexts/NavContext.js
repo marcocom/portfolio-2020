@@ -1,4 +1,6 @@
 import React, { createContext } from 'react';
+import {Link} from 'react-router-dom';
+import {StoreProvider} from '../components/VideoList/Store';
 const NavContext = createContext();
 
 const NavProvider = ({ children }) => {
@@ -11,6 +13,7 @@ const NavProvider = ({ children }) => {
   return (
     <NavContext.Provider value={navsections}>
       {children}
+      <Link to="/">Home</Link>
     </NavContext.Provider>
   );
 };

@@ -8,7 +8,7 @@ interface HomeProps {}
 const Home: FunctionComponent<HomeProps> = () => {
   const [randomNum, setRandomNum] = React.useState(0);
   React.useEffect(() => {
-    // setInterval(() => setRandomNum(Math.floor(Math.random() * 6) + 1), 3000);
+    setInterval(() => setRandomNum(Math.floor(Math.random() * 6) + 1), 3000);
   }, []);
 
 
@@ -28,14 +28,13 @@ const Home: FunctionComponent<HomeProps> = () => {
   return (
     <div className="app-container">
       <header>
-        <h1 data-testid="home-title">
-          marco comparato </h1>
-      </header>
-      <section className="content-container">
+        <h1>marco comparato</h1>
+        <h4>digital creations</h4>
         <nav>
           <Link to="/about">About</Link><br/>
-          <Link to="/todos">Todos test</Link>
         </nav>
+      </header>
+      <section className="content-container">
         <br/>
         <div>
           <h6>getting to know react hooks</h6>

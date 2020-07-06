@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react';
 
 import {Link} from "react-router-dom";
 
+//alias shortcut
 type FormElem = React.FormEvent<HTMLFormElement>;
 
 interface ITodo {
