@@ -1,11 +1,11 @@
-# Anthony Caron - Portfolio Website
+# Marco Comparato - Portfolio Website
 This is a portfolio website developed for myself. It was developed using [GatsbyJS](https://www.gatsbyjs.org/) and is hosted by [Netlify](https://www.netlify.com/).
 
-## :cloud: Hosting
-The site is hosted publicly at https://www.anthonycaron.com/.
+## Hosting
+The site is hosted publicly at https://www.marcocomparato.com/.
 
-## :open_file_folder: Local Installation
-This site is built with GatsbyJS, so you'll need to have the [Gatsby CLI](https://www.gatsbyjs.org/docs/gatsby-cli/) installed on your machine to run it locally. 
+## Local Installation
+This site is built with GatsbyJS, so you'll need to have the [Gatsby CLI](https://www.gatsbyjs.org/docs/gatsby-cli/) installed on your machine to run it locally.
 
 1. Install the Gatsby CLI
 
@@ -23,13 +23,12 @@ This site is built with GatsbyJS, so you'll need to have the [Gatsby CLI](https:
     gatsby develop
     ```
 
-## :hammer_and_wrench: Technologies Used
+## Technologies Used
 The following tools were used to develop this project:
 * [React](https://reactjs.org/)
 * [GatsbyJS](https://www.gatsbyjs.org/)
 * [Styled Components](https://www.styled-components.com/)
 * [React Icons](https://react-icons.netlify.com/#/)
-* [Netlify](https://www.netlify.com/)
 
-## :wave: Contact
-Built by [Anthony Caron](https://github.com/antcar112) - Feel free to reach out and contact me if you have any questions. 
+## Contact
+Built by [Marco Comparato](https://github.com/marcocom) - Feel free to reach out and [contact me](mailto:marcocom@gmail.com) if you have any questions.

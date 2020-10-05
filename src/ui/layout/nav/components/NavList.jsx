@@ -21,9 +21,9 @@ const StyledNavList = styled.ul`
 
 export const NavList = () => (
   <StyledNavList>
-    <NavLink to='/' name='Work' direction='right' />
+    <NavLink to='/' name='Creations' direction='right' />
     <NavLink to='/about/' name='About' direction='left' />
-    <NavLink href='mailto:anthony.j.caron@gmail.com' name='Contact' />
+    <NavLink href='mailto:marcocom@gmail.com' name='Email' target= />
     <SocialLinks />
     <DarkModeButton />
   </StyledNavList>
