@@ -1,23 +1,28 @@
 module.exports = {
-  parser: "@typescript-eslint/parser",
-  extends: [
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:jest/recommended",
-    "plugin:prettier/recommended"
-  ],
+  extends: ['eslint:recommended', 'prettier', 'plugin:react/recommended', 'prettier/react'],
+  plugins: ['prettier', 'react'],
+  env: {
+    browser: true,
+    node: true,
+  },
   parserOptions: {
-    tsconfigRootDir: __dirname,
     ecmaVersion: 2018,
-    sourceType: "module"
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+  rules: {
+    'prettier/prettier': ['error'],
+    'no-unused-vars': 'warn',
+    // 'react/jsx-filename-extension': 'warn',
+    'react/no-unescaped-entities': 'off',
+    'react/prop-types': 'off',
+    // react-hooks/exhaustive-deps
   },
   settings: {
     react: {
-      version: "detect"
-    }
+      version: '16.12.0',
+    },
   },
-  env: {
-    browser: true,
-    jest: true
-  }
 }
