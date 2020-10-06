@@ -5,7 +5,7 @@ const fonts = {
   cursive: ['Rubik', 'Helvetica', 'serif'],
   heading: ['Rubik', 'Helvetica', 'serif'],
   body: ['Karla', 'Helvetica', 'sans-serif'],
-}
+};
 
 const theme = {
   font: {
@@ -13,9 +13,13 @@ const theme = {
     heading: fonts.heading.join(', '),
     body: fonts.body.join(', '),
   },
-  hoverTransition:
-    'color 200ms ease-out, border 200ms ease-out, background 200ms ease-out, background-color 200ms ease-out',
-}
+  hoverTransition: `
+  color 200ms ease-out,
+  border 200ms ease-out, 
+  background 200ms ease-out,
+  background-color 200ms ease-out
+  `,
+};
 
 const lightTheme = {
   color: {
@@ -26,8 +30,7 @@ const lightTheme = {
     primary: '#0F97DB',
     primaryDarkened: '#0d8bca',
   },
-}
-
+};
 const darkTheme = {
   color: {
     text: '#ffffff',
@@ -37,7 +40,7 @@ const darkTheme = {
     primary: '#0F97DB',
     primaryDarkened: '#0d8bca',
   },
-}
+};
 
 export const Theme = ({ colorTheme, children }) => (
   <ThemeProvider theme={theme}>
@@ -45,4 +48,4 @@ export const Theme = ({ colorTheme, children }) => (
       {children}
     </ThemeProvider>
   </ThemeProvider>
-)
+);

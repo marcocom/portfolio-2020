@@ -70,7 +70,7 @@ const StyledHamburger = styled.button`
       }
     }
   }
-`
+`;
 
 export const Hamburger = ({ drawerOpen, setDrawerOpen }) => (
   <StyledHamburger
@@ -81,4 +81,4 @@ export const Hamburger = ({ drawerOpen, setDrawerOpen }) => (
     <span className='mid-bar' />
     <span className='bot-bar' />
   </StyledHamburger>
-)
+);

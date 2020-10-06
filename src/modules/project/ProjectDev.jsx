@@ -5,9 +5,9 @@ import styled from 'styled-components'
 
 const StyledProjectDev = styled.section`
   margin: 60px auto 0;
-`
+`;
 
-export const ProjectDev = ({ devDesc, tech, features }) => (
+export const ProjectDev = ({ devDesc, features }) => (
   <StyledProjectDev>
     <Text type='heading'>Project Development</Text>
     {devDesc.map((paragraph) => (
@@ -15,6 +15,5 @@ export const ProjectDev = ({ devDesc, tech, features }) => (
     ))}
 
     <ProjectFeatures features={features} />
-    <ProjectTech tech={tech} />
   </StyledProjectDev>
-)
+);

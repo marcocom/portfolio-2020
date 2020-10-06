@@ -27,14 +27,14 @@ const StyledDrawer = styled.aside`
   ${media.down.md} {
     display: flex;
   }
-`
+`;
 
 const StyledNav = styled.nav`
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
   padding: 0;
-`
+`;
 
 export const Drawer = ({ drawerOpen, setDrawerOpen }) => (
   <StyledDrawer className={drawerOpen ? 'drawer-open' : ''}>
@@ -42,4 +42,4 @@ export const Drawer = ({ drawerOpen, setDrawerOpen }) => (
       <DrawerList setDrawerOpen={setDrawerOpen} />
     </StyledNav>
   </StyledDrawer>
-)
+);

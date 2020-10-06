@@ -4,12 +4,9 @@ import { Helmet as ReactHelmet } from 'react-helmet'
 export const Helmet = ({ pageTitle }) => (
   <ReactHelmet>
     <meta charSet='utf-8' />
-    <title>Anthony Caron - {pageTitle}</title>
-    <meta
-      name='keywords'
-      content='HTML, CSS, JavaScript, React, Web Developer, Software Developer, Designer, Portfolio'
-    />
-    <meta name='description' content='Portfolio site for software developer Anthony Caron' />
     <meta name='author' content='Anthony Caron' />
+    <title>marco comparato :: technology creations :: welcome</title>
+    <meta name="description" content="Marco Comparato, Design and Development." />
+    <meta name="keywords" content="San Francisco, Web Design, Web Development, UI Design, User Interface Design, User Experience Design, Flash Design, Flash Animation, Flash Actionscripting, Flash Developer, Flash Development, User Interface Design, Multimedia Design." />
   </ReactHelmet>
-)
+);

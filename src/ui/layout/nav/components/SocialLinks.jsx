@@ -15,7 +15,7 @@ const SocialLink = styled.a`
   &:hover {
     color: ${({ theme }) => theme.color.textSecondary};
   }
-`
+`;
 
 export const SocialLinks = () => (
   <>
@@ -25,9 +25,8 @@ export const SocialLinks = () => (
     <SocialLink
       href='https://www.linkedin.com/in/anthony-caron/'
       target='_blank'
-      rel='noopener noreferrer'
-    >
+      rel='noopener noreferrer'>
       <FaLinkedin />
     </SocialLink>
   </>
-)
+);

@@ -13,7 +13,7 @@ module.exports = {
     },
   },
   rules: {
-    'prettier/prettier': ['error'],
+    'prettier/prettier': ['warn'],
     'no-unused-vars': 'warn',
     // 'react/jsx-filename-extension': 'warn',
     'react/no-unescaped-entities': 'off',

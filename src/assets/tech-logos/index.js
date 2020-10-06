@@ -23,6 +23,14 @@ import sass from './sass.svg'
 import styledComponents from './styled-components.svg'
 import testingLibrary from './testing-library.svg'
 import typescript from './typescript.svg'
+import xd from './adobe-xd.svg'
+import illustrator from './adobe-illustrator.svg'
+import aws from './aws.svg'
+import chrome from './chrome.svg'
+import salesforce from './salesforce.svg'
+import angular from './angular.svg'
+import ionic from './ionic.svg'
+import git from './git.svg'
 
 export const techLogos = {
   bootstrap,
@@ -50,4 +58,12 @@ export const techLogos = {
   styledComponents,
   testingLibrary,
   typescript,
-}
+  xd,
+  illustrator,
+  aws,
+  chrome,
+  salesforce,
+  angular,
+  ionic,
+  git,
+};

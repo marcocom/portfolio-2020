@@ -17,14 +17,14 @@ const StyledNavList = styled.ul`
   & li {
     line-height: 60px;
   }
-`
+`;
 
 export const NavList = () => (
   <StyledNavList>
     <NavLink to='/' name='Creations' direction='right' />
     <NavLink to='/about/' name='About' direction='left' />
-    <NavLink href='mailto:marcocom@gmail.com' name='Email' target= />
+    <NavLink href='mailto:marcocom@gmail.com' name='Email' target='_blank' />
     <SocialLinks />
     <DarkModeButton />
   </StyledNavList>
-)
+);

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
   Heading,
   Hightlight,
@@ -8,9 +8,9 @@ import {
   PageSubheading,
   Paragraph,
   Subheading,
-} from './styledText'
+} from './styledText';
 
-const styledText = {
+const styledClassNames = {
   body: Paragraph,
   'list-item': ListItem,
   heading: Heading,
@@ -18,15 +18,15 @@ const styledText = {
   'page-heading': PageHeading,
   'page-subheading': PageSubheading,
   highlight: Hightlight,
-}
+};
 
-const getTextComponent = (type) => styledText[type] || styledText.body
+const getTextComponent = (type) => styledClassNames[type] || styledClassNames.body;
 
 export const Text = ({ children, type = 'body', href, ...props }) => {
-  const TextComponent = href ? Link : getTextComponent(type)
+  const TextComponent = href ? Link : getTextComponent(type);
   return (
     <TextComponent {...props} href={href}>
       {children}
     </TextComponent>
   )
-}
+};

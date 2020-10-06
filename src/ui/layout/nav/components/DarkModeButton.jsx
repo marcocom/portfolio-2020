@@ -42,7 +42,7 @@ const DarkModeBtn = styled.button`
     font-size: 22px;
     display: ${({ colorTheme }) => (colorTheme === 'dark' ? 'none' : 'block')};
   }
-`
+`;
 
 export const DarkModeButton = () => {
   const { theme, toggle } = useTheme()
@@ -52,4 +52,4 @@ export const DarkModeButton = () => {
       <span>{theme === 'light' ? 'Dark ' : 'Light '}Mode</span>
     </DarkModeBtn>
   )
-}
+};

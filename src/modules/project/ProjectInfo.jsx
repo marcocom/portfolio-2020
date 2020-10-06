@@ -6,7 +6,7 @@ import styled from 'styled-components'
 const StyledProjectInfo = styled.section`
   width: 100%;
   margin: 10px auto 0;
-`
+`;
 
 const Grid = styled.div`
   display: grid;
@@ -18,7 +18,7 @@ const Grid = styled.div`
     grid-template-columns: 1fr;
     grid-gap: 20px;
   }
-`
+`;
 
 const Buttons = styled.div`
   display: grid;
@@ -37,7 +37,7 @@ const Buttons = styled.div`
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
-`
+`;
 
 export const ProjectInfo = ({ title, subtitle, description, githubLink, hostedLink }) => (
   <StyledProjectInfo>
@@ -53,4 +53,4 @@ export const ProjectInfo = ({ title, subtitle, description, githubLink, hostedLi
       </Buttons>
     </Grid>
   </StyledProjectInfo>
-)
+);

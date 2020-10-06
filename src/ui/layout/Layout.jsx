@@ -4,14 +4,13 @@ import { Footer, Helmet, LoadingPage, Nav } from '@src/ui/layout'
 import React from 'react'
 
 export const Layout = ({ pageTitle, children }) => {
-  const { mounted, theme } = useTheme()
+  const { mounted, theme } = useTheme();
 
   return (
     <Theme colorTheme={theme}>
       <Helmet pageTitle={pageTitle} />
-      {!mounted ? (
-        <LoadingPage />
-      ) : (
+      {!mounted ? <LoadingPage />
+       : (
         <>
           <GlobalStyle />
           <Nav />
@@ -21,4 +20,4 @@ export const Layout = ({ pageTitle, children }) => {
       )}
     </Theme>
   )
-}
+};

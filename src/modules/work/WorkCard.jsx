@@ -10,7 +10,7 @@ const StyledWorkCard = styled(Card)`
     margin: -100px auto -80px;
     width: 90%;
   }
-`
+`;
 
 export const WorkCard = ({ title, subtitle, description, link }) => (
   <StyledWorkCard>
@@ -23,4 +23,4 @@ export const WorkCard = ({ title, subtitle, description, link }) => (
     <Text card>{description}</Text>
     <Button outline to={link} text='See More' direction='up' />
   </StyledWorkCard>
-)
+);

@@ -31,7 +31,7 @@ const ImageContainer = styled.div`
       object-fit: contain;
     }
   }
-`
+`;
 
 export const WorkImage = ({ background, image, title }) => (
   <Fade bottom>
@@ -39,4 +39,4 @@ export const WorkImage = ({ background, image, title }) => (
       <img src={image} alt={title} />
     </ImageContainer>
   </Fade>
-)
+);

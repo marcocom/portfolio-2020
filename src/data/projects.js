@@ -22,10 +22,8 @@ export const projects = {
       `Allows users to add, edit and delete courses.`,
       `Displays study times in a graphical format.`,
       `Developed using the Agile design methodology.`,
-      `Code organized using the MVC design pattern.`,
-      `Uses Google Firebase for a database and for authorization.`,
     ],
   },
-}
+};
 
-export const projectList = Object.values(projects)
+export const projectList = Object.values(projects);

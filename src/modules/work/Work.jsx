@@ -8,7 +8,7 @@ const StyledWork = styled.section`
   width: 100%;
   background: ${({ theme }) => theme.color.bg};
   transition: ${({ theme }) => theme.hoverTransition};
-`
+`;
 
 const ScrollTarget = styled.div`
   width: 1px;
@@ -16,7 +16,7 @@ const ScrollTarget = styled.div`
   background: none;
   position: relative;
   top: -90px;
-`
+`;
 
 export const Work = () => (
   <StyledWork>
@@ -26,4 +26,4 @@ export const Work = () => (
       <WorkList />
     </Container>
   </StyledWork>
-)
+);

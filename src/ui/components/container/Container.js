@@ -21,4 +21,4 @@ export const Container = styled.div`
   ${media.down.xs} {
     width: 100%;
   }
-`
+`;

@@ -8,7 +8,7 @@ const ProjectContainer = styled.div`
   background: ${({ theme }) => theme.color.bg};
   transition: ${({ theme }) => theme.hoverTransition};
   margin-bottom: 30px;
-`
+`;
 
 const InnerContainer = styled.div`
   width: 100%;
@@ -18,7 +18,7 @@ const InnerContainer = styled.div`
   ${media.down.xs} {
     padding: 0 20px;
   }
-`
+`;
 
 export const Project = ({ project, tech }) => {
   const {
@@ -32,7 +32,7 @@ export const Project = ({ project, tech }) => {
     video,
     devDesc,
     features,
-  } = project
+  } = project;
 
   return (
     <ProjectContainer>
@@ -47,10 +47,10 @@ export const Project = ({ project, tech }) => {
             hostedLink={hostedLink}
           />
           <ProjectVideo video={video} title={title} />
-          <ProjectDev devDesc={devDesc} features={features} tech={tech} />
-          <Button outline to='/' text='Go Back' direction='down' />
+          <ProjectDev devDesc={devDesc} features={features} />
+          <Button outline to='/' text='Go Back' direction='up' />
         </InnerContainer>
       </Container>
     </ProjectContainer>
   )
-}
+};

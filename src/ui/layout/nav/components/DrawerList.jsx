@@ -1,8 +1,8 @@
 import { useTheme } from '@src/context'
 import { DrawerNavLink } from '@src/ui/layout/nav/components'
 import React from 'react'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import { IoMdFolder, IoMdMail, IoMdPerson, IoMdSunny, IoMdMoon } from 'react-icons/io'
+import { FaGithub, FaLinkedin, FaRegEnvelope } from 'react-icons/fa'
+import { IoMdFolder, IoMdPerson, IoMdSunny, IoMdMoon } from 'react-icons/io'
 import styled from 'styled-components'
 
 const NavList = styled.ul`
@@ -16,28 +16,28 @@ const NavList = styled.ul`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-`
+`;
 
 export const DrawerList = ({ setDrawerOpen }) => {
-  const { theme, toggle } = useTheme()
+  const { theme, toggle } = useTheme();
 
   const handleDarkMode = () => {
-    toggle()
-    setDrawerOpen()
-  }
+    toggle();
+    setDrawerOpen();
+  };
   return (
     <NavList>
       <DrawerNavLink to='/' direction='right' name='Work' icon={<IoMdFolder />} />
       <DrawerNavLink to='/about/' direction='left' name='About' icon={<IoMdPerson />} />
       <DrawerNavLink
-        href='mailto:anthony.j.caron@gmail.com'
+        href='mailto:marcocom@gmail.com'
         name='Contact'
-        icon={<IoMdMail />}
+        icon={<FaRegEnvelope />}
         email
       />
-      <DrawerNavLink href='https://github.com/antcar112' name='GitHub' icon={<FaGithub />} />
+      <DrawerNavLink href='https://github.com/marcocom' name='GitHub' icon={<FaGithub />} />
       <DrawerNavLink
-        href='https://www.linkedin.com/in/anthony-caron/'
+        href='https://www.linkedin.com/in/marcocom/'
         name='LinkedIn'
         icon={<FaLinkedin />}
       />
@@ -47,5 +47,5 @@ export const DrawerList = ({ setDrawerOpen }) => {
         icon={theme === 'light' ? <IoMdMoon /> : <IoMdSunny />}
       />
     </NavList>
-  )
-}
+  );
+};

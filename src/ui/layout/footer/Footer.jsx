@@ -18,11 +18,10 @@ const StyledFooter = styled.footer`
   ${media.down.md} {
     flex-direction: column;
   }
-`
+`;
 
 export const Footer = () => (
   <StyledFooter>
-    <span>© Anthony Caron {new Date().getFullYear()}</span>
-    <span>Website designed and developed by Anthony Caron.</span>
+    <span>© Marco Comparato {new Date().getFullYear()}</span>
   </StyledFooter>
-)
+);

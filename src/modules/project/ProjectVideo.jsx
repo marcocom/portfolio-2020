@@ -10,10 +10,10 @@ const VideoContainer = styled.section`
   & img {
     max-height: 82vh;
   }
-`
+`;
 
 export const ProjectVideo = ({ video, title }) => (
   <VideoContainer>
     <img src={video} alt={title} />
   </VideoContainer>
-)
+);

@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 import { media } from '@src/utils'
 
 export const GlobalStyle = createGlobalStyle`
-    
+
     /* Font Imports */
     /* @import url('https://fonts.googleapis.com/css?family=Karla:400,700|Rubik:400,700,900&display=swap'); */
     /* Now importing via typeface library in gatsby-browser */
@@ -100,12 +100,12 @@ export const GlobalStyle = createGlobalStyle`
         }
 
     }
-    p, 
-    nav a, 
-    aside a, 
-    a, 
-    span, 
-    div, 
+    p,
+    nav a,
+    aside a,
+    a,
+    span,
+    div,
     button {
         font-family: ${({ theme }) => theme.font.body};
         font-weight: 400;
@@ -123,4 +123,4 @@ export const GlobalStyle = createGlobalStyle`
     }
 
 
-`
+`;

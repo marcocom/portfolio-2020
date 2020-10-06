@@ -9,4 +9,4 @@ export const WorkList = () => (
       <WorkItem project={project} index={index} key={project.title} />
     ))}
   </div>
-)
+);

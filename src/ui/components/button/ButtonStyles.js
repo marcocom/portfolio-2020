@@ -81,7 +81,7 @@ const SharedBtnStyles = css`
       font-size: 1em;
     }
   }
-`
+`;
 
 export const BtnSolidStyles = css`
   ${SharedBtnStyles};
@@ -95,7 +95,7 @@ export const BtnSolidStyles = css`
   & span {
     color: white;
   }
-`
+`;
 
 export const BtnOutlineStyles = css`
   ${SharedBtnStyles};
@@ -124,4 +124,4 @@ export const BtnOutlineStyles = css`
       color: white;
     }
   }
-`
+`;

@@ -11,7 +11,7 @@ const StyledHeader = styled.header`
   z-index: 10;
   overflow: hidden;
   transition: ${({ theme }) => theme.hoverTransition};
-`
+`;
 
 const HeaderContainer = styled.div`
   width: 100%;
@@ -24,10 +24,10 @@ const HeaderContainer = styled.div`
   ${media.down.md} {
     padding: 0 10px 0 20px;
   }
-`
+`;
 
 export const Header = ({ children }) => (
   <StyledHeader>
     <HeaderContainer>{children}</HeaderContainer>
   </StyledHeader>
-)
+);

@@ -4,7 +4,7 @@ const size = {
   md: '992px',
   lg: '1200px',
   xl: '1450px',
-}
+};
 
 export const media = {
   down: {
@@ -14,4 +14,4 @@ export const media = {
     lg: `@media (max-width: ${size.lg})`,
     xl: `@media (max-width: ${size.xl})`,
   },
-}
+};

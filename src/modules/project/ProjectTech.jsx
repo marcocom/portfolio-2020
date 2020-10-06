@@ -8,7 +8,7 @@ const StyledProjectTech = styled.div`
   ${media.down.md} {
     margin-bottom: 30px;
   }
-`
+`;
 
 export const ProjectTech = ({ tech }) => (
   <StyledProjectTech>
@@ -18,4 +18,4 @@ export const ProjectTech = ({ tech }) => (
     </Text>
     <TechGrid tech={tech} page='project' />
   </StyledProjectTech>
-)
+);

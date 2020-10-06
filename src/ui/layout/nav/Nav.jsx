@@ -7,7 +7,7 @@ const StyledNav = styled.nav`
   height: 100%;
   display: flex;
   justify-content: space-between;
-`
+`;
 
 export const Nav = () => {
   const [drawerOpen, setDrawerOpen] = useState(false)
@@ -22,4 +22,4 @@ export const Nav = () => {
       </StyledNav>
     </Header>
   )
-}
+};

@@ -8,6 +8,6 @@ const Home = () => (
     <WorkHero />
     <Work />
   </Layout>
-)
+);
 
 export default Home

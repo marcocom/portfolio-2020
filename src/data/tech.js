@@ -46,11 +46,6 @@ const tech = {
     image: techLogos.bootstrap,
     inProgress: false,
   },
-  mobx: {
-    name: 'MobX',
-    image: techLogos.mobx,
-    inProgress: false,
-  },
   graphql: {
     name: 'GraphQL',
     image: techLogos.graphql,
@@ -66,48 +61,45 @@ const tech = {
     image: techLogos.node,
     inProgress: false,
   },
-  express: {
-    name: 'Express',
-    image: techLogos.express,
-    inProgress: false,
-    darkModeInvert: true,
-  },
-  java: {
-    name: 'Java',
-    image: techLogos.java,
-    inProgress: false,
-  },
-  python: {
-    name: 'Python',
-    image: techLogos.python,
-    inProgress: true,
-  },
-  c: { name: 'C', image: techLogos.c, inProgress: true },
-  oracle: {
-    name: 'Oracle Database',
-    image: techLogos.oracle,
-    inProgress: false,
-  },
-  mongodb: {
-    name: 'MongoDB',
-    image: techLogos.mongodb,
-    inProgress: false,
-  },
-  firebase: {
-    name: 'Firebase',
-    image: techLogos.firebase,
-    inProgress: false,
-  },
   jest: {
     name: 'Jest',
     image: techLogos.jest,
     inProgress: true,
   },
-  testingLibrary: {
-    name: 'Testing Library',
-    image: techLogos.testingLibrary,
+  aws: {
+    name: 'Amazon Web Services',
+    image: techLogos.aws,
     inProgress: true,
   },
+  google: {
+    name: 'Chrome Extensions',
+    image: techLogos.chrome,
+    inProgress: true,
+  },
+  salesforce: {
+    name: 'Salesforce LWC',
+    image: techLogos.salesforce,
+    inProgress: true,
+  },
+  angular: {
+    name: 'Angular',
+    image: techLogos.angular,
+    inProgress: true,
+  },
+  ionic: {
+    name: 'Ionic',
+    image: techLogos.ionic,
+    inProgress: true,
+  },
+  git: {
+    name: 'Git Flow',
+    image: techLogos.git,
+    inProgress: true,
+  },
+
+};
+
+const design = {
   photoshop: {
     name: 'Abobe Photoshop',
     image: techLogos.photoshop,
@@ -118,30 +110,20 @@ const tech = {
     image: techLogos.figma,
     inProgress: false,
   },
-}
+  xd: {
+    name: 'Adobe XD',
+    image: techLogos.xd,
+    inProgress: true,
+  },
+  illustrator: {
+    name: 'Adobe Illustrator',
+    image: techLogos.illustrator,
+    inProgress: true,
+  },
+};
 
-export const techList = Object.values(tech)
+export const techList = Object.values(tech);
 
 export const projectTech = {
-  bigGenerals: [tech.html, tech.css, tech.sass, tech.javascript, tech.photoshop],
-  codyCameron: [
-    tech.javascript,
-    tech.react,
-    tech.graphql,
-    tech.gatsby,
-    tech.styledComponents,
-    tech.photoshop,
-  ],
-  timeego: [tech.html, tech.css, tech.bootstrap, tech.javascript, tech.firebase, tech.figma],
-  volt: [
-    tech.javascript,
-    tech.react,
-    tech.node,
-    tech.express,
-    tech.mongodb,
-    tech.styledComponents,
-    tech.bootstrap,
-    tech.python,
-    tech.figma,
-  ],
-}
+  timeego: [tech.html, tech.css, tech.bootstrap, tech.javascript, tech.firebase, design.figma],
+};

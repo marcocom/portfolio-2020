@@ -6,18 +6,18 @@ import { BtnSolidStyles, BtnOutlineStyles } from './buttonStyles'
 
 const StyledButton = styled.button`
   ${({ outline }) => (outline ? BtnOutlineStyles : BtnSolidStyles)};
-`
+`;
 
 const StyledAnchor = styled.a`
   ${({ outline }) => (outline ? BtnOutlineStyles : BtnSolidStyles)};
-`
+`;
 
 const StyledAniLink = styled(AniLink)`
   ${({ outline }) => (outline ? BtnOutlineStyles : BtnSolidStyles)};
-`
+`;
 
 export const Button = ({ outline = false, to, href, text, direction, handleClick }) => {
-  const themeContext = useContext(ThemeContext)
+  const themeContext = useContext(ThemeContext);
   if (to) {
     return (
       <StyledAniLink
@@ -46,7 +46,7 @@ export const Button = ({ outline = false, to, href, text, direction, handleClick
       <ButtonText text={text} />
     </StyledButton>
   )
-}
+};
 
 const ButtonText = ({ text }) => (
   <>
@@ -57,4 +57,4 @@ const ButtonText = ({ text }) => (
       <span>{text}</span>
     </div>
   </>
-)
+);

@@ -26,7 +26,7 @@ const AboutGrid = styled.div`
   @media only screen and (max-width: 400px) {
     grid-template-columns: repeat(3, 1fr);
   }
-`
+`;
 
 const ProjectGrid = styled.div`
   display: grid;
@@ -48,15 +48,15 @@ const ProjectGrid = styled.div`
   ${media.down.xs} {
     grid-template-columns: repeat(3, 1fr);
   }
-`
+`;
 
 export const TechGrid = ({ page, tech }) => {
-  const StyledTechGrid = page === 'about' ? AboutGrid : ProjectGrid
+  const StyledTechGrid = page === 'about' ? AboutGrid : ProjectGrid;
   return (
     <StyledTechGrid>
       {tech.map((techItem) => (
-        <TechItem tech={techItem} key={techItem.name} showInProgress={page === 'about'} />
+        <TechItem tech={techItem} key={techItem.name} showInProgress={false} />
       ))}
     </StyledTechGrid>
   )
-}
+};

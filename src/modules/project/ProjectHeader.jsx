@@ -7,7 +7,7 @@ import styled from 'styled-components'
 const StyledHeader = styled.section`
   width: 100%;
   padding-top: 1.5em;
-`
+`;
 const ColorSection = styled.div`
   margin-top: 10vh;
   width: 100%;
@@ -33,7 +33,7 @@ const ColorSection = styled.div`
       width: 80%;
     }
   }
-`
+`;
 
 export const ProjectHeader = ({ background, title, subtitle, image }) => (
   <StyledHeader>
@@ -45,4 +45,4 @@ export const ProjectHeader = ({ background, title, subtitle, image }) => (
       </Fade>
     </ColorSection>
   </StyledHeader>
-)
+);

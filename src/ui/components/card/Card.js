@@ -6,4 +6,4 @@ export const Card = styled.div`
   background: ${({ theme }) => theme.color.bgCard};
   transition: ${({ theme }) => theme.hoverTransition};
   grid-area: card;
-`
+`;

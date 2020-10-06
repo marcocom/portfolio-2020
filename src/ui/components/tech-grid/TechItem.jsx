@@ -64,7 +64,7 @@ const StyledTechItem = styled.div`
       opacity: 1;
     }
   }
-`
+`;
 
 export const TechItem = ({ tech: { darkModeInvert, image, inProgress, name }, showInProgress }) => {
   const { theme } = useTheme()
@@ -72,7 +72,6 @@ export const TechItem = ({ tech: { darkModeInvert, image, inProgress, name }, sh
     <StyledTechItem colorTheme={theme} invert={darkModeInvert}>
       <img src={image} alt={name} />
       <span className='tech_name'>{name}</span>
-      {showInProgress && inProgress && <span className='in_progress'>In Progress</span>}
     </StyledTechItem>
   )
-}
+};

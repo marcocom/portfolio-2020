@@ -5,4 +5,4 @@ import 'typeface-rubik'
 
 export const wrapRootElement = ({ element }) => {
   return <GlobalContextProvider>{element}</GlobalContextProvider>
-}
+};

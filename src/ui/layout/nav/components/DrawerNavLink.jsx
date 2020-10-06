@@ -58,7 +58,7 @@ const NavListItem = styled.li`
       }
     }
   }
-`
+`;
 
 export const DrawerNavLink = ({ to, href, direction, name, icon, email, onClick }) => {
   const themeContext = useContext(ThemeContext)
@@ -105,11 +105,11 @@ export const DrawerNavLink = ({ to, href, direction, name, icon, email, onClick 
       </button>
     </NavListItem>
   )
-}
+};
 
 const DrawLinkContent = ({ name, icon }) => (
   <div>
     <span>{name}</span>
     {icon}
   </div>
-)
+);

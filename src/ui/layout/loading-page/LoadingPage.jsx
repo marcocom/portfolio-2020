@@ -6,7 +6,7 @@ const Page = styled.div`
   height: 100vh;
   display: grid;
   place-items: center center;
-`
+`;
 
 // Loading Spinner by Mimoh Shrestha at https://codepen.io/mimoh/pen/VmVqPB
 const Spinner = styled.div`
@@ -29,10 +29,10 @@ const Spinner = styled.div`
       -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     }
   }
-`
+`;
 
 export const LoadingPage = () => (
   <Page>
     <Spinner />
   </Page>
-)
+);

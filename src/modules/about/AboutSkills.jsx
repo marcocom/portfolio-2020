@@ -5,8 +5,8 @@ import { techList } from '@src/data'
 export const AboutSkills = () => (
   <section>
     <Text type='heading' center>
-      My Skills
+      My Tools
     </Text>
     <TechGrid tech={techList} page='about' />
   </section>
-)
+);

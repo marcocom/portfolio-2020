@@ -23,7 +23,7 @@ const evenStyles = css`
       rgba(0, 0, 0, 0) 100%
     );
   }
-`
+`;
 const oddStyles = css`
   grid-template-columns: 1fr 2fr;
   grid-template-areas: 'card image';
@@ -44,7 +44,7 @@ const oddStyles = css`
       rgba(0, 0, 0, 0) 100%
     );
   }
-`
+`;
 
 const StyledWorkItem = styled.article`
   margin-bottom: 90px;
@@ -62,7 +62,7 @@ const StyledWorkItem = styled.article`
     margin-top: 0px;
     margin-bottom: 150px;
   }
-`
+`;
 
 export const WorkItem = ({ project, index }) => {
   const { title, subtitle, description, link, background, image } = project
@@ -73,4 +73,4 @@ export const WorkItem = ({ project, index }) => {
       <WorkCard title={title} subtitle={subtitle} description={description} link={link} />
     </StyledWorkItem>
   )
-}
+};

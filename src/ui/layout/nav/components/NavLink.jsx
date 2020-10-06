@@ -34,11 +34,11 @@ const styles = css`
   &:hover {
     color: ${({ theme }) => theme.color.textSecondary};
   }
-`
+`;
 
 const StyledNavLink = styled(AniLink)`
   ${styles};
-`
+`;
 
 const StyledNavAnchor = styled.a`
   ${styles};

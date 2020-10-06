@@ -48,7 +48,7 @@ const NavLogoContainer = styled(AniLink)`
   &:hover {
     color: ${({ theme }) => theme.color.textSecondary};
   }
-`
+`;
 
 export const NavLogo = () => {
   const themeContext = useContext(ThemeContext)
@@ -57,4 +57,4 @@ export const NavLogo = () => {
       <img className='logo' src={logo} alt='Anthony Caron - Developer' />
     </NavLogoContainer>
   )
-}
+};
