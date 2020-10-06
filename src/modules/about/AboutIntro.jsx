@@ -56,7 +56,9 @@ const AboutCard = styled(Card)`
     color: ${({ theme }) => theme.color.text};
     font-size: 3em;
     margin: 6px 0 20px;
-
+    & i {
+      text
+    }
     & span {
       color: ${({ theme }) => theme.color.primary};
     }
@@ -89,15 +91,22 @@ export const AboutIntro = () => (
         hello, i'm <span>marco</span>
       </h2>
       <Text>
-        <p>I am a digital artist, web designer, and front-end developer, specializing in the creation of interactive rich user-experiences that seek to deliver a brand message in a fun and engaging way. </p>
+        <p>I am a digital artist, web designer, and front-end developer, specializing in the creation of interactive rich user-experiences. </p>
       </Text>
       <Text>
-        <p>My career began at the first large-scale internet company in 1998, at U.S.Interactive in Los Angeles where we launched Adidas, NFL, and much more. I then proceeded to San Francisco where I worked at Apple in Cupertino, for CKS Partners for 2 years with a specialization in designing websites and animating in Flash and multimedia and actionscript programming.</p>
+        <p>My creative career began at the world's first large-scale internet agency in 1998, at U.S.Interactive in Los Angeles, where we launched the first websites for Adidas, Lexus, Wide World of Disney, and the Smithsonian-Award winning <cite>'StarBright'</cite>. I then moved to San Francisco in 2001 where I worked in Cupertino, for U.S.Web/CKS for 2 years designing websites rich in animation, interactivity and multimedia, and delivered original launch sites for Levi's, Docker's, Williams-Sonoma, and JCPenney.</p>
       </Text>
       <Text>
-        <p>Upon closure of CKS, I moved to San Diego to do creative direction for a small firm in the real-estate brokerage market and after one year, moved back to Los Angeles to work at Saatchi & Saatchi and handle Toyota for the next 3 years, followed by another 5 years of automotive-work for Nissan, Acura, Scion, and Chrysler/Dodge</p>
+        <p>In 2003, I moved to San Diego to do creative direction for a small firm in the real-estate brokerage market and later, moved back to Los Angeles to work at Saatchi & Saatchi and handle Toyota's main website, micro-sites, and digital media for the next 3 years, followed by another 5 years of freelance automotive client work for Nissan, Acura, Scion, and Chrysler/Dodge.</p>
       </Text>
-      <Text><p>My specialties include: Concepting, Digital Design, Ad Media, Interactive Touch Displays, Front-end code development in HTML/CSS, UX Design and Animation.</p>
+      <Text>
+        <p>I then moved into video-games for a few years, working with the U.S.Army's <cite>'America's Army'</cite> and <cite>'The Army Experience'</cite> game interfaces, <cite>'The Secret World'</cite>, <cite>'Tony Hawk RIDE'</cite>, <cite>'Darksiders'</cite>, <cite>'RedBull's Soap-Race'</cite> websites, and the in-game menus and clan features of <cite>'Call Of Duty'</cite> at Activision, and finally moving overseas to do some Holland Casino contest-games in Amsterdam.</p>
+      </Text>
+      <Text>
+        <p>Since 2014, I moved back from Europe to San Francisco, to work with Accenture, consulting their clients including Disney, Autodesk, Google, YouTube, Intel, Warner Bros Studios, Marriott Hotels, and PizzaHut. </p>
+      </Text>
+      <Text>
+        <p>My specialties include; Concepting, User Interface Design, Ad Media, Interactive Touch Displays, Front-end modern code development, User-Centric Design and Prototype-driven discovery processes. I strive to always create intelligently unified solutions that deliver a brand's message in a playfully engaging and interactive way, and that might touch us with its friendly sincerity.</p>
       </Text>
     </AboutCard>
   </StyledAboutIntro>

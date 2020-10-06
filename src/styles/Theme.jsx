@@ -1,5 +1,6 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
+import { assetImages } from '@src/assets/images'
 
 const fonts = {
   cursive: ['Rubik', 'Helvetica', 'serif'],
@@ -15,7 +16,7 @@ const theme = {
   },
   hoverTransition: `
   color 200ms ease-out,
-  border 200ms ease-out, 
+  border 200ms ease-out,
   background 200ms ease-out,
   background-color 200ms ease-out
   `,
@@ -29,6 +30,7 @@ const lightTheme = {
     bgCard: '#ffffff',
     primary: '#0F97DB',
     primaryDarkened: '#0d8bca',
+    backgroundImage: assetImages.sky1,
   },
 };
 const darkTheme = {
@@ -39,6 +41,7 @@ const darkTheme = {
     bgCard: '#1D1D1D',
     primary: '#0F97DB',
     primaryDarkened: '#0d8bca',
+    backgroundImage: assetImages.wood2,
   },
 };
 

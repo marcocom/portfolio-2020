@@ -9,7 +9,8 @@ export const Layout = ({ pageTitle, children }) => {
   return (
     <Theme colorTheme={theme}>
       <Helmet pageTitle={pageTitle} />
-      {!mounted ? <LoadingPage />
+      {!mounted ?
+        <LoadingPage />
        : (
         <>
           <GlobalStyle />

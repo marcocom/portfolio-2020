@@ -6,15 +6,18 @@ import { FaGithub, FaLinkedin, FaRegEnvelope } from 'react-icons/fa'
 import { Text } from '@src/ui/components'
 import { media } from '@src/utils'
 
-const StyledAboutContact = styled.section``;
+const StyledAboutContact = styled.section`
+  width:
+`;
 
 const AboutContactList = styled.ul`
   display: flex;
   flex-direction: row;
+
   margin: 0 auto;
-  padding: 15px;
+
   list-style: none;
-  align-items: center;
+  flex-grow: inherit;
 
   & a {
     text-decoration: none;

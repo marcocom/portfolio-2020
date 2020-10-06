@@ -20,35 +20,9 @@ const Title = styled.h1`
   font-family: ${({ theme }) => theme.font.cursive};
   font-weight: 200;
   color: ${({ theme }) => theme.color.text};
-  font-size: 5.5em;
-  margin-bottom: 0px;
-  transition: ${({ theme }) => theme.hoverTransition};
-
-  ${media.down.md} {
-    font-size: 4.5em;
-  }
-  ${media.down.sm} {
-    font-size: 3em;
-  }
-  ${media.down.xs} {
-    font-size: 2em;
-  }
-`;
-
-const SubTitle = styled.h3`
-  font-family: ${({ theme }) => theme.font.cursive};
-  font-weight: 400;
-  color: ${({ theme }) => theme.color.text};
   font-size: 3.5em;
-  margin-bottom: 0px;
+  margin-bottom: 15px;
   transition: ${({ theme }) => theme.hoverTransition};
-
-  & span {
-    color: ${({ theme }) => theme.color.primary};
-    font-family: ${({ theme }) => theme.font.cursive};
-    transition: ${({ theme }) => theme.hoverTransition};
-    font-weight: 700;
-  }
 
   ${media.down.md} {
     font-size: 2.5em;
@@ -61,16 +35,45 @@ const SubTitle = styled.h3`
   }
 `;
 
-const BodyText = styled.h5`
-  font-size: 1.8em;
-  display: block;
-  margin-bottom: 80px;
+const SubTitle = styled.h3`
+  font-family: ${({ theme }) => theme.font.cursive};
+  font-weight: 400;
+  color: ${({ theme }) => theme.color.text};
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  transition: ${({ theme }) => theme.hoverTransition};
+
+  & span {
+    color: ${({ theme }) => theme.color.primary};
+    font-family: ${({ theme }) => theme.font.cursive};
+    transition: ${({ theme }) => theme.hoverTransition};
+    font-weight: 700;
+  }
 
   ${media.down.md} {
-    font-size: 1.4em;
+    font-size: 1.5em;
   }
   ${media.down.sm} {
+    font-size: 1em;
+  }
+  ${media.down.xs} {
+    font-size: 0.7em;
+  }
+`;
+
+const BodyText = styled.h5`
+  font-size: 1.4em;
+  display: block;
+  margin: 0 auto 80px;
+  width: 100%;
+  max-width: 600px;
+
+
+  ${media.down.md} {
     font-size: 1.2em;
+  }
+  ${media.down.sm} {
+    font-size: 1.1em;
   }
   ${media.down.xs} {
     font-size: 1.1em;
@@ -98,7 +101,8 @@ export const WorkHero = () => (
       <BodyText>
         <p>This website is an off-hours work-in-progress.</p>
         <p>Excuse the mess while i refine its functionality.</p>
-        <p>My portfolio is a body of collected interactive works covering over twenty years. From initial concept to final product, my work is the culmination of a lifetime of study, observation, and a great deal of trial and error.</p>
+        <p>My portfolio is a body of collected interactive works covering over twenty years.</p>
+        <p>From initial concept to final product, my work is the culmination of a lifetime of study, observation, and a great deal of trial and error.</p>
         <p>Please enjoy and thank you for your interest.</p>
       </BodyText>
       <Button outline='true' text='See my work' handleClick={scrollDown} direction='down' />
