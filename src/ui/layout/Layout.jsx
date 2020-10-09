@@ -1,6 +1,6 @@
 import { useTheme } from '@src/context'
 import { GlobalStyle, Theme } from '@src/styles'
-import { Footer, Helmet, LoadingPage, Nav } from '@src/ui/layout'
+import { Footer, Helmet, LoadingPage, Nav, Background } from '@src/ui/layout'
 import React from 'react'
 
 export const Layout = ({ pageTitle, children }) => {
@@ -13,7 +13,8 @@ export const Layout = ({ pageTitle, children }) => {
         <LoadingPage />
        : (
         <>
-          <GlobalStyle />
+          <GlobalStyle/>
+          {/*<Background />*/}
           <Nav />
           <main>{children}</main>
           <Footer />

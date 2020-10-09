@@ -1,6 +1,6 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
-import { assetImages } from '@src/assets/images'
+// import { assetImages } from '@src/assets/images'
 
 const fonts = {
   cursive: ['Rubik', 'Helvetica', 'serif'],
@@ -30,7 +30,7 @@ const lightTheme = {
     bgCard: '#ffffff',
     primary: '#0F97DB',
     primaryDarkened: '#0d8bca',
-    backgroundImage: assetImages.sky1,
+    // backgroundImage: assetImages.wood7,
   },
 };
 const darkTheme = {
@@ -41,7 +41,7 @@ const darkTheme = {
     bgCard: '#1D1D1D',
     primary: '#0F97DB',
     primaryDarkened: '#0d8bca',
-    backgroundImage: assetImages.wood2,
+    // backgroundImage: assetImages.wood2,
   },
 };
 

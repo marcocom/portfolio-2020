@@ -5,6 +5,7 @@ import wood3 from './wood/wood3.jpg'
 import wood4 from './wood/wood4.jpg'
 import wood5 from './wood/wood5.jpg'
 import wood6 from './wood/wood6.jpg'
+import wood7 from './wood/wood7.jpg'
 
 
 export const assetImages = {
@@ -15,4 +16,5 @@ export const assetImages = {
   wood4,
   wood5,
   wood6,
+  wood7,
 };

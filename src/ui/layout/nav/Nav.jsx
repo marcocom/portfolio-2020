@@ -10,7 +10,7 @@ const StyledNav = styled.nav`
 `;
 
 export const Nav = () => {
-  const [drawerOpen, setDrawerOpen] = useState(false)
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   return (
     <Header>

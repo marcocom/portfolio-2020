@@ -105,7 +105,7 @@ export const WorkHero = () => (
         <p>From initial concept to final product, my work is the culmination of a lifetime of study, observation, and a great deal of trial and error.</p>
         <p>Please enjoy and thank you for your interest.</p>
       </BodyText>
-      <Button outline='true' text='See my work' handleClick={scrollDown} direction='down' />
+      <Button outline='true' text='See my work' handleClick={scrollDown} direction='up' />
     </div>
   </StyledHero>
 );

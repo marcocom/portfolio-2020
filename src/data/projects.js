@@ -24,6 +24,7 @@ export const projects = {
       `Developed using the Agile design methodology.`,
     ],
   },
+
 };
 
 export const projectList = Object.values(projects);
