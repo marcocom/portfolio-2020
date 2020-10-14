@@ -26,17 +26,18 @@ export const Project = ({ project, tech }) => {
     subtitle,
     background,
     description,
-    image,
+    hero,
+    images,
     githubLink,
     hostedLink,
-    video,
+    videos,
     devDesc,
     features,
   } = project;
 
   return (
     <ProjectContainer>
-      <ProjectHeader background={background} title={title} subtitle={subtitle} image={image} />
+      <ProjectHeader background={background} title={title} subtitle={subtitle} image={images[0]} />
       <Container>
         <InnerContainer>
           <ProjectInfo
@@ -46,7 +47,7 @@ export const Project = ({ project, tech }) => {
             githubLink={githubLink}
             hostedLink={hostedLink}
           />
-          <ProjectVideo video={video} title={title} />
+          <ProjectVideo video={videos[0]} title={title} />
           <ProjectDev devDesc={devDesc} features={features} />
           <Button outline to='/' text='Go Back' direction='up' />
         </InnerContainer>

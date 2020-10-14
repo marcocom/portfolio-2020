@@ -5,13 +5,13 @@ import styled from 'styled-components'
 
 const ImageContainer = styled.div`
   grid-area: image;
-  height: 600px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
 
   & img {
-    height: 80%;
+    height: 75%;
   }
 
   ${media.down.lg} {
@@ -19,7 +19,7 @@ const ImageContainer = styled.div`
     height: auto;
 
     & img {
-      max-height: 500px;
+      max-height: 300px;
       object-fit: contain;
     }
   }
