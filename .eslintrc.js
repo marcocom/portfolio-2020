@@ -1,32 +1,28 @@
 module.exports = {
-	parser: 'babel-eslint',
-	env: {
-		browser: true,
-		commonjs: true,
-		es6: true,
-		node: true,
-		jest: true,
-	},
-	parserOptions: {
-		ecmaVersion: 2020,
-		ecmaFeatures: {
-			impliedStrict: true,
-			jsx: true,
-		},
-		sourceType: 'module',
-	},
-	plugins: ['react', 'react-hooks'],
-	extends: [
-		'eslint:recommended',
-		'plugin:react/recommended',
-		'plugin:react-hooks/recommended',
-	],
-	settings: {
-		react: {
-			version: 'detect',
-		},
-	},
-	rules: {
-		// 'react/prop-types': ['off']
-	},
-};
+  extends: ['eslint:recommended', 'prettier', 'plugin:react/recommended', 'prettier/react'],
+  plugins: ['prettier', 'react'],
+  env: {
+    browser: true,
+    node: true,
+  },
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+  rules: {
+    'prettier/prettier': ['warn'],
+    'no-unused-vars': 'warn',
+    // 'react/jsx-filename-extension': 'warn',
+    'react/no-unescaped-entities': 'off',
+    'react/prop-types': 'off',
+    // react-hooks/exhaustive-deps
+  },
+  settings: {
+    react: {
+      version: '16.12.0',
+    },
+  },
+}
