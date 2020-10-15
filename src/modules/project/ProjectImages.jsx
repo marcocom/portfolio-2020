@@ -12,7 +12,6 @@ const ColorSection = styled.div`
   margin-top: 10vh;
   width: 100%;
   height: 40vh;
-  background: ${({ background }) => background};
   display: grid;
   place-items: center center;
 
@@ -36,12 +35,16 @@ const ColorSection = styled.div`
   }
 `;
 
-export const ProjectImages = ({ image }) => (
+const ProjectImages = ({ title, images }) => (
   <StyledHeader>
-    <ColorSection background={background}>
+    <ColorSection >
+      <Text style='Subheading'>Sample Images:</Text>
       <Fade bottom>
-        {images.map(image => <img src={image} alt={title}/>) }
+        {
+          images.map(image => <img src={image} alt={title} key={title} />)
+        }
       </Fade>
     </ColorSection>
   </StyledHeader>
 );
+export default ProjectImages;

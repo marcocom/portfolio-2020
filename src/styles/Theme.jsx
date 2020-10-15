@@ -24,10 +24,11 @@ const theme = {
 
 const lightTheme = {
   color: {
-    text: '#000000',
+    text: '#0e0e0e',
     textSecondary: '#777777',
     bg: '#ffffff',
-    bgCard: '#ffffff',
+    imgBg: '#f6f6f6',
+    bgCard: '#FFFFFF',
     primary: '#0F97DB',
     primaryDarkened: '#0d8bca',
     // backgroundImage: assetImages.wood7,
@@ -39,6 +40,7 @@ const darkTheme = {
     textSecondary: '#AAAAAA',
     bg: '#151515',
     bgCard: '#1D1D1D',
+    imgBg: '#2e2e2e',
     primary: '#0F97DB',
     primaryDarkened: '#0d8bca',
     // backgroundImage: assetImages.wood2,

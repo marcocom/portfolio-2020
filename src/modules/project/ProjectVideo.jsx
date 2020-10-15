@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Text} from '@src/ui/components'
 
 const VideoContainer = styled.section`
   width: 100%;
@@ -14,6 +15,7 @@ const VideoContainer = styled.section`
 
 export const ProjectVideo = ({ video, title }) => (
   <VideoContainer>
+    <Text style='Subheading'>Demo Video:</Text>
     <img src={video} alt={title} />
   </VideoContainer>
 );

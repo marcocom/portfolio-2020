@@ -438,7 +438,7 @@ export const projects = {
       narrative evokes an awe and respect for the lineage of this product and brand, throughout
       modern history. Each of us fell in love with the subject, and I think it comes through in a
       rich and rarely-achieved interactive experience for visitors and potential buyers.`,
-      `Winner:Belding Bowl, Cannes Cyberlion, One Show`,
+      `Winner: Cannes Cyber-Lion, One Show, Belding Bowl`,
     ],
     features: [
       ``,
@@ -579,6 +579,7 @@ export const projects = {
       break out of their framework boxes and try to push front-end development back into the need
       to deliver rich media like this again. We really never knew how to do it, and just found a way,
       everytime. `,
+      `Winner: CommArts Award, Adobe Site of Week`
     ],
     features: [
       ``,
@@ -808,6 +809,68 @@ export const projects = {
       challenge their friends for hi-score. `,
       `Game design and code provided by Fuel, my site housed the game with downloadable content,
       and shareable videos and fused the different sections into a playful user experience.`,
+    ],
+    features: [
+      ``,
+    ],
+  },
+  infsummer: {
+    title: `Infiniti`,
+    year: 2008,
+    subtitle: 'Summer Event Kiosk',
+    link: '/infsummer/',
+    role: 'Art Director',
+    hero: projectAssets.infsummer.hero,
+    images: projectAssets.infsummer.images,
+    videos: projectAssets.infsummer.videos,
+    background: '#B1B1B1',
+    githubLink: 'https://github.com/marcocom',
+    hostedLink: '',
+    devDesc: [
+      `Infiniti asked that I impliment my 360-interactive logic for a kiosk
+      and we came up with a nice implimentation that brings life to all five of
+      their vehicles in a simple execution that we delivered very quickly.`,
+      `In both HTML as well as Flash, moving through a series of images rapidly can
+      produce hesitation and flashing, as the screen is asked to repaint rapidly. My
+      trick/solution was to load dynamic sequence images in a z-ordered stack. This
+      allowed the browser to load all images into resident memory, then re-ordering the
+      stack could be done smoothly at up to 120fps! This is also how i was able to now
+      colors and fade from one to the other. I used this technique alot for products,
+      especially cars, that needed to be seen by the user from all angles, while keeping
+      the render and color quality to the high standards we would demand of our images.
+      It still works in javascript today, but im sure someone has probably made a
+      library for it by now.`
+    ],
+    features: [
+      ``,
+    ],
+  },
+  thride: {
+    title: `Tony Hawk: RIDE`,
+    year: 2009,
+    subtitle: 'Game website, product demo',
+    link: '/thride/',
+    role: 'Art Director',
+    hero: projectAssets.thride.hero,
+    images: projectAssets.thride.images,
+    videos: projectAssets.thride.videos,
+    background: '#B1B1B1',
+    githubLink: 'https://github.com/marcocom',
+    hostedLink: '',
+    devDesc: [
+      `Tony Hawk's popular game was set to release with a completely new concept, a physical
+      skateboard, as a human interface device to control your gameplay. It was pretty steep cost
+      increase for a single game, and so we needed to create a website that could showcase
+      the game, its peripheral controller, and encourage user-engagement through sharing on
+      social networks.`,
+      `Skuemorphism was a bit over-applied, in retrospect, as the look required
+      drop-shadowing on all elements to create realism, and as elements animated, that became
+      very intensive. I remember struggling to keep animations smooth on low-end machines, and
+      having to invent a logic that would remove them when framerates were lagging for users. A
+      common design-challenge, in video-game brands of that era, was the publisher's desire to extend
+      the look & feel from game to website, which often was too heavy. Learning how to negotiate
+      this creatively took trial and error.`,
+      `Winner: Gray Interactive Award, IGN`
     ],
     features: [
       ``,

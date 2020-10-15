@@ -8,6 +8,7 @@ import {
   PageSubheading,
   Paragraph,
   Subheading,
+  ProjectYear,
 } from './styledText';
 
 const styledClassNames = {
@@ -18,6 +19,7 @@ const styledClassNames = {
   'page-heading': PageHeading,
   'page-subheading': PageSubheading,
   highlight: Hightlight,
+  'project-year': ProjectYear,
 };
 
 const getTextComponent = (type) => styledClassNames[type] || styledClassNames.body;

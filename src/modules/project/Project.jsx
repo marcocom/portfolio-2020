@@ -1,4 +1,4 @@
-import { ProjectDev, ProjectInfo, ProjectHeader, ProjectVideo } from '@src/modules/project'
+import { ProjectDev, ProjectInfo, ProjectHeader, ProjectVideo, ProjectImages } from '@src/modules/project'
 import { Button, Container, Text } from '@src/ui/components'
 import { media } from '@src/utils'
 import React from 'react'
@@ -37,6 +37,7 @@ export const Project = ({ project }) => {
 
   return (
     <ProjectContainer>
+      <Button to='/' text='<< Back' direction='up'/>
       <ProjectHeader background={background} title={title} subtitle={subtitle} image={hero} />
       <Container>
         <InnerContainer>
@@ -55,12 +56,12 @@ export const Project = ({ project }) => {
 
 
           {videos.length > 0 &&
-            <ProjectVideo video={videos[0]} title={title}/>
+            <ProjectVideo video={videos[0]} title={title} />
           }
           <ProjectDev devDesc={devDesc} features={features} />
-          <Button outline to='/' text='Go Back' direction='up' />
         </InnerContainer>
       </Container>
+      <Button to='/' text='<< Back' direction='up'/>
     </ProjectContainer>
   )
 };

@@ -30,6 +30,8 @@ import warnerbrosHeroImg from './heros/warnerbros.png'
 import stadiaHeroImg from './heros/stadia.png'
 import usarmyHeroImg from './heros/usarmy.png'
 import yorotoHeroImg from './heros/yoroto.png'
+import summerHeroImg from './heros/infiniti_summer.png'
+import thrideHeroImg from './heros/thride.png'
 
 export const projectAssets = {
   jcpenney: {
@@ -179,6 +181,16 @@ export const projectAssets = {
   },
   yoroto: {
     hero: yorotoHeroImg,
+    images: [],
+    videos: [],
+  },
+  infsummer: {
+    hero: summerHeroImg,
+    images: [],
+    videos: [],
+  },
+  thride: {
+    hero: thrideHeroImg,
     images: [],
     videos: [],
   },
