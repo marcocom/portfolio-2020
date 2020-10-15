@@ -3,12 +3,12 @@ import { Project } from '@src/modules/project'
 import { Layout } from '@src/ui/layout'
 import React from 'react'
 
-const { timeego } = projects
+const { adidas } = projects;
 
-const Timeego = () => (
-  <Layout pageTitle={timeego.title}>
-    <Project project={timeego} tech={projectTech.timeego} />
+export const Adidas = () => (
+  <Layout pageTitle={adidas.title}>
+    <Project project={adidas} />
   </Layout>
-)
+);
 
-export default Timeego
+

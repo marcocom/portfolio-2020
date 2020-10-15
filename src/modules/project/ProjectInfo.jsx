@@ -48,8 +48,12 @@ export const ProjectInfo = ({ title, subtitle, description, githubLink, hostedLi
         <Text>{description}</Text>
       </div>
       <Buttons>
-        <Button text='See Website' href={hostedLink} />
+        { hostedLink.length > 0 &&
+          <Button text='See Website' href={hostedLink}/>
+        }
+        { githubLink.length > 0 &&
         <Button outline text='View on GitHub' href={githubLink} />
+        }
       </Buttons>
     </Grid>
   </StyledProjectInfo>

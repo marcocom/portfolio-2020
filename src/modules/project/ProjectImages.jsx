@@ -1,5 +1,5 @@
-import {Text} from '@src/ui/components'
-import {media} from '@src/utils'
+import { Text } from '@src/ui/components'
+import { media } from '@src/utils'
 import React from 'react'
 import Fade from 'react-reveal/Fade'
 import styled from 'styled-components'
@@ -12,7 +12,7 @@ const ColorSection = styled.div`
   margin-top: 10vh;
   width: 100%;
   height: 40vh;
-  background: ${({background}) => background};
+  background: ${({ background }) => background};
   display: grid;
   place-items: center center;
 
@@ -36,8 +36,12 @@ const ColorSection = styled.div`
   }
 `;
 
-export const ProjectHeader = ({background, title, subtitle, image}) => (
-  <StyledHeader> <Text type='page-heading'>{title}</Text> <Text type='page-subheading'>{subtitle}</Text>
-    <ColorSection background={background}> <Fade bottom> <img src={image} alt={title}/> </Fade> </ColorSection>
+export const ProjectImages = ({ image }) => (
+  <StyledHeader>
+    <ColorSection background={background}>
+      <Fade bottom>
+        {images.map(image => <img src={image} alt={title}/>) }
+      </Fade>
+    </ColorSection>
   </StyledHeader>
 );

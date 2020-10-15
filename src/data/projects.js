@@ -41,13 +41,13 @@ export const projects = {
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
-      `MMy position was as a flash artist and production designer as support to the
+      `My position was as a flash artist and production designer as support to the
       Art Direction team. The site does an excellent job of connecting the product
       with the people that use them, allowing the site to connect to all sports across
       the world (and Adidas is popular world-wide)in a manner that internationalizes
       the company identity. `,
-      `This site was built for 56k and its use of black/white
-      background pallette and flash video elements both keeps its data size down
+      `This site was built for 56k and its use of black & white
+      color pallette and video elements both keeps its data size down
       while also striking out the color and texture of the product when showcased.`,
     ],
     features: [

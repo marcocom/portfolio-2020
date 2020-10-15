@@ -1,5 +1,5 @@
 import { ProjectDev, ProjectInfo, ProjectHeader, ProjectVideo } from '@src/modules/project'
-import { Button, Container } from '@src/ui/components'
+import { Button, Container, Text } from '@src/ui/components'
 import { media } from '@src/utils'
 import React from 'react'
 import styled from 'styled-components'
@@ -20,7 +20,7 @@ const InnerContainer = styled.div`
   }
 `;
 
-export const Project = ({ project, tech }) => {
+export const Project = ({ project }) => {
   const {
     title,
     subtitle,
@@ -37,7 +37,7 @@ export const Project = ({ project, tech }) => {
 
   return (
     <ProjectContainer>
-      <ProjectHeader background={background} title={title} subtitle={subtitle} image={images[0]} />
+      <ProjectHeader background={background} title={title} subtitle={subtitle} image={hero} />
       <Container>
         <InnerContainer>
           <ProjectInfo
@@ -47,7 +47,16 @@ export const Project = ({ project, tech }) => {
             githubLink={githubLink}
             hostedLink={hostedLink}
           />
-          <ProjectVideo video={videos[0]} title={title} />
+          <Text type='heading'>Sample Images</Text>
+          {images.length > 0 ?
+            <ProjectImages images={images} /> :
+            <Text type='subheading'>Coming Soon</Text>
+          }
+
+
+          {videos.length > 0 &&
+            <ProjectVideo video={videos[0]} title={title}/>
+          }
           <ProjectDev devDesc={devDesc} features={features} />
           <Button outline to='/' text='Go Back' direction='up' />
         </InnerContainer>

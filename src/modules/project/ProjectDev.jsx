@@ -9,11 +9,9 @@ const StyledProjectDev = styled.section`
 
 export const ProjectDev = ({ devDesc, features }) => (
   <StyledProjectDev>
-    <Text type='heading'>Project Development</Text>
+    <Text type='heading'>Introspective</Text>
     {devDesc.map((paragraph) => (
       <Text key={`DevDesc-${paragraph}`}>{paragraph}</Text>
     ))}
-
-    <ProjectFeatures features={features} />
   </StyledProjectDev>
 );
