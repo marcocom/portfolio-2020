@@ -15,14 +15,14 @@ const StyledHeader = styled.header`
 
 const HeaderContainer = styled.div`
   width: 100%;
-  padding: 0 150px;
+  padding: 0 20px;
   height: 100%;
 
   ${media.down.lg} {
-    padding: 0 90px 0 100px;
+    padding: 0 90px 0 20px;
   }
   ${media.down.md} {
-    padding: 0 10px 0 20px;
+    padding: 0 10px 0 10px;
   }
 `;
 

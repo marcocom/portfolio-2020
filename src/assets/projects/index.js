@@ -1,5 +1,3 @@
-import timeegoHeroImg from './timeego/timeego.png'
-import timeegoVideo from './timeego/timeegoVideo.webp'
 
 //HEROS - these are used for the landing page
 import jcpenneyHeroImg from './heros/jcpenney.png'

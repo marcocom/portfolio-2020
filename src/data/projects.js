@@ -10,7 +10,7 @@ export const projects = {
     hero: projectAssets.sixtymin.hero,
     images: projectAssets.sixtymin.images,
     videos: projectAssets.sixtymin.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom/60minutes',
     hostedLink: '',
     devDesc: [
@@ -37,7 +37,7 @@ export const projects = {
     hero: projectAssets.adidas.hero,
     images: projectAssets.adidas.images,
     videos: projectAssets.adidas.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -63,7 +63,7 @@ export const projects = {
     hero: projectAssets.autodesk.hero,
     images: projectAssets.autodesk.images,
     videos: projectAssets.autodesk.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -89,7 +89,7 @@ export const projects = {
     hero: projectAssets.codelite.hero,
     images: projectAssets.codelite.images,
     videos: projectAssets.codelite.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -116,7 +116,7 @@ export const projects = {
     hero: projectAssets.deluxe.hero,
     images: projectAssets.deluxe.images,
     videos: projectAssets.deluxe.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -142,7 +142,7 @@ export const projects = {
     hero: projectAssets.disney.hero,
     images: projectAssets.disney.images,
     videos: projectAssets.disney.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -171,7 +171,7 @@ export const projects = {
     hero: projectAssets.dockers.hero,
     images: projectAssets.dockers.images,
     videos: projectAssets.dockers.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -190,7 +190,7 @@ export const projects = {
     hero: projectAssets.dodgesrt.hero,
     images: projectAssets.dodgesrt.images,
     videos: projectAssets.dodgesrt.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -213,7 +213,7 @@ export const projects = {
     hero: projectAssets.eggbank.hero,
     images: projectAssets.eggbank.images,
     videos: projectAssets.eggbank.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -241,7 +241,7 @@ export const projects = {
     hero: projectAssets.goodhome.hero,
     images: projectAssets.goodhome.images,
     videos: projectAssets.goodhome.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -263,7 +263,7 @@ export const projects = {
     hero: projectAssets.hsd.hero,
     images: projectAssets.hsd.images,
     videos: projectAssets.hsd.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -286,7 +286,7 @@ export const projects = {
     hero: projectAssets.infiniti.hero,
     images: projectAssets.infiniti.images,
     videos: projectAssets.infiniti.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -314,7 +314,7 @@ export const projects = {
     hero: projectAssets.istrategy.hero,
     images: projectAssets.istrategy.images,
     videos: projectAssets.istrategy.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -338,7 +338,7 @@ export const projects = {
     hero: projectAssets.jcpenney.hero,
     images: projectAssets.jcpenney.images,
     videos: projectAssets.jcpenney.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -370,7 +370,7 @@ export const projects = {
     hero: projectAssets.kitbuilder.hero,
     images: projectAssets.kitbuilder.images,
     videos: projectAssets.kitbuilder.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -396,7 +396,7 @@ export const projects = {
     hero: projectAssets.kpn.hero,
     images: projectAssets.kpn.images,
     videos: projectAssets.kpn.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -423,7 +423,7 @@ export const projects = {
     hero: projectAssets.landcruiser.hero,
     images: projectAssets.landcruiser.images,
     videos: projectAssets.landcruiser.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -453,7 +453,7 @@ export const projects = {
     hero: projectAssets.levis.hero,
     images: projectAssets.levis.images,
     videos: projectAssets.levis.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -473,7 +473,7 @@ export const projects = {
     hero: projectAssets.marriott.hero,
     images: projectAssets.marriott.images,
     videos: projectAssets.marriott.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -501,7 +501,7 @@ export const projects = {
     hero: projectAssets.ritepro.hero,
     images: projectAssets.ritepro.images,
     videos: projectAssets.ritepro.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -532,7 +532,7 @@ export const projects = {
     hero: projectAssets.samsung.hero,
     images: projectAssets.samsung.images,
     videos: projectAssets.samsung.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -557,7 +557,7 @@ export const projects = {
     hero: projectAssets.shift2.hero,
     images: projectAssets.shift2.images,
     videos: projectAssets.shift2.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -593,7 +593,7 @@ export const projects = {
     hero: projectAssets.stadia.hero,
     images: projectAssets.stadia.images,
     videos: projectAssets.stadia.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -626,7 +626,7 @@ export const projects = {
     hero: projectAssets.tivo.hero,
     images: projectAssets.tivo.images,
     videos: projectAssets.tivo.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -653,7 +653,7 @@ export const projects = {
     hero: projectAssets.tombrady.hero,
     images: projectAssets.tombrady.images,
     videos: projectAssets.tombrady.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -686,7 +686,7 @@ export const projects = {
     hero: projectAssets.toyota.hero,
     images: projectAssets.toyota.images,
     videos: projectAssets.toyota.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -723,7 +723,7 @@ export const projects = {
     hero: projectAssets.usarmy.hero,
     images: projectAssets.usarmy.images,
     videos: projectAssets.usarmy.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -751,7 +751,7 @@ export const projects = {
     hero: projectAssets.vodafone.hero,
     images: projectAssets.vodafone.images,
     videos: projectAssets.vodafone.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -772,7 +772,7 @@ export const projects = {
     hero: projectAssets.warnerbros.hero,
     images: projectAssets.warnerbros.images,
     videos: projectAssets.warnerbros.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -796,7 +796,7 @@ export const projects = {
     hero: projectAssets.yoroto.hero,
     images: projectAssets.yoroto.images,
     videos: projectAssets.yoroto.videos,
-    background: '#FFFFFF',
+    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom',
     hostedLink: '',
     devDesc: [
@@ -813,35 +813,6 @@ export const projects = {
       ``,
     ],
   },
-  /*
-  timeego: {
-    title: 'Timeego',
-    year: 1998,
-    subtitle: 'Studying Web App',
-    description: `Timeego is a web app designed to help students track their time spent studying. It allows users to add courses, log their time studying, and view their total study time in each course.`,
-    link: '/timeego/',
-    role: 'Art Director',
-    hero: projectAssets.timeego.images[0],
-    images: projectAssets.timeego.images,
-    videos: projectAssets.timeego.videos,
-    background: '#FFFFFF',
-    githubLink: 'https://github.com/antcar112/timeego',
-    hostedLink: 'https://timeego-d54c4.firebaseapp.com/',
-    devDesc: [
-      `Timeego was the result of a four-month project class, in which our team of three conceived, designed and developed a web application. We used an Agile design methodology to build this app. The final project was judged on good UX/UI, complete documentation, and overall functionality.`,
-      `The original pitch for this app was to build something that would allow students to log their time studying, and view their total study time in each course. This would help students track, manage and ultimately improve their study habits. I'm proud to say the finished product lives up to this original idea.`,
-      `The feature I'm most proud of in this app is the working stopwatch that can be used to track study times. It was built using object-oriented programming, and uses local storage to save it's state. This allows the time to persist across different page loads without the need for a true backend.`,
-      `When we started coding, we quickly realized we would have a lot of different JavaScript files. To improve our codes organization, we implemented a Model-View-Controller design pattern. This ultimately made the finished product much easier to navigate.`,
-    ],
-    features: [
-      `A working stopwatch that is able to track times across different page loads.`,
-      `Allows users to add, edit and delete courses.`,
-      `Displays study times in a graphical format.`,
-      `Developed using the Agile design methodology.`,
-    ],
-  },
-  */
-
 };
 
 export const projectList = Object.values(projects);

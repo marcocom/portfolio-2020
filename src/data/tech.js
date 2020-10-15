@@ -46,11 +46,6 @@ const tech = {
     image: techLogos.bootstrap,
     inProgress: false,
   },
-  graphql: {
-    name: 'GraphQL',
-    image: techLogos.graphql,
-    inProgress: false,
-  },
   gatsby: {
     name: 'Gatsby',
     image: techLogos.gatsby,
@@ -122,7 +117,7 @@ const design = {
   },
 };
 
-export const techList = Object.values(tech);
+export const techList = Object.values({...design, ...tech});
 
 export const projectTech = {
   timeego: [tech.html, tech.css, tech.bootstrap, tech.javascript, tech.firebase, design.figma],

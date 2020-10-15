@@ -33,9 +33,9 @@ const ImageContainer = styled.div`
   }
 `;
 
-export const WorkImage = ({ background, image, title }) => (
+export const WorkImage = ({ image, title }) => (
   <Fade bottom>
-    <ImageContainer background={background}>
+    <ImageContainer >
       <img src={image} alt={title} />
     </ImageContainer>
   </Fade>

@@ -10,12 +10,12 @@ export const PageSubheading = styled.h3`
   text-align: center;
 `;
 
-export const Heading = styled.h2`
+export const Heading = styled.h3`
   text-align: ${({ center }) => (center ? 'center' : 'left')};
-  margin-bottom: ${({ card }) => (card ? '10px' : '0.4em')};
+  margin-bottom: ${({ card }) => (card ? '5px' : '0.3em')};
 `;
 
-export const Subheading = styled.h3`
+export const Subheading = styled.h4`
   margin-bottom: ${({ card }) => (card ? '30px;' : '16px')};
 `;
 
@@ -54,6 +54,6 @@ export const Hightlight = styled.span`
 `;
 
 export const Link = styled.a`
-  font-weight: 700;
+  font-weight: 400;
   color: ${({ theme }) => theme.color.primary};
 `;
