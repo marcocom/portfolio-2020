@@ -5,10 +5,10 @@ import React from 'react'
 
 const { adidas } = projects;
 
-export const Adidas = () => (
+const Adidas = () => (
   <Layout pageTitle={adidas.title}>
     <Project project={adidas} />
   </Layout>
 );
-
+export default Adidas;
 
