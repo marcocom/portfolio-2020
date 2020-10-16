@@ -49,7 +49,8 @@ export const Project = ({ project }) => {
             hostedLink={hostedLink}
           />
           <Text type='heading'>Sample Images</Text>
-          {images.length > 0 ?
+          {
+            images.length > 0 ?
             <ProjectImages images={images} /> :
             <Text type='subheading'>Coming Soon</Text>
           }

@@ -9,9 +9,9 @@ const NotFoundContainer = styled(Container)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`
+`;
 
-const NotFoundPage = () => (
+const PageContent = () => (
   <Layout pageTitle='Page Not Found'>
     <NotFoundContainer>
       <Text type='page-heading'>404 error</Text>
@@ -21,6 +21,6 @@ const NotFoundPage = () => (
       <Button to='/' outline direction='up' text='Go Back' />
     </NotFoundContainer>
   </Layout>
-)
+);
 
-export default NotFoundPage
+export default PageContent;

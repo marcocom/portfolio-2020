@@ -4,7 +4,6 @@ import { media } from '@src/utils'
 export const PageHeading = styled.h2`
   text-align: center;
   font-weight: 200;
-  text-transform: lowercase;
 `;
 export const PageSubheading = styled.h3`
   color: ${({ theme }) => theme.color.primary};

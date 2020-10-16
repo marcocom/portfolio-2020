@@ -11,7 +11,7 @@ const StyledAbout = styled.section`
   transition: ${({ theme }) => theme.hoverTransition};
 `;
 
-const About = () => {
+const PageContent = () => {
   return (
     <Layout pageTitle='About'>
       <StyledAbout>
@@ -25,4 +25,4 @@ const About = () => {
   )
 };
 
-export default About
+export default PageContent;

@@ -30,7 +30,7 @@ export const projects = {
   },
   adidas: {
     title: 'Adidas',
-    year: 2000,
+    year: 1999,
     subtitle: 'Original website launch, U.S. Interactive',
     link: '/adidas/',
     role: 'Production Designer, Animator',
@@ -38,7 +38,7 @@ export const projects = {
     images: projectAssets.adidas.images,
     videos: projectAssets.adidas.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `My position was as a flash artist and production designer as support to the
@@ -64,7 +64,7 @@ export const projects = {
     images: projectAssets.autodesk.images,
     videos: projectAssets.autodesk.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `I consulted twice for Autodesk, on behalf of Accenture. My first project was a UI
@@ -90,7 +90,7 @@ export const projects = {
     images: projectAssets.codelite.images,
     videos: projectAssets.codelite.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `Elite was the inclusion of persistent player-performance reporting for Call Of Duty,
@@ -117,7 +117,7 @@ export const projects = {
     images: projectAssets.deluxe.images,
     videos: projectAssets.deluxe.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `The Deluxe project was built and designed exclusively for a European marketplace
@@ -143,7 +143,7 @@ export const projects = {
     images: projectAssets.disney.images,
     videos: projectAssets.disney.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `I consulted with Disney on two separate projects, in 2014 and 2019, on behalf of
@@ -172,7 +172,7 @@ export const projects = {
     images: projectAssets.dockers.images,
     videos: projectAssets.dockers.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       ``,
@@ -191,7 +191,7 @@ export const projects = {
     images: projectAssets.dodgesrt.images,
     videos: projectAssets.dodgesrt.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `Big Block had an extraordinary 3D physics-engine that allowed them
@@ -214,7 +214,7 @@ export const projects = {
     images: projectAssets.eggbank.images,
     videos: projectAssets.eggbank.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `Egg Bank is a popular bank in London. A very open-minded client,
@@ -242,7 +242,7 @@ export const projects = {
     images: projectAssets.goodhome.images,
     videos: projectAssets.goodhome.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `I was challenged with the task to develop a navigation system for this ecommerce
@@ -258,13 +258,13 @@ export const projects = {
     title: 'Toyota Prius',
     year: 2006,
     subtitle: 'Interactive Kiosk/mini-site, Saatchi & Saatchi',
-    link: '/clone/',
+    link: '/hsd/',
     role: 'Multimedia Designer',
     hero: projectAssets.hsd.hero,
     images: projectAssets.hsd.images,
     videos: projectAssets.hsd.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `To introduce Prius to car consumers, we needed to effectively introduce hybrid engines.
@@ -287,7 +287,7 @@ export const projects = {
     images: projectAssets.infiniti.images,
     videos: projectAssets.infiniti.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `Infiniti's website redesign required internationalization, and each region has its
@@ -315,7 +315,7 @@ export const projects = {
     images: projectAssets.istrategy.images,
     videos: projectAssets.istrategy.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `iStrategy was the first to impliment MLS Listings for Real Estate websites in California.
@@ -339,7 +339,7 @@ export const projects = {
     images: projectAssets.jcpenney.images,
     videos: projectAssets.jcpenney.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `A project under the Creative Direction of Johanna Clark and Tim Kain, our
@@ -371,7 +371,7 @@ export const projects = {
     images: projectAssets.kitbuilder.images,
     videos: projectAssets.kitbuilder.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `Kitbuilder is a great example of the transition from Flash to HTML5, mid-step, that the
@@ -397,7 +397,7 @@ export const projects = {
     images: projectAssets.kpn.images,
     videos: projectAssets.kpn.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `Quince has a very respected business, throughout northern Europe, providing custom
@@ -424,7 +424,7 @@ export const projects = {
     images: projectAssets.landcruiser.images,
     videos: projectAssets.landcruiser.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `Toyota wanted to pay homage to their most expensive vehicle, one of such world-reknown, that it
@@ -454,7 +454,7 @@ export const projects = {
     images: projectAssets.levis.images,
     videos: projectAssets.levis.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `A touch-screen and web-based display of all Levi's broadcast and print ads since FCB's
@@ -466,7 +466,7 @@ export const projects = {
   },
   marriott: {
     title: 'Marriott Hotels',
-    year: 2019,
+    year: 2018,
     subtitle: 'Mobile app, Accenture Liquid Studio',
     link: '/marriott/',
     role: 'UI Architect',
@@ -474,7 +474,7 @@ export const projects = {
     images: projectAssets.marriott.images,
     videos: projectAssets.marriott.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `A comprehensive mobile app created for Marriott/SPG business clients. This project brought
@@ -502,7 +502,7 @@ export const projects = {
     images: projectAssets.ritepro.images,
     videos: projectAssets.ritepro.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `A proprietary web application for Product Data Management from Hewlett-Packard.
@@ -527,13 +527,13 @@ export const projects = {
     title: 'Samsung',
     year: 1999,
     subtitle: 'Branding kiosk',
-    link: '/clone/',
+    link: '/samsung/',
     role: 'Art Director',
     hero: projectAssets.samsung.hero,
     images: projectAssets.samsung.images,
     videos: projectAssets.samsung.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `This was a rich-media kiosk piece, built in the era of minimalist bauhaus-style as
@@ -558,7 +558,7 @@ export const projects = {
     images: projectAssets.shift2.images,
     videos: projectAssets.shift2.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `SHIFT_2.0 was a TBWA/Chiat-Day campaign that sought to redefine the Nissan brand
@@ -589,22 +589,23 @@ export const projects = {
     title: 'Google',
     year: 2019,
     subtitle: 'Stadia game-streaming service, Accenture',
-    link: '/clone/',
+    link: '/stadia/',
     role: 'Art Director',
     hero: projectAssets.stadia.hero,
     images: projectAssets.stadia.images,
     videos: projectAssets.stadia.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `In a rush to deliver this enormous project, I was brought aboard the Stadia team
       at Google in Mountain View to work on the ChromeCast (Smart TV dongle) receiver front-end.
       Stadia streams gaming-experiences to users across any Chrome-enabled device, and the
       Chromecast is most underpowered of them by far. This required building our client and UI
-      at a completely raw level, using DART as our only framework and library. Performance was
+      at a completely raw level, using Google's proprietary DART.js as our only framework and library. Performance was
       shrewdly achieved with pure CSS animations, requiring minimal repainting, while achieving
       a rich game-console feel in its opening-introductions, and game-menu system.`,
+
       `As a creative artist, and having very little true computer-science knowledge, I found it thrilling
       to have to learn so much Java, Blaze, and Linux, as well as device-peripherals like a
       game-controller, in order to do my work. Google has a very deep build process requiring nearly
@@ -628,7 +629,7 @@ export const projects = {
     images: projectAssets.tivo.images,
     videos: projectAssets.tivo.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `TiVo's launch needed a light and fun look seeking to introduce its unknown brand with concepts of
@@ -655,7 +656,7 @@ export const projects = {
     images: projectAssets.tombrady.images,
     videos: projectAssets.tombrady.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `Intel's internal creative-technology and brand center is wholly seperate, and reknowned
@@ -688,7 +689,7 @@ export const projects = {
     images: projectAssets.toyota.images,
     videos: projectAssets.toyota.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `I spent two and a half years as a creative at Saatchi in Los Angeles, where our
@@ -725,7 +726,7 @@ export const projects = {
     images: projectAssets.usarmy.images,
     videos: projectAssets.usarmy.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `I was hired at Ignited Minds to help with their client who challenged us
@@ -753,7 +754,7 @@ export const projects = {
     images: projectAssets.vodafone.images,
     videos: projectAssets.vodafone.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `A retail below-the-line concept for attracting consumers to participate
@@ -774,7 +775,7 @@ export const projects = {
     images: projectAssets.warnerbros.images,
     videos: projectAssets.warnerbros.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `Warner Bros has a lot of very large assets under their license management. Games, movies,
@@ -798,7 +799,7 @@ export const projects = {
     images: projectAssets.yoroto.images,
     videos: projectAssets.yoroto.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `These viral YouTube videos depict an underground hero who works as a sign-spinner
@@ -824,7 +825,7 @@ export const projects = {
     images: projectAssets.infsummer.images,
     videos: projectAssets.infsummer.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `Infiniti asked that I impliment my 360-interactive logic for a kiosk
@@ -855,7 +856,7 @@ export const projects = {
     images: projectAssets.thride.images,
     videos: projectAssets.thride.videos,
     background: '#B1B1B1',
-    githubLink: 'https://github.com/marcocom',
+    githubLink: '',
     hostedLink: '',
     devDesc: [
       `Tony Hawk's popular game was set to release with a completely new concept, a physical

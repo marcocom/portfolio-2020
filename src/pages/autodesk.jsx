@@ -3,11 +3,11 @@ import { Project } from '@src/modules/project'
 import { Layout } from '@src/ui/layout'
 import React from 'react'
 
-const { sixtymin } = projects;
+const { autodesk } = projects;
 
 const PageContent = () => (
-  <Layout pageTitle={sixtymin.title} >
-    <Project project={sixtymin} />
+  <Layout pageTitle={autodesk.title}>
+    <Project project={autodesk} />
   </Layout>
 );
 export default PageContent;

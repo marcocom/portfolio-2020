@@ -6,13 +6,13 @@ import styled from 'styled-components'
 
 const StyledHeader = styled.section`
   width: 100%;
-  padding-top: 1.5em;
+  padding-top: 10vh;
 `;
 const ColorSection = styled.div`
-  margin-top: 10vh;
+  margin-top: 20px;
   width: 100%;
   height: 40vh;
-  background: ${({background}) => background};
+  background: ${({theme}) => theme.color.imgBg};
   display: grid;
   place-items: center center;
 
@@ -40,7 +40,7 @@ export const ProjectHeader = ({background, title, subtitle, image}) => (
   <StyledHeader>
     <Text type='page-heading'>{title}</Text>
     <Text type='page-subheading'>{subtitle}</Text>
-    <ColorSection background={background}>
+    <ColorSection>
       <Fade bottom>
         <img src={image} alt={title} />
       </Fade>

@@ -19,11 +19,11 @@ const SocialLink = styled.a`
 
 export const SocialLinks = () => (
   <>
-    <SocialLink href='https://github.com/antcar112' target='_blank' rel='noopener noreferrer'>
+    <SocialLink href='https://github.com/marcocom' target='_blank' rel='noopener noreferrer'>
       <FaGithub />
     </SocialLink>
     <SocialLink
-      href='https://www.linkedin.com/in/anthony-caron/'
+      href='https://www.linkedin.com/in/marcocom/'
       target='_blank'
       rel='noopener noreferrer'>
       <FaLinkedin />

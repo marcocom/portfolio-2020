@@ -7,7 +7,7 @@ const { adidas } = projects;
 
 const PageContent = () => (
   <Layout pageTitle={adidas.title}>
-    <Project project={adidas}/>
+    <Project project={adidas} />
   </Layout>
 );
 export default PageContent;
