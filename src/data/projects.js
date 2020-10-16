@@ -371,7 +371,7 @@ export const projects = {
     images: projectAssets.kitbuilder.images,
     videos: projectAssets.kitbuilder.videos,
     background: '#B1B1B1',
-    githubLink: '',
+    githubLink: 'https://github.com/marcocom/kitbuilder',
     hostedLink: '',
     devDesc: [
       `Kitbuilder is a great example of the transition from Flash to HTML5, mid-step, that the

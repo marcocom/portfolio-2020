@@ -77,7 +77,7 @@ export const projectAssets = {
   dodgesrt: {
     hero: dodgesrtHeroImg,
     images: [],
-    videos: [],
+    videos: ['https://vimeo.com/468769501'],
   },
   eggbank: {
     hero: eggbankHeroImg,

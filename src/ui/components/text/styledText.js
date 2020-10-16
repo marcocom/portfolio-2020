@@ -1,12 +1,15 @@
 import styled from 'styled-components'
 import { media } from '@src/utils'
 
-export const PageHeading = styled.h2`
+export const PageHeading = styled.h1`
   text-align: center;
-  font-weight: 200;
+  font-weight: 400;
+  margin-bottom: 0;
+  text-transform: lowercase;
+  color: ${({theme}) => theme.color.imgBg}
 `;
 export const PageSubheading = styled.h3`
-  color: ${({ theme }) => theme.color.primary};
+  color: ${({ theme }) => theme.color.textSecondary};
   font-weight: 400;
   text-align: center;
 `;

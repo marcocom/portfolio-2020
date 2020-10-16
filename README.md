@@ -1,5 +1,5 @@
 # Marco Comparato - Portfolio Website
-This is a portfolio website developed for myself. It was developed using [GatsbyJS](https://www.gatsbyjs.org/) and is hosted by [Netlify](https://www.netlify.com/).
+This is a portfolio website .
 
 ## Hosting
 The site is hosted publicly at https://www.marcocomparato.com/.

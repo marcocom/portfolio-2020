@@ -7,7 +7,7 @@ import styled from 'styled-components'
 const ProjectContainer = styled.div`
   background: ${({ theme }) => theme.color.bg};
   transition: ${({ theme }) => theme.hoverTransition};
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 `;
 
 const InnerContainer = styled.div`

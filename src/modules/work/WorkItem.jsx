@@ -37,9 +37,6 @@ const StyledWorkItem = styled.article`
    );*/
 
 
-  ${media.down.xs} {
-    border-radius: unset;
-  }
 
   ${media.down.lg} {
     grid-template-columns: 1fr;
@@ -49,6 +46,9 @@ const StyledWorkItem = styled.article`
     border-radius: 3em;
     margin-top: 0;
     margin-bottom: 20vh;
+  }
+  ${media.down.sm} {
+    border-radius: unset;
   }
 `;
 

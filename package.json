@@ -18,6 +18,7 @@
     "react-helmet": "^5.2.1",
     "react-icons": "^3.11.0",
     "react-reveal": "^1.2.2",
+    "react-vimeo": "^2.0.0",
     "styled-components": "^4.4.1",
     "typeface-karla": "0.0.72",
     "typeface-rubik": "0.0.72"
