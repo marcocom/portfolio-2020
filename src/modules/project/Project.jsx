@@ -1,13 +1,12 @@
 import { ProjectDev, ProjectInfo, ProjectHeader, ProjectVideo, ProjectImages } from '@src/modules/project'
 import { Button, Container, Text } from '@src/ui/components'
 import { media } from '@src/utils'
-import React from 'react'
+import {React, useEffect} from 'react'
 import styled from 'styled-components'
 
 const ProjectContainer = styled.div`
   background: ${({ theme }) => theme.color.bg};
   transition: ${({ theme }) => theme.hoverTransition};
-  margin-bottom: 20px;
 `;
 
 const InnerContainer = styled.div`
@@ -19,6 +18,8 @@ const InnerContainer = styled.div`
     padding: 0 20px;
   }
 `;
+
+
 
 export const Project = ({ project }) => {
   const {
@@ -35,6 +36,9 @@ export const Project = ({ project }) => {
     features,
   } = project;
 
+
+  useEffect(() => window.scrollTo(0,0));
+
   return (
     <ProjectContainer>
       <Button to='/' text='<< Back' direction='up'/>
@@ -49,12 +53,10 @@ export const Project = ({ project }) => {
             hostedLink={hostedLink}
           />
           <Text type='heading'>Sample Images</Text>
-          {
-            images.length > 0 ?
+          {images.length > 0 ?
             <ProjectImages images={images} /> :
-            <Text type='subheading'>Coming Soon</Text>
+            <Text type='subheading'>Coming Soon...</Text>
           }
-
 
           {videos.length > 0 &&
             <ProjectVideo video={videos[0]} title={title} />

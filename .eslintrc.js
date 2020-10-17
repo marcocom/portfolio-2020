@@ -25,4 +25,4 @@ module.exports = {
       version: '16.12.0',
     },
   },
-}
+};

@@ -25,15 +25,17 @@ const StyleSubHeading = styled.h5`
   margin:2px 0 10px;
 `;
 
-export const Work = () => (
-  <StyledWork>
-    <ScrollTarget id='scroll-target' />
-    <Text type='page-heading'>Projects</Text>
-    <StyleSubHeading>
+export const Work = () => {
+  return (
+    <StyledWork>
+      <ScrollTarget id='scroll-target'/>
+      <Text type='page-heading'>Projects</Text>
+      <StyleSubHeading>
       <Text type='page-subheading'>Listed chronologically</Text>
-    </StyleSubHeading>
-    <Container>
-      <WorkList />
-    </Container>
-  </StyledWork>
-);
+      </StyleSubHeading>
+      <Container>
+        <WorkList/>
+      </Container>
+    </StyledWork>
+  )
+};

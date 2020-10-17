@@ -39,14 +39,20 @@ const Buttons = styled.div`
   }
 `;
 
-export const ProjectInfo = ({ title, subtitle, description, githubLink, hostedLink }) => (
+const StyledTitle = styled.div`
+  & h3, & h4 {
+    text-align: left;
+    color: ${({theme}) => theme.color.imgBg};
+  }
+`;
+
+export const ProjectInfo = ({ title, subtitle, githubLink, hostedLink }) => (
   <StyledProjectInfo>
-    <Text type='heading'>{title}</Text>
     <Grid>
-      <div>
+      {/*<StyledTitle>
+        <Text type='heading'>{title}</Text>
         <Text type='subheading'>{subtitle}</Text>
-        <Text>{description}</Text>
-      </div>
+      </StyledTitle>*/}
       <Buttons>
         { hostedLink.length > 0 &&
           <Button text='See Website' href={hostedLink}/>
