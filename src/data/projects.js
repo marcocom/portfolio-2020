@@ -550,7 +550,7 @@ export const projects = {
   },
   shift2: {
     title: 'Nissan',
-    year: 2001,
+    year: 2008,
     subtitle: 'SHIFT_2.0, The Designory',
     link: '/shift2/',
     role: 'Multimedia Director',

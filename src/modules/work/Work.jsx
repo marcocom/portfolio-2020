@@ -19,7 +19,7 @@ const ScrollTarget = styled.div`
   top: -60px;
 `;
 
-const StyleSubHeading = styled.h5`
+const StyleSubHeading = styled.div`
   font-size: .7em;
   text-transform: lowercase;
   margin:2px 0 10px;

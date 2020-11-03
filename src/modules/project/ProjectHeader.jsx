@@ -52,9 +52,10 @@ const StyledText = styled.div`
 `;
 
 export const ProjectHeader = ({background, title, subtitle, image}) => (
-  <StyledHeader> <StyledText>
-    <Text type='heading'>{subtitle}</Text>
-  </StyledText>
+  <StyledHeader>
+    <StyledText>
+      <Text type='heading'>{subtitle}</Text>
+    </StyledText>
     <ColorSection>
       <Fade bottom>
         <img src={image} alt={title} />

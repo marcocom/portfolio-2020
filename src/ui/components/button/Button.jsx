@@ -1,8 +1,7 @@
 import React, { useContext } from 'react'
 import styled, { ThemeContext } from 'styled-components'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
-
-import { BtnSolidStyles, BtnOutlineStyles } from './buttonStyles'
+import { BtnSolidStyles, BtnOutlineStyles, BtnBackStyles } from './buttonStyles'
 
 const StyledButton = styled.button`
   ${({ outline }) => (outline ? BtnOutlineStyles : BtnSolidStyles)};
@@ -14,15 +13,17 @@ const StyledAnchor = styled.a`
 
 const StyledAniLink = styled(AniLink)`
   ${({ outline }) => (outline ? BtnOutlineStyles : BtnSolidStyles)};
+  ${({ backbtn }) => (backbtn && BtnBackStyles)};
 `;
 
-export const Button = ({ outline = false, to, href, text, direction, handleClick }) => {
+export const Button = ({ outline = 'false', backbtn = 'false', to, href, text, direction, handleClick }) => {
   const themeContext = useContext(ThemeContext);
   if (to) {
     return (
       <StyledAniLink
+        backbtn={backbtn === 'true'}
         to={to}
-        outline={outline}
+        outline={outline === 'true'}
         cover
         direction={direction}
         bg={themeContext.color.primary}
@@ -35,14 +36,14 @@ export const Button = ({ outline = false, to, href, text, direction, handleClick
 
   if (href) {
     return (
-      <StyledAnchor href={href} outline={outline} target='_blank' rel='noopener noreferrer'>
+      <StyledAnchor href={href} outline={outline === 'true'} target='_blank' rel='noopener noreferrer'>
         <ButtonText text={text} />
       </StyledAnchor>
     )
   }
 
   return (
-    <StyledButton onClick={handleClick} outline={outline}>
+    <StyledButton onClick={handleClick} outline={outline === 'true'}>
       <ButtonText text={text} />
     </StyledButton>
   )

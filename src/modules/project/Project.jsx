@@ -41,7 +41,7 @@ export const Project = ({ project }) => {
 
   return (
     <ProjectContainer>
-      <Button to='/' text='<< Back' direction='up'/>
+      <Button to='/' text='<< Back' direction='up' outline='false' backbtn='true'/>
       <ProjectHeader background={background} title={title} subtitle={subtitle} image={hero} />
       <Container>
         <InnerContainer>
@@ -64,7 +64,7 @@ export const Project = ({ project }) => {
           <ProjectDev devDesc={devDesc} features={features} />
         </InnerContainer>
       </Container>
-      <Button to='/' text='<< Back' direction='up'/>
+      <Button to='/' text='<< Back' direction='up' outline='false' backbtn='true'/>
     </ProjectContainer>
   )
 };
