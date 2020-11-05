@@ -21,16 +21,18 @@ module.exports = {
         crossOrigin: 'use-credentials',
       },
     },
+    /*
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'heros',
         path: `${__dirname}/src/assets/projects/heros`,
         ignore: [
-          '**/\.*',
+          '**!/\.*',
         ],
       }
     },
+    */
     'gatsby-plugin-eslint',
     // 'gatsby-plugin-root-import',
     'gatsby-plugin-sharp',

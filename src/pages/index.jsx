@@ -1,12 +1,11 @@
 import React from 'react'
 
 import { Layout } from '@src/ui/layout'
-import { WorkHero, Work } from '@src/modules/work'
+import { WorkHero } from '@src/modules/work'
 
 const Home = () => (
-  <Layout pageTitle='Work'>
+  <Layout pageTitle='Welcome'>
     <WorkHero />
-    <Work />
   </Layout>
 );
 

@@ -165,7 +165,7 @@ export const projects = {
   dockers: {
     title: 'Dockers',
     year: 2000,
-    subtitle: 'Reload Kiosk, CKS/marchFIRST',
+    subtitle: 'Zen Reload Kiosk, CKS/marchFIRST',
     link: '/dockers/',
     role: 'Designer, Animator',
     hero: projectAssets.dockers.hero,
@@ -175,7 +175,9 @@ export const projects = {
     githubLink: '',
     hostedLink: '',
     devDesc: [
-      ``,
+      `Levis wanted to reach out to young people of all sexual preference and have a more interactive multimedia content.',
+      'An idea, built further upon again later for other clients like TiVo, this creative solution was an effort to allow visitors to create their own customized animation by making choices from a menu system.',
+      'This approach allowed for a more targeted advertisement to the user and gives them control to customize the intro while also writing that data to a database for reporting marketing metrics. Before the existence of GoogleAnalytics, this is how we solved business-intelligence, as best we could.`,
     ],
     features: [
       ``,

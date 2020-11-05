@@ -42,10 +42,10 @@ const StyledNavLink = styled(AniLink)`
 
 const StyledNavAnchor = styled.a`
   ${styles};
-`
+`;
 
 export const NavLink = ({ to, href, name, direction }) => {
-  const themeContext = useContext(ThemeContext)
+  const themeContext = useContext(ThemeContext);
 
   if (href) {
     return (
@@ -58,7 +58,7 @@ export const NavLink = ({ to, href, name, direction }) => {
     <li>
       <StyledNavLink
         to={to}
-        cover
+        paintDrip
         direction={direction}
         bg={themeContext.color.primary}
         duration={0.8}
@@ -68,4 +68,4 @@ export const NavLink = ({ to, href, name, direction }) => {
       </StyledNavLink>
     </li>
   )
-}
+};

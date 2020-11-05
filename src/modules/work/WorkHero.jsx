@@ -88,6 +88,9 @@ const BodyText = styled.h5`
   }
   & p {
     margin-bottom: 10px;
+    & i {
+      font-size: .8em;
+    }
   }
 
   & a {
@@ -120,7 +123,7 @@ export const WorkHero = () => (
           <i>This <a href='https://github.com/marcocom/portfolio-2020'>website's code</a> is scratch-built using <a href='https://reactjs.org'>ReactJS</a> with <a href="https://styled-components.com">Styled-Components</a> for light/dark theme support, and <a href='https://gatsbyjs.com'>Gatsby</a> for static-content deployables. I am adding sample images, as well as movie-clips to replace old website-demos, and refining functionality every day. Please excuse the mess.</i>
         </p>
       </BodyText>
-      <Button outline='true' text='See my work' handleClick={scrollDown} direction='up' />
+      <Button outline='true' text='See my work' to='/mywork' direction='up' />
     </div>
   </StyledHero>
 );

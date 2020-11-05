@@ -1,7 +1,8 @@
 import { WorkCard, WorkImage } from '@src/modules/work'
 import { media } from '@src/utils'
-import React from 'react'
+import React, {useEffect, useRef} from 'react';
 import styled, { css } from 'styled-components'
+import useIntersectionObserver from '../../hooks/useIntersectionAPI';
 
 const evenStyles = css`
   grid-template-columns: 2fr 1fr;
@@ -55,9 +56,18 @@ const StyledWorkItem = styled.article`
 export const WorkItem = ({ project, index }) => {
   const { title, subtitle, description, link, hero, year, background } = project;
 
+  const elementRef = useRef(null);
+  const [inView, entry] = useIntersectionObserver(elementRef, {threshold: 0});
+
+  //log everytime state is updated
+  useEffect(() => {
+    if(inView) console.log(`WorkItem:${index} in-view:${inView}`);
+  }, [inView]);
+
+
   return (
-    <StyledWorkItem index={index}>
-      <WorkImage image={hero} title={title} />
+    <StyledWorkItem index={index} ref={elementRef}>
+      <WorkImage image={hero} title={title} inview={inView} />
       <WorkCard title={title} subtitle={subtitle} description={description} link={link} year={year}/>
     </StyledWorkItem>
   )

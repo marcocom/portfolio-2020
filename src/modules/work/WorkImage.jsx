@@ -1,7 +1,8 @@
 import { media } from '@src/utils'
-import React from 'react'
 import Fade from 'react-reveal/Fade'
 import styled from 'styled-components'
+import React from 'react'
+// import Img from 'gatsby-image'
 
 const ImageContainer = styled.div`
   grid-area: image;
@@ -33,10 +34,14 @@ const ImageContainer = styled.div`
   }
 `;
 
-export const WorkImage = ({ image, title }) => (
-  <Fade bottom>
-    <ImageContainer >
-      <img src={image} alt={title} />
-    </ImageContainer>
-  </Fade>
-);
+export const WorkImage = ({ image, title, inview }) => {
+
+  return (
+    <Fade bottom>
+      <ImageContainer>
+        {inview && <img src={image} alt={title}/>}
+      </ImageContainer>
+    </Fade>
+  )
+
+};

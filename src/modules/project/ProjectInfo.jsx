@@ -14,7 +14,7 @@ const Grid = styled.div`
   width: 100%;
   grid-template-columns: 2fr 1fr;
 
-  ${media.down.md} {
+  ${ media.down.md } {
     grid-template-columns: 1fr;
     grid-gap: 20px;
   }
@@ -42,7 +42,7 @@ const Buttons = styled.div`
 const StyledTitle = styled.div`
   & h3, & h4 {
     text-align: left;
-    color: ${({theme}) => theme.color.imgBg};
+    color: ${ ({theme}) => theme.color.imgBg };
   }
 `;
 

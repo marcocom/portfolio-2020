@@ -1,4 +1,4 @@
-import { Drawer, Hamburger, Header, NavList, NavLogo } from '@src/ui/layout/nav/components'
+import { Drawer, Hamburger, Header, NavList, NavLogo } from './components'
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
@@ -21,5 +21,5 @@ export const Nav = () => {
         <Drawer drawerOpen={drawerOpen} setDrawerOpen={setDrawerOpen} />
       </StyledNav>
     </Header>
-  )
+  );
 };

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components'
 
 import { WorkList } from '@src/modules/work'
@@ -31,7 +31,7 @@ export const Work = () => {
       <ScrollTarget id='scroll-target'/>
       <Text type='page-heading'>Projects</Text>
       <StyleSubHeading>
-      <Text type='page-subheading'>Listed chronologically</Text>
+        <Text type='page-subheading'>Listed chronologically</Text>
       </StyleSubHeading>
       <Container>
         <WorkList/>
