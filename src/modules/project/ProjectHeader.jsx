@@ -12,29 +12,16 @@ const StyledHeader = styled.section`
 const ColorSection = styled.div`
   margin-top: 20px;
   width: 100%;
-  height: 40vh;
+  height: auto;
   background: ${({theme}) => theme.color.imgBg};
   display: grid;
   place-items: center center;
   position: relative;
   & img {
-    height: 80%;
-    width: auto;
+    height: auto;
+    width: 100%;
   }
 
-  ${media.down.md} {
-    height: 35vh;
-  }
-  ${media.down.sm} {
-    height: 25vh;
-  }
-  ${media.down.xs} {
-    height: 30vh;
-    & img {
-      height: auto;
-      width: 80%;
-    }
-  }
 `;
 
 const StyledText = styled.div`
@@ -44,17 +31,21 @@ const StyledText = styled.div`
   width: 100%;
   & h3 {
     width: 100%;
+    text-align: center;
     padding: 10px 0 0 20px;
     display: inline-block;
-    line-height: 1;
+    line-height: 1.1;
     margin: 0 10px 0 0;
+    ${media.down.sm} {
+      font-size: 1.2em;
+    }
   }
 `;
 
-export const ProjectHeader = ({background, title, subtitle, image}) => (
+export const ProjectHeader = ({background, title, subtitle, image, year}) => (
   <StyledHeader>
     <StyledText>
-      <Text type='heading'>{subtitle}</Text>
+      <Text type='heading'>{title} :: {subtitle} :: {year}</Text>
     </StyledText>
     <ColorSection>
       <Fade bottom>

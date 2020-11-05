@@ -13,7 +13,7 @@ const StyledAbout = styled.section`
 
 const PageContent = () => {
 
-  useEffect(() => window.scrollTo(0, 0));
+  // useEffect(() => window.scrollTo(0, 0));
   return (
     <Layout pageTitle='About'>
       <StyledAbout>

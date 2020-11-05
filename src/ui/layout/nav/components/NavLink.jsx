@@ -58,7 +58,7 @@ export const NavLink = ({ to, href, name, direction }) => {
     <li>
       <StyledNavLink
         to={to}
-        paintDrip
+        cover
         direction={direction}
         bg={themeContext.color.primary}
         duration={0.8}

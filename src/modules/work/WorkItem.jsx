@@ -60,10 +60,11 @@ export const WorkItem = ({ project, index }) => {
   const [inView, entry] = useIntersectionObserver(elementRef, {threshold: 0});
 
   //log everytime state is updated
+  /*
   useEffect(() => {
     if(inView) console.log(`WorkItem:${index} in-view:${inView}`);
   }, [inView]);
-
+  */
 
   return (
     <StyledWorkItem index={index} ref={elementRef}>

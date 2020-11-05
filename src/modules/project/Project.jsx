@@ -1,7 +1,7 @@
-import { ProjectDev, ProjectInfo, ProjectHeader, ProjectVideo, ProjectImages } from '@src/modules/project'
+import { ProjectDev, ProjectInfo, ProjectHeader, ProjectVideo, ProjectImages } from './'
 import { Button, Container, Text } from '@src/ui/components'
 import { media } from '@src/utils'
-import {React, useEffect} from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 const ProjectContainer = styled.div`
@@ -12,10 +12,9 @@ const ProjectContainer = styled.div`
 const InnerContainer = styled.div`
   width: 100%;
   max-width: 1100px;
-  margin: 0 auto;
-
-  ${media.down.xs} {
-    padding: 0 20px;
+  margin: 10px auto;
+  ${media.down.md} {
+    width: 90%;
   }
 `;
 
@@ -34,15 +33,16 @@ export const Project = ({ project }) => {
     videos,
     devDesc,
     features,
+    year,
   } = project;
 
 
-  useEffect(() => window.scrollTo(0,0));
+  // useEffect(() => window.scrollTo(0,0));
 
   return (
     <ProjectContainer>
-      <Button to='/' text='<< Back' direction='up' outline='false' backbtn='true'/>
-      <ProjectHeader background={background} title={title} subtitle={subtitle} image={hero} />
+      <Button to='/mywork' text='<< Back' outline='false' direction='left' backbtn='true'/>
+      <ProjectHeader background={background} title={title} subtitle={subtitle} image={hero} year={year}/>
       <Container>
         <InnerContainer>
           <ProjectInfo
@@ -64,7 +64,7 @@ export const Project = ({ project }) => {
           <ProjectDev devDesc={devDesc} features={features} />
         </InnerContainer>
       </Container>
-      <Button to='/' text='<< Back' direction='up' outline='false' backbtn='true'/>
+      <Button to='/mywork' text='<< Back' outline='false' direction='left' backbtn='true'/>
     </ProjectContainer>
   )
 };

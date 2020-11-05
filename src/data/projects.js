@@ -31,7 +31,7 @@ export const projects = {
   adidas: {
     title: 'Adidas',
     year: 1999,
-    subtitle: 'Original website launch, U.S. Interactive',
+    subtitle: 'Original launch, U.S.Interactive',
     link: '/adidas/',
     role: 'Production Designer, Animator',
     hero: projectAssets.adidas.hero,
@@ -39,7 +39,7 @@ export const projects = {
     videos: projectAssets.adidas.videos,
     background: '#B1B1B1',
     githubLink: '',
-    hostedLink: '',
+    hostedLink: 'https://thestore.adidas.com',
     devDesc: [
       `My position was as a flash artist and production designer as support to the
       Art Direction team. The site does an excellent job of connecting the product

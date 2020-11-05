@@ -16,7 +16,7 @@ const StyledAniLink = styled(AniLink)`
   ${({ backbtn }) => (backbtn === 'true' && BtnBackStyles)};
 `;
 
-export const Button = ({ outline = 'false', backbtn = 'false', to, href, text, direction, handleClick }) => {
+export const Button = ({ outline = 'false', backbtn = 'false', direction = 'right', to, href, text, handleClick }) => {
   const themeContext = useContext(ThemeContext);
   if (to) {
     return (
@@ -25,10 +25,9 @@ export const Button = ({ outline = 'false', backbtn = 'false', to, href, text, d
         outline={outline}
         to={to}
         cover
-        direction='left'
+        direction={direction}
         bg={themeContext.color.primary}
         duration={0.8}
-
       >
         <ButtonText text={text} />
       </StyledAniLink>

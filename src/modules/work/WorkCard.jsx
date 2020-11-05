@@ -21,6 +21,6 @@ export const WorkCard = ({ title, subtitle, description, link, year }) => (
     <Text type='heading' card>{title}</Text>
     <Text type='subheading' card>{subtitle}</Text>
     <Text card>{description}</Text>
-    <Button outline='true' to={link} text='See More' direction='up' />
+    <Button outline='true' to={link} text='See More' />
   </StyledWorkCard>
 );
