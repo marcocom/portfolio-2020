@@ -247,77 +247,120 @@ const projectAssets = {
   shift2: {
     hero: '/heros/shift2.png',
     images: [
-      '/screenshots/CHANGE.jpg',
+      '/screenshots/NissanShift1.jpg',
+      '/screenshots/NissanShift2.jpg',
+      '/screenshots/NissanShift3.jpg',
+      '/screenshots/NissanShift4.jpg',
+      '/screenshots/NissanShift5.jpg',
     ],
-    videos: [],
+    videos: ['https://vimeo.com/468769383'],
   },
   tivo: {
     hero: '/heros/tivo.png',
     images: [
-      '/screenshots/CHANGE.jpg',
+      '/screenshots/tivo1.jpg',
+      '/screenshots/tivo2.jpg',
+      '/screenshots/tivo3.jpg',
     ],
-    videos: [],
+    videos: [
+      'https://vimeo.com/467895909',
+      'https://vimeo.com/467895914',
+      'https://vimeo.com/470649995',
+      'https://vimeo.com/467895861',
+    ],
   },
   tombrady: {
     hero: '/heros/tombrady.png',
     images: [
-      '/screenshots/CHANGE.jpg',
+      '/screenshots/intel1.jpg',
+      '/screenshots/intel2.jpg',
+      '/screenshots/intel3.jpg',
+      '/screenshots/intel4.jpg',
     ],
-    videos: [],
+    videos: ['https://vimeo.com/470659430'],
   },
   toyota: {
     hero: '/heros/toyota.png',
     images: [
-      '/screenshots/CHANGE.jpg',
+      '/screenshots/toyota1.jpg',
+      '/screenshots/toyota2.jpg',
+      '/screenshots/toyota3.jpg',
+      '/screenshots/toyota4.jpg',
+      '/screenshots/toyota5.jpg',
+      '/screenshots/toyota6.jpg',
+      '/screenshots/toyota7.jpg',
     ],
-    videos: [],
+    videos: [
+      'https://vimeo.com/470650734',
+      'https://vimeo.com/470650708',
+      'https://vimeo.com/467895853',
+      'https://vimeo.com/470650895',
+      'https://vimeo.com/470650814',
+      'https://vimeo.com/470650915',
+      'https://vimeo.com/470659779',
+      'https://vimeo.com/470659812'
+    ],
   },
   vodafone: {
     hero: '/heros/vodefone.png',
     images: [
-      '/screenshots/CHANGE.jpg',
+      '/screenshots/vodafone1.jpg',
+      '/screenshots/vodafone2.jpg',
+      '/screenshots/vodafone3.jpg',
+      '/screenshots/vodafone4.jpg',
+      '/screenshots/vodafone5.jpg',
     ],
     videos: [],
   },
   warnerbros: {
     hero: '/heros/warnerbros.png',
     images: [
-      '/screenshots/CHANGE.jpg',
+      '/screenshots/warnerbros.jpg',
     ],
     videos: [],
   },
   stadia: {
     hero: '/heros/stadia.png',
     images: [
-      '/screenshots/CHANGE.jpg',
+      '/screenshots/stadia1.jpg',
+      '/screenshots/stadia2.jpg',
     ],
-    videos: [],
+    videos: ['https://www.youtube.com/watch?v=qKUlG04AnL4'],
   },
   usarmy: {
     hero: '/heros/usarmy.png',
     images: [
-      '/screenshots/CHANGE.jpg',
+      '/screenshots/usarmy1.jpg',
     ],
-    videos: [],
+    videos: [
+      'https://www.youtube.com/watch?v=-lZKV9bP_0Q',
+      'https://www.youtube.com/watch?v=sfZuFrJvrqM',
+      'https://www.youtube.com/watch?v=bM0cR_G6t4c',
+    ],
   },
   yoroto: {
     hero: '/heros/yoroto.png',
     images: [
-      '/screenshots/CHANGE.jpg',
+      '/screenshots/YoRoto1.jpg',
+      '/screenshots/YoRoto2.jpg',
+      '/screenshots/YoRoto3.jpg',
     ],
-    videos: [],
+    videos: ['https://vimeo.com/468769483'],
   },
   infsummer: {
     hero: '/heros/infiniti_summer.png',
     images: [
-      '/screenshots/CHANGE.jpg',
+      '/screenshots/infinit1.jpg',
+      '/screenshots/infinit2.jpg',
+      '/screenshots/infinit3.jpg',
     ],
-    videos: [],
+    videos: ['https://vimeo.com/470650230'],
   },
   thride: {
     hero: '/heros/thride.png',
     images: [
-      '/screenshots/CHANGE.jpg',
+      '/screenshots/thride1.jpg',
+      '/screenshots/thride2.jpg',
     ],
     videos: [],
   },
@@ -1018,7 +1061,7 @@ export const projects = {
     hostedLink: '',
     devDesc: [
       `I spent two and a half years as a creative at Saatchi in Los Angeles, where our
-      only clients were Toyota and Square Enix. My job was to execute multimedia
+      only clients were Toyota and Square Enix. My job was to concept and execute multimedia
       throughout Toyota.com, which was a hybrid website of HTML and Flash, with
       multiple Flash-based micro-sites, kiosks, and ad-banners for all 16 different
       vehicles sold in North America. `,
