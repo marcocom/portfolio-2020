@@ -39,20 +39,25 @@ const Buttons = styled.div`
   }
 `;
 
-const StyledTitle = styled.div`
-  & h3, & h4 {
-    text-align: left;
-    color: ${ ({theme}) => theme.color.imgBg };
+const Hero = styled.div`
+  height: 300px;
+  display: block;
+  width: 100%;
+
+  & img {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+
   }
 `;
 
-export const ProjectInfo = ({ title, subtitle, githubLink, hostedLink }) => (
+export const ProjectInfo = ({ githubLink, hostedLink, hero }) => (
   <StyledProjectInfo>
+    <Hero>
+      <img src={hero} />
+    </Hero>
     <Grid>
-      {/*<StyledTitle>
-        <Text type='heading'>{title}</Text>
-        <Text type='subheading'>{subtitle}</Text>
-      </StyledTitle>*/}
       <Buttons>
         { hostedLink.length > 0 &&
           <Button text='See Website' href={hostedLink}/>
@@ -62,5 +67,6 @@ export const ProjectInfo = ({ title, subtitle, githubLink, hostedLink }) => (
         }
       </Buttons>
     </Grid>
+
   </StyledProjectInfo>
 );

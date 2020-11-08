@@ -1,7 +1,7 @@
+import React from 'react'
 import { ProjectDev, ProjectInfo, ProjectHeader, ProjectVideo, ProjectImages } from './'
 import { Button, Container, Text } from '@src/ui/components'
 import { media } from '@src/utils'
-import React from 'react'
 import styled from 'styled-components'
 
 const ProjectContainer = styled.div`
@@ -42,26 +42,19 @@ export const Project = ({ project }) => {
   return (
     <ProjectContainer>
       <Button to='/mywork' text='<< Back' outline='false' direction='left' backbtn='true'/>
-      <ProjectHeader background={background} title={title} subtitle={subtitle} image={hero} year={year}/>
+      <ProjectHeader background={background}
+                     title={title}
+                     subtitle={subtitle}
+                     hero={hero}
+                     images={images}
+                     year={year}/>
       <Container>
         <InnerContainer>
-          <ProjectInfo
-            title={title}
-            subtitle={subtitle}
-            description={description}
-            githubLink={githubLink}
-            hostedLink={hostedLink}
-          />
-          <Text type='heading'>Sample Images</Text>
-          {images.length > 0 ?
-            <ProjectImages images={images} /> :
-            <Text type='subheading'>Coming Soon...</Text>
-          }
-
-          {videos.length > 0 &&
-            <ProjectVideo video={videos[0]} title={title} />
+          {videos.length &&
+          <ProjectVideo videos={videos} />
           }
           <ProjectDev devDesc={devDesc} features={features} />
+          <ProjectInfo githubLink={githubLink} hostedLink={hostedLink} hero={hero} />
         </InnerContainer>
       </Container>
       <Button to='/mywork' text='<< Back' outline='false' direction='left' backbtn='true'/>

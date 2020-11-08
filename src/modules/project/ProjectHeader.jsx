@@ -1,25 +1,32 @@
 import {Text} from '@src/ui/components'
 import {media} from '@src/utils'
 import React from 'react'
-import Fade from 'react-reveal/Fade'
 import styled from 'styled-components'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import {Carousel} from 'react-responsive-carousel';
 
 const StyledHeader = styled.section`
   width: 100%;
-  //padding-top: 10vh;
   position: relative;
 `;
 const ColorSection = styled.div`
   margin-top: 20px;
+  padding: 10px 50px;
   width: 100%;
   height: auto;
   background: ${({theme}) => theme.color.imgBg};
   display: grid;
   place-items: center center;
   position: relative;
-  & img {
-    height: auto;
-    width: 100%;
+  ${media.down.md} {
+    padding: 0;
+  }
+
+  & .carousel {
+    max-width: 1100px;
+    & .slide {
+      background: ${({theme}) => theme.color.imgBg} !important;
+    }
   }
 
 `;
@@ -41,16 +48,44 @@ const StyledText = styled.div`
     }
   }
 `;
+const getConfigurableProps = () => ({
+  showArrows: true,
+  showStatus: true,
+  showIndicators: true,
+  infiniteLoop: true,
+  showThumbs: true,
+  useKeyboardArrows: false,
+  autoPlay: true,
+  stopOnHover: true,
+  swipeable: true,
+  dynamicHeight: true,
+  emulateTouch: true,
+  thumbWidth: 150,
+  selectedItem: 0,
+  interval: 8000,
+  transitionTime: 700,
+  swipeScrollTolerance: 5,
+});
 
-export const ProjectHeader = ({background, title, subtitle, image, year}) => (
-  <StyledHeader>
-    <StyledText>
-      <Text type='heading'>{title} :: {subtitle} :: {year}</Text>
-    </StyledText>
-    <ColorSection>
-      <Fade bottom>
-        <img src={image} alt={title} />
-      </Fade>
-    </ColorSection>
-  </StyledHeader>
-);
+
+export const ProjectHeader = ({background, title, subtitle, images, year}) => (
+    <StyledHeader>
+      <StyledText>
+        <Text type='heading'>{title} :: {subtitle} :: {year}</Text>
+      </StyledText>
+      <ColorSection>
+
+        <Carousel {...getConfigurableProps()}>
+          {
+            images.map((image, i) => {
+            return (
+              <div key={i}>
+                <img src={image} alt={title}/>
+              </div>);
+            })
+          }
+        </Carousel>
+
+      </ColorSection>
+    </StyledHeader>
+  );
