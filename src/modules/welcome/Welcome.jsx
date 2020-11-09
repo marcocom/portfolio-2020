@@ -99,13 +99,8 @@ const BodyText = styled.h5`
   }
 `;
 
-const scrollDown = () => {
-  document.getElementById('scroll-target').scrollIntoView({
-    behavior: 'smooth',
-  })
-};
 
-export const WorkHero = () => (
+export const Welcome = () => (
   <StyledHero>
     <div>
       <Title>
@@ -120,7 +115,7 @@ export const WorkHero = () => (
         <p>Please enjoy, and thank you for your interest.</p>
         <br/>
         <p>
-          <i>This <a href='https://github.com/marcocom/portfolio-2020'>website's code</a> is scratch-built using <a href='https://reactjs.org'>ReactJS</a> with <a href="https://styled-components.com">Styled-Components</a> for light/dark theme support, and <a href='https://gatsbyjs.com'>Gatsby</a> for static-content deployables. I am adding sample images, as well as movie-clips to replace old website-demos, and refining functionality every day. Please excuse the mess.</i>
+          <i>This <a href='https://github.com/marcocom/portfolio-2020'>website's code</a> is built using <a href='https://reactjs.org'>ReactJS</a> with <a href="https://styled-components.com">Styled-Components</a> for light/dark theme support, and <a href='https://gatsbyjs.com'>Gatsby</a> for static-content deployables. I am adding sample images, as well as movie-clips to replace old website-demos, and refining functionality every day. Please excuse the mess.</i>
         </p>
       </BodyText>
       <Button outline='true' text='See my work' to='/mywork' direction='up' />
