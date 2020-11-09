@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { media } from '@src/utils'
 
-export const PageHeading = styled.h1`
+export const PageHeading = styled.h2`
   text-align: center;
   font-weight: 400;
   margin-bottom: 0;

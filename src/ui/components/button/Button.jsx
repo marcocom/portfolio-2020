@@ -1,28 +1,29 @@
 import React, { useContext } from 'react'
 import styled, { ThemeContext } from 'styled-components'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
-
-import { BtnSolidStyles, BtnOutlineStyles } from './buttonStyles'
+import { BtnSolidStyles, BtnOutlineStyles, BtnBackStyles } from './buttonStyles'
 
 const StyledButton = styled.button`
-  ${({ outline }) => (outline ? BtnOutlineStyles : BtnSolidStyles)};
+  ${({ outline }) => (outline === 'true' ? BtnOutlineStyles : BtnSolidStyles)};
 `;
 
 const StyledAnchor = styled.a`
-  ${({ outline }) => (outline ? BtnOutlineStyles : BtnSolidStyles)};
+  ${({ outline }) => (outline === 'true' ? BtnOutlineStyles : BtnSolidStyles)};
 `;
 
 const StyledAniLink = styled(AniLink)`
-  ${({ outline }) => (outline ? BtnOutlineStyles : BtnSolidStyles)};
+  ${({ outline }) => (outline === 'true' ? BtnOutlineStyles : BtnSolidStyles)};
+  ${({ backbtn }) => (backbtn === 'true' && BtnBackStyles)};
 `;
 
-export const Button = ({ outline = false, to, href, text, direction, handleClick }) => {
+export const Button = ({ outline = 'false', backbtn = 'false', direction = 'right', to, href, text, handleClick }) => {
   const themeContext = useContext(ThemeContext);
   if (to) {
     return (
       <StyledAniLink
-        to={to}
+        backbtn={backbtn}
         outline={outline}
+        to={to}
         cover
         direction={direction}
         bg={themeContext.color.primary}

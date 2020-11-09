@@ -14,7 +14,7 @@ const Grid = styled.div`
   width: 100%;
   grid-template-columns: 2fr 1fr;
 
-  ${media.down.md} {
+  ${ media.down.md } {
     grid-template-columns: 1fr;
     grid-gap: 20px;
   }
@@ -39,14 +39,25 @@ const Buttons = styled.div`
   }
 `;
 
-export const ProjectInfo = ({ title, subtitle, description, githubLink, hostedLink }) => (
+const Hero = styled.div`
+  height: 300px;
+  display: block;
+  width: 100%;
+
+  & img {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+
+  }
+`;
+
+export const ProjectInfo = ({ githubLink, hostedLink, hero }) => (
   <StyledProjectInfo>
-    <Text type='heading'>{title}</Text>
+    <Hero>
+      <img src={hero} />
+    </Hero>
     <Grid>
-      <div>
-        <Text type='subheading'>{subtitle}</Text>
-        <Text>{description}</Text>
-      </div>
       <Buttons>
         { hostedLink.length > 0 &&
           <Button text='See Website' href={hostedLink}/>
@@ -56,5 +67,6 @@ export const ProjectInfo = ({ title, subtitle, description, githubLink, hostedLi
         }
       </Buttons>
     </Grid>
+
   </StyledProjectInfo>
 );

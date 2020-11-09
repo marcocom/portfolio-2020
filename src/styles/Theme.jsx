@@ -49,7 +49,7 @@ const darkTheme = {
 
 export const Theme = ({ colorTheme, children }) => (
   <ThemeProvider theme={theme}>
-    <ThemeProvider theme={colorTheme === 'light' ? lightTheme : darkTheme}>
+    <ThemeProvider current={colorTheme} theme={colorTheme === 'light' ? lightTheme : darkTheme}>
       {children}
     </ThemeProvider>
   </ThemeProvider>

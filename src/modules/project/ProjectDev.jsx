@@ -4,7 +4,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledProjectDev = styled.section`
-  margin: 60px auto 0;
+  margin: 10px auto 60px;
 `;
 
 export const ProjectDev = ({ devDesc, features }) => (

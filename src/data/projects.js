@@ -1,4 +1,370 @@
-import { projectAssets } from '@src/assets/projects'
+
+const projectAssets = {
+  sixtymin: {
+    hero: '/heros/60minutes.png',
+    images: [
+      '/screenshots/60minutes1.jpg',
+      '/screenshots/60minutes2.jpg',
+      '/screenshots/60minutes3.jpg',
+      '/screenshots/60minutes4.jpg',
+      '/screenshots/60minutes5.jpg',
+    ],
+    videos: [],
+  },
+  adidas: {
+    hero: '/heros/adidas.png',
+    images: [
+      '/screenshots/adidas1.jpg',
+      '/screenshots/adidas2.jpg',
+      '/screenshots/adidas3.jpg',
+      '/screenshots/adidas4.jpg',
+      '/screenshots/adidas5.jpg',
+    ],
+    videos: [],
+  },
+  autodesk: {
+    hero: '/heros/autodesk.png',
+    images: [
+      '/screenshots/autodesk1.jpg',
+      '/screenshots/autodesk2.jpg',
+      '/screenshots/autodesk3.jpg',
+      '/screenshots/autodesk4.jpg',
+      '/screenshots/autodesk5.jpg',
+      '/screenshots/autodesk6.jpg',
+      '/screenshots/autodesk7.jpg',
+    ],
+    videos: [],
+  },
+  codelite: {
+    hero: '/heros/codelite.png',
+    images: [
+      '/screenshots/code_elite1.jpg',
+      '/screenshots/code_elite2.jpg',
+      '/screenshots/code_elite3.jpg',
+      '/screenshots/code_elite4.jpg',
+      '/screenshots/code_elite5.jpg',
+    ],
+    videos: [],
+  },
+  deluxe: {
+    hero: '/heros/deluxe.png',
+    images: [
+      '/screenshots/deluxe1.jpg',
+      '/screenshots/deluxe2.jpg',
+      '/screenshots/deluxe3.jpg',
+      '/screenshots/deluxe4.jpg',
+      '/screenshots/deluxe5.jpg',
+      '/screenshots/deluxe6.jpg',
+      '/screenshots/deluxe7.jpg',
+    ],
+    videos: [],
+  },
+  disney: {
+    hero: '/heros/disney.png',
+    images: [
+      '/screenshots/disney1.jpg',
+      '/screenshots/disney2.jpg',
+      '/screenshots/disney3.jpg',
+      '/screenshots/disney4.jpg',
+      '/screenshots/disney5.jpg',
+      '/screenshots/disney6.jpg',
+      '/screenshots/disney7.jpg',
+    ],
+    videos: [],
+  },
+  dockers: {
+    hero: '/heros/dockers.png',
+    images: [
+      '/screenshots/dockers1.jpg',
+      '/screenshots/dockers2.jpg',
+      '/screenshots/dockers3.jpg',
+      '/screenshots/dockers4.jpg',
+    ],
+    videos: [],
+  },
+  dodgesrt: {
+    hero: '/heros/dodgesrt.png',
+    images: [
+      '/screenshots/dodgesrt1.jpg',
+      '/screenshots/dodgesrt2.jpg',
+      '/screenshots/dodgesrt3.jpg',
+      '/screenshots/dodgesrt4.jpg',
+      '/screenshots/dodgesrt5.jpg',
+    ],
+    videos: ['https://vimeo.com/468769501'],
+  },
+  eggbank: {
+    hero: '/heros/eggbamk.png',
+    images: [
+      '/screenshots/eggbank1.jpg',
+      '/screenshots/eggbank2.jpg',
+      '/screenshots/eggbank3.jpg',
+    ],
+    videos: [],
+  },
+  goodhome: {
+    hero: '/heros/goodhome.png',
+    images: [
+      '/screenshots/goodhome1.jpg',
+      '/screenshots/goodhome2.jpg',
+      '/screenshots/goodhome3.jpg',
+      '/screenshots/goodhome4.jpg',
+      '/screenshots/goodhome5.jpg',
+      '/screenshots/goodhome6.jpg',
+    ],
+    videos: ['https://vimeo.com/467895744'],
+  },
+  hsd: {
+    hero: '/heros/HSD.png',
+    images: [
+      '/screenshots/hsd1.jpg',
+      '/screenshots/hsd2.jpg',
+      '/screenshots/hsd3.jpg',
+      '/screenshots/hsd4.jpg',
+      '/screenshots/hsd5.jpg',
+      '/screenshots/hsd6.jpg',
+      '/screenshots/hsd7.jpg',
+    ],
+    videos: ['https://vimeo.com/476683558'],
+  },
+  infiniti: {
+    hero: '/heros/infiniti.png',
+    images: [
+      '/screenshots/infiniti1.jpg',
+      '/screenshots/infiniti2.jpg',
+      '/screenshots/infiniti3.jpg',
+    ],
+    videos: [
+      'https://vimeo.com/470650181',
+      'https://vimeo.com/470650185',
+      'https://vimeo.com/470650230',
+    ],
+  },
+  istrategy: {
+    hero: '/heros/istrategy.png',
+    images: [
+      '/screenshots/istrategy1.jpg',
+      '/screenshots/istrategy2.jpg',
+      '/screenshots/istrategy3.jpg',
+      '/screenshots/istrategy4.jpg',
+      '/screenshots/istrategy5.jpg',
+    ],
+    videos: [],
+  },
+  jcpenney: {
+    hero: '/heros/jcpenney.png',
+    images: [
+      '/screenshots/jcpenney1.jpg',
+      '/screenshots/jcpenney2.jpg',
+      '/screenshots/jcpenney3.jpg',
+      '/screenshots/jcpenney4.jpg',
+    ],
+    videos: [],
+  },
+  kitbuilder: {
+    hero: '/heros/kitbuilder.png',
+    images: [
+      '/screenshots/kitbuilder1.jpg',
+      '/screenshots/kitbuilder2.jpg',
+      '/screenshots/kitbuilder3.jpg',
+      '/screenshots/kitbuilder4.jpg',
+      '/screenshots/kitbuilder5.jpg',
+    ],
+    videos: [],
+  },
+  kpn: {
+    hero: '/heros/kpn.png',
+    images: [
+      '/screenshots/kpn_kioske1.jpg',
+      '/screenshots/kpn_kioske2.jpg',
+      '/screenshots/kpn_kioske3.jpg',
+      '/screenshots/kpn_kioske4.jpg',
+      '/screenshots/kpn_kioske5.jpg',
+    ],
+    videos: [],
+  },
+  landcruiser: {
+    hero: '/heros/landcruiser.png',
+    images: [
+      '/screenshots/landcruiser1.jpg',
+      '/screenshots/landcruiser2.jpg',
+      '/screenshots/landcruiser3.jpg',
+      '/screenshots/landcruiser4.jpg',
+      '/screenshots/landcruiser5.jpg',
+    ],
+    videos: [
+      'https://vimeo.com/468769470',
+      'https://vimeo.com/470650763',
+    ],
+  },
+  levis: {
+    hero: '/heros/levis.png',
+    images: [
+      '/screenshots/levis1.jpg',
+      '/screenshots/levis2.jpg',
+      '/screenshots/levis3.jpg',
+      '/screenshots/levis4.jpg',
+    ],
+    videos: [
+      'https://vimeo.com/470650238'
+    ],
+  },
+  marriott: {
+    hero: '/heros/marriott.png',
+    images: [
+      '/screenshots/marriott1.jpg',
+      '/screenshots/marriott2.jpg',
+      '/screenshots/marriott3.jpg',
+      '/screenshots/marriott4.jpg',
+      '/screenshots/marriott5.jpg',
+      '/screenshots/marriott6.jpg',
+      '/screenshots/marriott7.jpg',
+    ],
+    videos: [],
+  },
+  ritepro: {
+    hero: '/heros/rightpro.png',
+    images: [
+      '/screenshots/QuadRite1.jpg',
+      '/screenshots/QuadRite2.jpg',
+      '/screenshots/QuadRite3.jpg',
+      '/screenshots/QuadRite4.jpg',
+      '/screenshots/QuadRite5.jpg',
+      '/screenshots/QuadRite6.jpg',
+    ],
+    videos: [],
+  },
+  samsung: {
+    hero: '/heros/samsung.png',
+    images: [
+      '/screenshots/Samsung1.jpg',
+      '/screenshots/Samsung2.jpg',
+      '/screenshots/Samsung3.jpg',
+      '/screenshots/Samsung4.jpg',
+    ],
+    videos: ['https://vimeo.com/467896012'],
+  },
+  shift2: {
+    hero: '/heros/shift2.png',
+    images: [
+      '/screenshots/NissanShift1.jpg',
+      '/screenshots/NissanShift2.jpg',
+      '/screenshots/NissanShift3.jpg',
+      '/screenshots/NissanShift4.jpg',
+      '/screenshots/NissanShift5.jpg',
+    ],
+    videos: ['https://vimeo.com/468769383'],
+  },
+  tivo: {
+    hero: '/heros/tivo.png',
+    images: [
+      '/screenshots/tivo1.jpg',
+      '/screenshots/tivo2.jpg',
+      '/screenshots/tivo3.jpg',
+    ],
+    videos: [
+      'https://vimeo.com/467895909',
+      'https://vimeo.com/467895914',
+      'https://vimeo.com/470649995',
+      'https://vimeo.com/467895861',
+    ],
+  },
+  tombrady: {
+    hero: '/heros/tombrady.png',
+    images: [
+      '/screenshots/intel1.jpg',
+      '/screenshots/intel2.jpg',
+      '/screenshots/intel3.jpg',
+      '/screenshots/intel4.jpg',
+    ],
+    videos: ['https://vimeo.com/470659430'],
+  },
+  toyota: {
+    hero: '/heros/toyota.png',
+    images: [
+      '/screenshots/toyota1.jpg',
+      '/screenshots/toyota2.jpg',
+      '/screenshots/toyota3.jpg',
+      '/screenshots/toyota4.jpg',
+      '/screenshots/toyota5.jpg',
+      '/screenshots/toyota6.jpg',
+      '/screenshots/toyota7.jpg',
+    ],
+    videos: [
+      'https://vimeo.com/470650734',
+      'https://vimeo.com/470650708',
+      'https://vimeo.com/467895853',
+      'https://vimeo.com/470650895',
+      'https://vimeo.com/470650814',
+      'https://vimeo.com/470650915',
+      'https://vimeo.com/470659779',
+      'https://vimeo.com/470659812'
+    ],
+  },
+  vodafone: {
+    hero: '/heros/vodefone.png',
+    images: [
+      '/screenshots/vodafone1.jpg',
+      '/screenshots/vodafone2.jpg',
+      '/screenshots/vodafone3.jpg',
+      '/screenshots/vodafone4.jpg',
+      '/screenshots/vodafone5.jpg',
+    ],
+    videos: [],
+  },
+  warnerbros: {
+    hero: '/heros/warnerbros.png',
+    images: [
+      '/screenshots/warnerbros.jpg',
+    ],
+    videos: [],
+  },
+  stadia: {
+    hero: '/heros/stadia.png',
+    images: [
+      '/screenshots/stadia1.jpg',
+      '/screenshots/stadia2.jpg',
+    ],
+    videos: ['https://www.youtube.com/watch?v=qKUlG04AnL4'],
+  },
+  usarmy: {
+    hero: '/heros/usarmy.png',
+    images: [
+      '/screenshots/usarmy1.jpg',
+    ],
+    videos: [
+      'https://www.youtube.com/watch?v=-lZKV9bP_0Q',
+      'https://www.youtube.com/watch?v=sfZuFrJvrqM',
+      'https://www.youtube.com/watch?v=bM0cR_G6t4c',
+    ],
+  },
+  yoroto: {
+    hero: '/heros/yoroto.png',
+    images: [
+      '/screenshots/YoRoto1.jpg',
+      '/screenshots/YoRoto2.jpg',
+      '/screenshots/YoRoto3.jpg',
+    ],
+    videos: ['https://vimeo.com/468769483'],
+  },
+  infsummer: {
+    hero: '/heros/infiniti_summer.png',
+    images: [
+      '/screenshots/infinit1.jpg',
+      '/screenshots/infinit2.jpg',
+      '/screenshots/infinit3.jpg',
+    ],
+    videos: ['https://vimeo.com/470650230'],
+  },
+  thride: {
+    hero: '/heros/thride.png',
+    images: [
+      '/screenshots/thride1.jpg',
+      '/screenshots/thride2.jpg',
+    ],
+    videos: [],
+  },
+};
 
 export const projects = {
   sixtymin: {
@@ -31,7 +397,7 @@ export const projects = {
   adidas: {
     title: 'Adidas',
     year: 1999,
-    subtitle: 'Original website launch, U.S. Interactive',
+    subtitle: 'Original launch, U.S.Interactive',
     link: '/adidas/',
     role: 'Production Designer, Animator',
     hero: projectAssets.adidas.hero,
@@ -165,7 +531,7 @@ export const projects = {
   dockers: {
     title: 'Dockers',
     year: 2000,
-    subtitle: 'Reload Kiosk, CKS/marchFIRST',
+    subtitle: 'Zen Reload Kiosk, CKS/marchFIRST',
     link: '/dockers/',
     role: 'Designer, Animator',
     hero: projectAssets.dockers.hero,
@@ -175,7 +541,9 @@ export const projects = {
     githubLink: '',
     hostedLink: '',
     devDesc: [
-      ``,
+      `Levis wanted to reach out to young people of all sexual preference and have a more interactive multimedia content.',
+      'An idea, built further upon again later for other clients like TiVo, this creative solution was an effort to allow visitors to create their own customized animation by making choices from a menu system.',
+      'This approach allowed for a more targeted advertisement to the user and gives them control to customize the intro while also writing that data to a database for reporting marketing metrics. Before the existence of GoogleAnalytics, this is how we solved business-intelligence, as best we could.`,
     ],
     features: [
       ``,
@@ -279,7 +647,7 @@ export const projects = {
   },
   infiniti: {
     title: 'Infiniti.com',
-    year: 2008,
+    year: 2007,
     subtitle: 'Website redesign, The Designory',
     link: '/infiniti/',
     role: 'Multimedia Director',
@@ -550,7 +918,7 @@ export const projects = {
   },
   shift2: {
     title: 'Nissan',
-    year: 2001,
+    year: 2008,
     subtitle: 'SHIFT_2.0, The Designory',
     link: '/shift2/',
     role: 'Multimedia Director',
@@ -681,7 +1049,7 @@ export const projects = {
   },
   toyota: {
     title: 'Toyota',
-    year: 2006,
+    year: 2005,
     subtitle: 'Website / minisites / banners, Saatchi & Saatchi',
     link: '/toyota/',
     role: 'Multimedia Designer',
@@ -693,7 +1061,7 @@ export const projects = {
     hostedLink: '',
     devDesc: [
       `I spent two and a half years as a creative at Saatchi in Los Angeles, where our
-      only clients were Toyota and Square Enix. My job was to execute multimedia
+      only clients were Toyota and Square Enix. My job was to concept and execute multimedia
       throughout Toyota.com, which was a hybrid website of HTML and Flash, with
       multiple Flash-based micro-sites, kiosks, and ad-banners for all 16 different
       vehicles sold in North America. `,

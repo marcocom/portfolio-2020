@@ -14,4 +14,11 @@ export const media = {
     lg: `@media (max-width: ${size.lg})`,
     xl: `@media (max-width: ${size.xl})`,
   },
+  up: {
+    xs: `@media (min-width: ${size.xs})`,
+    sm: `@media (min-width: ${size.sm})`,
+    md: `@media (min-width: ${size.md})`,
+    lg: `@media (min-width: ${size.lg})`,
+    xl: `@media (min-width: ${size.xl})`,
+  },
 };

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react';
 import styled from 'styled-components'
 
 import { AboutContact, AboutIntro, AboutSkills } from '@src/modules/about'
@@ -12,6 +12,8 @@ const StyledAbout = styled.section`
 `;
 
 const PageContent = () => {
+
+  // useEffect(() => window.scrollTo(0, 0));
   return (
     <Layout pageTitle='About'>
       <StyledAbout>

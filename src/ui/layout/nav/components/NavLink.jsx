@@ -42,10 +42,10 @@ const StyledNavLink = styled(AniLink)`
 
 const StyledNavAnchor = styled.a`
   ${styles};
-`
+`;
 
 export const NavLink = ({ to, href, name, direction }) => {
-  const themeContext = useContext(ThemeContext)
+  const themeContext = useContext(ThemeContext);
 
   if (href) {
     return (
@@ -68,4 +68,4 @@ export const NavLink = ({ to, href, name, direction }) => {
       </StyledNavLink>
     </li>
   )
-}
+};

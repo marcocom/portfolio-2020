@@ -38,7 +38,7 @@ export const GlobalStyle = createGlobalStyle`
 
     h1 {
         font-family: ${({ theme }) => theme.font.heading};
-        font-weight: 700;
+        font-weight: normal;
         color: ${({ theme }) => theme.color.text};
         font-size: 5em;
         text-align: center;
@@ -59,7 +59,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     h2 {
         font-family: ${({ theme }) => theme.font.heading};
-        font-weight: 700;
+        font-weight: normal;
         color: ${({ theme }) => theme.color.text};
         font-size: 3em;
 

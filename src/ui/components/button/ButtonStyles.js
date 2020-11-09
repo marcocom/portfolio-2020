@@ -1,5 +1,6 @@
-import { css } from 'styled-components'
+import {css} from 'styled-components'
 import { media } from '@src/utils'
+
 
 const SharedBtnStyles = css`
   cursor: pointer;
@@ -8,6 +9,7 @@ const SharedBtnStyles = css`
   text-decoration: none;
   transition: ${({ theme }) => theme.hoverTransition}, border-color 300ms linear;
   overflow: hidden;
+  //width: 100%;
   width: 250px;
   height: 60px;
 
@@ -95,6 +97,17 @@ export const BtnSolidStyles = css`
   & span {
     color: white;
   }
+`;
+
+export const BtnBackStyles = css`
+
+  ${media.up.md}{
+    width: 100px;
+    height: 30px;
+    position: relative;
+
+  }
+
 `;
 
 export const BtnOutlineStyles = css`

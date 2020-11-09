@@ -1,197 +1,260 @@
-
-//HEROS - these are used for the landing page
-import jcpenneyHeroImg from './heros/jcpenney.png'
-import sixtyminHeroImg from './heros/60minutes.png'
-import adidasHeroImg from './heros/adidas.png'
-import autodeskHeroImg from './heros/autodesk.png'
-import codeliteHeroImg from './heros/codelite.png'
-import deluxeHeroImg from './heros/deluxe.png'
-import disneyHeroImg from './heros/disney.png'
-import dockersHeroImg from './heros/dockers.png'
-import dodgesrtHeroImg from './heros/dodgesrt.png'
-import eggbankHeroImg from './heros/eggbamk.png'
-import goodhomeHeroImg from './heros/goodhome.png'
-import hsdHeroImg from './heros/HSD.png'
-import infinitiHeroImg from './heros/infiniti.png'
-import istrategyHeroImg from './heros/istrategy.png'
-import kitbuilderHeroImg from './heros/kitbuilder.png'
-import kpnHeroImg from './heros/kpn.png'
-import landcruiserHeroImg from './heros/landcruiser.png'
-import levisHeroImg from './heros/levis.png'
-import marriottHeroImg from './heros/marriott.png'
-import rightproHeroImg from './heros/rightpro.png'
-import samsungHeroImg from './heros/samsung.png'
-import shift2HeroImg from './heros/shift2.png'
-import tivoHeroImg from './heros/tivo.png'
-import tombradyHeroImg from './heros/tombrady.png'
-import toyotaHeroImg from './heros/toyota.png'
-import vodafoneHeroImg from './heros/vodefone.png'
-import warnerbrosHeroImg from './heros/warnerbros.png'
-import stadiaHeroImg from './heros/stadia.png'
-import usarmyHeroImg from './heros/usarmy.png'
-import yorotoHeroImg from './heros/yoroto.png'
-import summerHeroImg from './heros/infiniti_summer.png'
-import thrideHeroImg from './heros/thride.png'
-
+// key names matched to data at src/data/projects.js
 export const projectAssets = {
-  jcpenney: {
-    hero: jcpenneyHeroImg,
-    images: [],
-    videos: [],
-  },
   sixtymin: {
-    hero: sixtyminHeroImg,
-    images: [],
+    hero: './heros/60minutes.png',
+    images: [
+      './screenshots/60minutes1.jpg',
+      './screenshots/60minutes2.jpg',
+      './screenshots/60minutes3.jpg',
+      './screenshots/60minutes4.jpg',
+      './screenshots/60minutes5.jpg',
+    ],
     videos: [],
   },
   adidas: {
-    hero: adidasHeroImg,
-    images: [],
+    hero: '/heros/adidas.png',
+    images: [
+      './screenshots/adidas1.jpg',
+      './screenshots/adidas2.jpg',
+      './screenshots/adidas3.jpg',
+      './screenshots/adidas4.jpg',
+      './screenshots/adidas5.jpg',
+    ],
     videos: [],
   },
   autodesk: {
-    hero: autodeskHeroImg,
-    images: [],
+    hero: './heros/autodesk.png',
+    images: [
+      './screenshots/autodesk1.jpg',
+      './screenshots/autodesk2.jpg',
+      './screenshots/autodesk3.jpg',
+      './screenshots/autodesk4.jpg',
+      './screenshots/autodesk5.jpg',
+      './screenshots/autodesk6.jpg',
+      './screenshots/autodesk7.jpg',
+    ],
     videos: [],
   },
   codelite: {
-    hero: codeliteHeroImg,
-    images: [],
+    hero: './heros/codelite.png',
+    images: [
+      './screenshots/code_elite1.jpg',
+      './screenshots/code_elite2.jpg',
+      './screenshots/code_elite3.jpg',
+      './screenshots/code_elite4.jpg',
+      './screenshots/code_elite5.jpg',
+    ],
     videos: [],
   },
   deluxe: {
-    hero: deluxeHeroImg,
-    images: [],
+    hero: './heros/deluxe.png',
+    images: [
+      './screenshots/deluxe1.jpg',
+      './screenshots/deluxe2.jpg',
+      './screenshots/deluxe3.jpg',
+      './screenshots/deluxe4.jpg',
+      './screenshots/deluxe5.jpg',
+      './screenshots/deluxe6.jpg',
+      './screenshots/deluxe7.jpg',
+    ],
     videos: [],
   },
   disney: {
-    hero: disneyHeroImg,
-    images: [],
+    hero: './heros/disney.png',
+    images: [
+      './screenshots/disney1.jpg',
+      './screenshots/disney2.jpg',
+      './screenshots/disney3.jpg',
+      './screenshots/disney4.jpg',
+      './screenshots/disney5.jpg',
+      './screenshots/disney6.jpg',
+      './screenshots/disney7.jpg',
+    ],
     videos: [],
   },
   dockers: {
-    hero: dockersHeroImg,
-    images: [],
+    hero: './heros/dockers.png',
+    images: [
+      './screenshots/dockers1.jpg',
+      './screenshots/dockers2.jpg',
+      './screenshots/dockers3.jpg',
+      './screenshots/dockers4.jpg',
+    ],
     videos: [],
   },
   dodgesrt: {
-    hero: dodgesrtHeroImg,
-    images: [],
+    hero: './heros/dodgesrt.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: ['https://vimeo.com/468769501'],
   },
   eggbank: {
-    hero: eggbankHeroImg,
-    images: [],
+    hero: './heros/eggbamk.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   goodhome: {
-    hero: goodhomeHeroImg,
-    images: [],
+    hero: './heros/goodhome.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   hsd: {
-    hero: hsdHeroImg,
-    images: [],
+    hero: './heros/HSD.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   infiniti: {
-    hero: infinitiHeroImg,
-    images: [],
+    hero: './heros/infiniti.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   istrategy: {
-    hero: istrategyHeroImg,
-    images: [],
+    hero: './heros/istrategy.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
+    videos: [],
+  },
+  jcpenney: {
+    hero: './heros/jcpenney.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   kitbuilder: {
-    hero: kitbuilderHeroImg,
-    images: [],
+    hero: './heros/kitbuilder.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   kpn: {
-    hero: kpnHeroImg,
-    images: [],
+    hero: './heros/kpn.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   landcruiser: {
-    hero: landcruiserHeroImg,
-    images: [],
+    hero: './heros/landcruiser.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   levis: {
-    hero: levisHeroImg,
-    images: [],
+    hero: './heros/levis.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   marriott: {
-    hero: marriottHeroImg,
-    images: [],
+    hero: './heros/marriott.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   ritepro: {
-    hero: rightproHeroImg,
-    images: [],
+    hero: './heros/rightpro.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   samsung: {
-    hero: samsungHeroImg,
-    images: [],
+    hero: './heros/samsung.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   shift2: {
-    hero: shift2HeroImg,
-    images: [],
+    hero: './heros/shift2.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   tivo: {
-    hero: tivoHeroImg,
-    images: [],
+    hero: './heros/tivo.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   tombrady: {
-    hero: tombradyHeroImg,
-    images: [],
+    hero: './heros/tombrady.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   toyota: {
-    hero: toyotaHeroImg,
-    images: [],
+    hero: './heros/toyota.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   vodafone: {
-    hero: vodafoneHeroImg,
-    images: [],
+    hero: './heros/vodefone.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   warnerbros: {
-    hero: warnerbrosHeroImg,
-    images: [],
+    hero: './heros/warnerbros.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   stadia: {
-    hero: stadiaHeroImg,
-    images: [],
+    hero: './heros/stadia.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   usarmy: {
-    hero: usarmyHeroImg,
-    images: [],
+    hero: './heros/usarmy.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   yoroto: {
-    hero: yorotoHeroImg,
-    images: [],
+    hero: './heros/yoroto.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   infsummer: {
-    hero: summerHeroImg,
-    images: [],
+    hero: './heros/infiniti_summer.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
   thride: {
-    hero: thrideHeroImg,
-    images: [],
+    hero: './heros/thride.png',
+    images: [
+      './screenshots/CHANGE.jpg',
+    ],
     videos: [],
   },
 };

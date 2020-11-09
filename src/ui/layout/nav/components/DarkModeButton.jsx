@@ -45,7 +45,7 @@ const DarkModeBtn = styled.button`
 `;
 
 export const DarkModeButton = () => {
-  const { theme, toggle } = useTheme()
+  const { theme, toggle } = useTheme();
   return (
     <DarkModeBtn onClick={toggle} colorTheme={theme}>
       <IoMdSunny className='sun' /> <IoMdMoon className='moon' />
