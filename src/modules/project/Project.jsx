@@ -50,7 +50,7 @@ export const Project = ({ project }) => {
                      year={year}/>
       <Container>
         <InnerContainer>
-          {videos.length &&
+          { videos.length > 0 &&
           <ProjectVideo videos={videos} />
           }
           <ProjectDev devDesc={devDesc} features={features} />

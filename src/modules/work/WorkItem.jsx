@@ -68,8 +68,8 @@ export const WorkItem = ({ project, index }) => {
 
   return (
     <StyledWorkItem index={index} ref={elementRef}>
-      <WorkImage image={hero} title={title} inview={inView} />
-      <WorkCard title={title} subtitle={subtitle} description={description} link={link} year={year}/>
+      <WorkImage image={hero} title={title} inview={inView} link={link} />
+      <WorkCard title={title} subtitle={subtitle} description={description} link={link} year={year} />
     </StyledWorkItem>
   )
 };

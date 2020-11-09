@@ -77,12 +77,7 @@ export const ProjectHeader = ({background, title, subtitle, images, year}) => (
 
         <Carousel {...getConfigurableProps()}>
           {
-            images.map((image, i) => {
-            return (
-              <div key={i}>
-                <img src={image} alt={title}/>
-              </div>);
-            })
+            images.map((image, i) => <div key={i}><img src={image} alt={title}/></div>)
           }
         </Carousel>
 

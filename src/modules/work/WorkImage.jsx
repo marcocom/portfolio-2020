@@ -34,12 +34,12 @@ const ImageContainer = styled.div`
   }
 `;
 
-export const WorkImage = ({ image, title, inview }) => {
+export const WorkImage = ({ image, title, inview, link }) => {
 
   return (
     <Fade bottom>
       <ImageContainer>
-        {inview && <img src={image} alt={title}/>}
+        {inview && <img src={image} alt={title} />}
       </ImageContainer>
     </Fade>
   )
