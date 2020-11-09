@@ -20,7 +20,7 @@ const projectAssets = {
       '/screenshots/adidas4.jpg',
       '/screenshots/adidas5.jpg',
     ],
-    videos: [],
+    videos: ['https://vimeo.com/467895817'],
   },
   autodesk: {
     hero: '/heros/autodesk.png',

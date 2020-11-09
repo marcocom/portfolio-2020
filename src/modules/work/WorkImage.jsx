@@ -2,6 +2,7 @@ import { media } from '@src/utils'
 import Fade from 'react-reveal/Fade'
 import styled from 'styled-components'
 import React from 'react'
+import {Link} from 'gatsby';
 // import Img from 'gatsby-image'
 
 const ImageContainer = styled.div`
@@ -39,7 +40,7 @@ export const WorkImage = ({ image, title, inview, link }) => {
   return (
     <Fade bottom>
       <ImageContainer>
-        {inview && <img src={image} alt={title} />}
+        {inview && <Link to={link}><img src={image} alt={title}/></Link>}
       </ImageContainer>
     </Fade>
   )
