@@ -1,11 +1,15 @@
 import { useEffect, useState } from 'react'
+import {initialScrollState} from '../context'
 
-export const useScrollChange = (newScrollPoint) => {
-  const [scrollpoint, setScrollPoint] = useState(0);
+
+export const useScrollChange = () => {
+  const [scrollpoint, setScrollPoint] = useState(initialScrollState);
+  const [componentMounted, setComponentMounted] = useState(false);
+
 
   useEffect(() => {
-
+    setComponentMounted(true);
   }, []);
 
-  return setScrollPoint;
+  return {ypoint: scrollpoint, isMounted: componentMounted};
 };
