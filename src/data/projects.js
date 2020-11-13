@@ -1,5 +1,17 @@
 
 const projectAssets = {
+  auria: {
+    hero: '/heros/auria_bionicear.png',
+    images: [
+      '/screenshots/bionicear1.jpg',
+      '/screenshots/bionicear2.jpg',
+      '/screenshots/bionicear3.jpg',
+      '/screenshots/bionicear4.jpg',
+      '/screenshots/bionicear5.jpg',
+      '/screenshots/bionicear6.jpg',
+    ],
+    videos: [],
+  },
   sixtymin: {
     hero: '/heros/60minutes.png',
     images: [
@@ -350,9 +362,9 @@ const projectAssets = {
   infsummer: {
     hero: '/heros/infiniti_summer.png',
     images: [
-      '/screenshots/infinit1.jpg',
-      '/screenshots/infinit2.jpg',
-      '/screenshots/infinit3.jpg',
+      '/screenshots/infsummer1.jpg',
+      '/screenshots/infsummer2.jpg',
+      '/screenshots/infsummer3.jpg',
     ],
     videos: ['https://vimeo.com/470650230'],
   },
