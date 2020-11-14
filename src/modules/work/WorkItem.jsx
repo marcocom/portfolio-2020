@@ -46,7 +46,7 @@ const StyledWorkItem = styled.article`
     //background: ${(props) => props.background};
     border-radius: 3em;
     margin-top: 0;
-    margin-bottom: 20vh;
+    margin-bottom: 100px;
   }
   ${media.down.sm} {
     border-radius: unset;

@@ -2,6 +2,8 @@ import { DrawerList } from '@src/ui/layout/nav/components'
 import { media } from '@src/utils'
 import React from 'react'
 import styled from 'styled-components'
+import {GlobalDispatchContext} from '@src/context';
+import {GlobalStateActions} from '@src/reducers/reduceGlobal';
 
 const StyledDrawer = styled.aside`
   position: fixed;
@@ -15,12 +17,13 @@ const StyledDrawer = styled.aside`
   z-index: 3;
   opacity: 0;
   pointer-events: none;
-  transition: 300ms opacity ease-in-out, ${({ theme }) => theme.hoverTransition};
+  //transition: 300ms opacity ease-in-out, ${({ theme }) => theme.hoverTransition};
   justify-content: center;
   align-items: center;
 
   &.drawer-open {
     opacity: 1;
+    display: block;
     pointer-events: all;
   }
 
@@ -36,10 +39,20 @@ const StyledNav = styled.nav`
   padding: 0;
 `;
 
-export const Drawer = ({ drawerOpen, setDrawerOpen }) => (
-  <StyledDrawer className={drawerOpen ? 'drawer-open' : ''}>
-    <StyledNav>
-      <DrawerList setDrawerOpen={setDrawerOpen} />
-    </StyledNav>
-  </StyledDrawer>
-);
+export const Drawer = ({ drawerOpen, setDrawerOpen }) => {
+  const dispatch = React.useContext(GlobalDispatchContext);
+  React.useEffect(() => {
+    dispatch({
+       type: GlobalStateActions.SET_DRAWER,
+       payload: drawerOpen
+     });
+  }, [drawerOpen]);
+
+  return (
+    <StyledDrawer className={drawerOpen ? 'drawer-open' : ''}>
+      <StyledNav>
+        <DrawerList setDrawerOpen={setDrawerOpen}/>
+      </StyledNav>
+    </StyledDrawer>
+  );
+};

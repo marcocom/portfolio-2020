@@ -1,11 +1,11 @@
-import React, {useState, useEffect} from "react";
-
+import React from "react";
+const initialState = {
+  inView: false,
+  triggered: false,
+  entry: undefined
+};
 const useIntersectionObserver = (ref, {threshold, root, rootMargin}) => {
-  const [state, setState] = useState({
-       inView: false,
-       triggered: false,
-       entry: undefined
-     });
+  const [state, setState] = React.useState(initialState);
 
   const observer = new IntersectionObserver((entries, observerInstance) => {
       //check to see if element is intersecting
@@ -26,7 +26,7 @@ const useIntersectionObserver = (ref, {threshold, root, rootMargin}) => {
     }
   );
 
-  useEffect(() => {
+  React.useEffect(() => {
     // check that element exists and has not already been observed
     if (ref.current && !state.triggered) {
       observer.observe(ref.current);

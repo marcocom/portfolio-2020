@@ -4,4 +4,5 @@ module.exports = {
   singleQuote: true,
   endOfLine: 'auto',
   jsxSingleQuote: true,
-}
+  semi: false,
+};
