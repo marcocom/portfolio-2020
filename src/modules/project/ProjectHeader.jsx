@@ -23,6 +23,7 @@ const ColorSection = styled.div`
   }
 
   & .carousel {
+    width: 100%;
     max-width: 1100px;
     & .slide {
       background: ${({theme}) => theme.color.imgBg} !important;
@@ -77,12 +78,7 @@ export const ProjectHeader = ({background, title, subtitle, images, year}) => (
 
         <Carousel {...getConfigurableProps()}>
           {
-            images.map((image, i) => {
-            return (
-              <div key={i}>
-                <img src={image} alt={title}/>
-              </div>);
-            })
+            images.map((image, i) => <div key={i}><img src={image} alt={title}/></div>)
           }
         </Carousel>
 

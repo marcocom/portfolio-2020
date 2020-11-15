@@ -95,9 +95,10 @@ export const AboutIntro = () => (
       <h2>
         hello, i'm <span>marco</span>
       </h2>
-        <h6>I am a digital artist, web designer, and front-end developer, specializing in the creation of interactive rich user-experiences. </h6>
+        <h6>I am a digital artist, web designer, and front-end developer, specializing in the creation of rich, interactive user-experiences. </h6>
 
-        <h6>My creative career began at the world's first large-scale internet agency in 1998, at U.S.Interactive in Los Angeles, where we launched the first websites for Adidas, Lexus, Wide World of Disney, and the Smithsonian-Award winning <cite>'StarBright'</cite>. I then moved to San Francisco in 2001 where I worked in Cupertino, for U.S.Web/CKS for 2 years designing websites rich in animation, interactivity and multimedia, and delivered original launch sites for Levi's, Docker's, Williams-Sonoma, and JCPenney.</h6>
+        <h6>My creative career began at the world's first large-scale internet agency in 1998, at U.S.Interactive in Los Angeles, where we launched the first websites for Adidas, Lexus, Wide World of Disney, and the Smithsonian-Award winning, <cite>'StarBright'</cite>.
+          I then moved to San Francisco in 2001 where I worked in Cupertino, for U.S.Web/CKS for 2 years designing websites rich in animation, interactivity and multimedia &#8212; delivering the original launch sites for Levi's, Docker's, Williams-Sonoma, and JCPenney.</h6>
 
         <h6>In 2003, I moved to San Diego to do creative direction for a small firm in the real-estate brokerage market and later, moved back to Los Angeles to work at Saatchi & Saatchi and handle Toyota's main website, micro-sites, and digital media for the next 3 years, followed by another 5 years of freelance automotive client work for Nissan, Acura, Scion, and Chrysler/Dodge.</h6>
 

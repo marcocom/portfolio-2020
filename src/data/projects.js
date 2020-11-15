@@ -20,7 +20,7 @@ const projectAssets = {
       '/screenshots/adidas4.jpg',
       '/screenshots/adidas5.jpg',
     ],
-    videos: [],
+    videos: ['https://vimeo.com/467895817'],
   },
   autodesk: {
     hero: '/heros/autodesk.png',
@@ -206,7 +206,8 @@ const projectAssets = {
       '/screenshots/levis4.jpg',
     ],
     videos: [
-      'https://vimeo.com/470650238'
+      'https://vimeo.com/479444548',
+      'https://vimeo.com/470650238',
     ],
   },
   marriott: {
@@ -350,9 +351,9 @@ const projectAssets = {
   infsummer: {
     hero: '/heros/infiniti_summer.png',
     images: [
-      '/screenshots/infinit1.jpg',
-      '/screenshots/infinit2.jpg',
-      '/screenshots/infinit3.jpg',
+      '/screenshots/infsummer1.jpg',
+      '/screenshots/infsummer2.jpg',
+      '/screenshots/infsummer3.jpg',
     ],
     videos: ['https://vimeo.com/470650230'],
   },
@@ -361,6 +362,52 @@ const projectAssets = {
     images: [
       '/screenshots/thride1.jpg',
       '/screenshots/thride2.jpg',
+    ],
+    videos: [],
+  },
+  auria: {
+    hero: '/heros/auria_bionicear.png',
+    images: [
+      '/screenshots/bionicear1.jpg',
+      '/screenshots/bionicear2.jpg',
+      '/screenshots/bionicear3.jpg',
+      '/screenshots/bionicear4.jpg',
+      '/screenshots/bionicear5.jpg',
+      '/screenshots/bionicear6.jpg',
+    ],
+    videos: [],
+  },
+
+
+  diesel: {
+    hero: '/heros/diesel.png',
+    images: [
+      '/screenshots/diesel1.jpg',
+      '/screenshots/diesel2.jpg',
+      '/screenshots/diesel3.jpg',
+      '/screenshots/diesel4.jpg',
+      '/screenshots/diesel5.jpg',
+    ],
+    videos: ['https://vimeo.com/479118939'],
+  },
+  dodgemotorsports: {
+    hero: '/heros/dodgemotorsports.png',
+    images: [
+      '/screenshots/dodgemotorsports1.jpg',
+      '/screenshots/dodgemotorsports2.jpg',
+      '/screenshots/dodgemotorsports3.jpg',
+      '/screenshots/dodgemotorsports4.jpg',
+    ],
+    videos: [],
+  },
+  raadnwin: {
+    hero: '/heros/raadnwin.png',
+    images: [
+      '/screenshots/RaadnWin1.jpg',
+      '/screenshots/RaadnWin2.jpg',
+      '/screenshots/RaadnWin3.jpg',
+      '/screenshots/RaadnWin4.jpg',
+      '/screenshots/RaadnWin5.jpg',
     ],
     videos: [],
   },
@@ -376,7 +423,6 @@ export const projects = {
     hero: projectAssets.sixtymin.hero,
     images: projectAssets.sixtymin.images,
     videos: projectAssets.sixtymin.videos,
-    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom/60minutes',
     hostedLink: '',
     devDesc: [
@@ -390,9 +436,6 @@ export const projects = {
       playback videos uploaded to the CBS media servers, with complex client-side management
       written in pure vanilla javascript, for optional deployment to Google ChromeApp platforms. `,
     ],
-    features: [
-      ``,
-    ],
   },
   adidas: {
     title: 'Adidas',
@@ -403,7 +446,6 @@ export const projects = {
     hero: projectAssets.adidas.hero,
     images: projectAssets.adidas.images,
     videos: projectAssets.adidas.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -416,9 +458,6 @@ export const projects = {
       color pallette and video elements both keeps its data size down
       while also striking out the color and texture of the product when showcased.`,
     ],
-    features: [
-      ``,
-    ],
   },
   autodesk: {
     title: 'Autodesk',
@@ -429,7 +468,6 @@ export const projects = {
     hero: projectAssets.autodesk.hero,
     images: projectAssets.autodesk.images,
     videos: projectAssets.autodesk.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -442,9 +480,6 @@ export const projects = {
       `My second project was a UX Designer role, integrating a Salesforce record-system into the existing
       partner-information systems existing throughout Autodesk's infrastructure.`,
     ],
-    features: [
-      ``,
-    ],
   },
   codelite: {
     title: 'Call of Duty:Black Ops',
@@ -455,7 +490,6 @@ export const projects = {
     hero: projectAssets.codelite.hero,
     images: projectAssets.codelite.images,
     videos: projectAssets.codelite.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -469,9 +503,6 @@ export const projects = {
       applied in long-term application design.`
 
     ],
-    features: [
-      ``,
-    ],
   },
   deluxe: {
     title: 'Deluxe.com',
@@ -482,7 +513,6 @@ export const projects = {
     hero: projectAssets.deluxe.hero,
     images: projectAssets.deluxe.images,
     videos: projectAssets.deluxe.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -495,9 +525,6 @@ export const projects = {
       `User-centric design principles had to be heavily relied upon yet be tastefully
       concealed within the folds of the design for thorough customizability.`,
     ],
-    features: [
-      ``,
-    ],
   },
   disney: {
     title: 'Disney',
@@ -508,7 +535,6 @@ export const projects = {
     hero: projectAssets.disney.hero,
     images: projectAssets.disney.images,
     videos: projectAssets.disney.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -524,9 +550,6 @@ export const projects = {
       `Delivery for both projects included a front-end style-framework implimented in CSS and
       javascript frameworks, Angular, React, and GatsbyJS.`,
     ],
-    features: [
-      ``,
-    ],
   },
   dockers: {
     title: 'Dockers',
@@ -537,16 +560,12 @@ export const projects = {
     hero: projectAssets.dockers.hero,
     images: projectAssets.dockers.images,
     videos: projectAssets.dockers.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
       `Levis wanted to reach out to young people of all sexual preference and have a more interactive multimedia content.',
       'An idea, built further upon again later for other clients like TiVo, this creative solution was an effort to allow visitors to create their own customized animation by making choices from a menu system.',
       'This approach allowed for a more targeted advertisement to the user and gives them control to customize the intro while also writing that data to a database for reporting marketing metrics. Before the existence of GoogleAnalytics, this is how we solved business-intelligence, as best we could.`,
-    ],
-    features: [
-      ``,
     ],
   },
   dodgesrt: {
@@ -558,7 +577,6 @@ export const projects = {
     hero: projectAssets.dodgesrt.hero,
     images: projectAssets.dodgesrt.images,
     videos: projectAssets.dodgesrt.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -567,9 +585,6 @@ export const projects = {
       concept was to bring all five of Dodge's models into a single abstract world of
       obstacles. Rendering-time is expensive, and so the concept had to deliver as much
       story in pre-render gray-tone state, until the final reveal.`,
-    ],
-    features: [
-      ``,
     ],
   },
   eggbank: {
@@ -581,7 +596,6 @@ export const projects = {
     hero: projectAssets.eggbank.hero,
     images: projectAssets.eggbank.images,
     videos: projectAssets.eggbank.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -596,9 +610,6 @@ export const projects = {
       regulations that required consideration to the blind and therefore
       struggled with limited javascript in commercial websites of the 2001 era.`,
     ],
-    features: [
-      ``,
-    ],
   },
   goodhome: {
     title: 'Good Home',
@@ -609,7 +620,6 @@ export const projects = {
     hero: projectAssets.goodhome.hero,
     images: projectAssets.goodhome.images,
     videos: projectAssets.goodhome.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -617,9 +627,6 @@ export const projects = {
       site, as well as site design and production. The overall look and feel is airy and
       clean and suggests a desirable lifestyle to the user. This project was also delivered
       on an extremely tight schedule of about 8 weeks for both design and development.`,
-    ],
-    features: [
-      ``,
     ],
   },
   hsd: {
@@ -631,7 +638,6 @@ export const projects = {
     hero: projectAssets.hsd.hero,
     images: projectAssets.hsd.images,
     videos: projectAssets.hsd.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -640,9 +646,6 @@ export const projects = {
       blue skies and clouds above clean cities. Early 3D capabilities gave us a great asset
       in creating a skyline, and my concept was to use a parallax effect to slide, or
       faux-panning, to break out of the box and create a magical sense of discovery.`,
-    ],
-    features: [
-      ``,
     ],
   },
   infiniti: {
@@ -654,7 +657,6 @@ export const projects = {
     hero: projectAssets.infiniti.hero,
     images: projectAssets.infiniti.images,
     videos: projectAssets.infiniti.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -669,9 +671,6 @@ export const projects = {
       producers as needed, when frequent changes occured. Pricing and modifications needed to be
       accurately fed by third-party per region, as well.`,
     ],
-    features: [
-      ``,
-    ],
   },
   istrategy: {
     title: 'iStrategy',
@@ -682,7 +681,6 @@ export const projects = {
     hero: projectAssets.istrategy.hero,
     images: projectAssets.istrategy.images,
     videos: projectAssets.istrategy.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -692,9 +690,6 @@ export const projects = {
       and I enjoyed my brief time delivering what we could in the days of Internet Explorer 5,
       but more than anything, I had a lot of direct hands-on discovery with each client, and
       learned how to build relationships through trust.`,
-    ],
-    features: [
-      ``,
     ],
   },
   jcpenney: {
@@ -706,7 +701,6 @@ export const projects = {
     hero: projectAssets.jcpenney.hero,
     images: projectAssets.jcpenney.images,
     videos: projectAssets.jcpenney.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -725,9 +719,6 @@ export const projects = {
       special attention to the womens, mens, and features section of this very
       large website.`,
     ],
-    features: [
-      ``,
-    ],
   },
   kitbuilder: {
     title: 'DW Drums',
@@ -738,7 +729,6 @@ export const projects = {
     hero: projectAssets.kitbuilder.hero,
     images: projectAssets.kitbuilder.images,
     videos: projectAssets.kitbuilder.videos,
-    background: '#B1B1B1',
     githubLink: 'https://github.com/marcocom/kitbuilder',
     hostedLink: '',
     devDesc: [
@@ -751,9 +741,6 @@ export const projects = {
       in exchange for a priceless chance to learn the early rich-media capabilities of HTML prior
       to the popular frameworks (and unified browser engines) that support this so easily today. `,
     ],
-    features: [
-      ``,
-    ],
   },
   kpn: {
     title: 'KPN Network, NL',
@@ -764,7 +751,6 @@ export const projects = {
     hero: projectAssets.kpn.hero,
     images: projectAssets.kpn.images,
     videos: projectAssets.kpn.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -778,9 +764,6 @@ export const projects = {
       tangeable as possible, with the client's goal of limiting the enormous retail-space required
       commonly in most mobile stores, to showcase all the different accessories per device.`,
     ],
-    features: [
-      ``,
-    ],
   },
   landcruiser: {
     title: 'Land Cruiser Heritage',
@@ -791,7 +774,6 @@ export const projects = {
     hero: projectAssets.landcruiser.hero,
     images: projectAssets.landcruiser.images,
     videos: projectAssets.landcruiser.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -808,9 +790,6 @@ export const projects = {
       rich and rarely-achieved interactive experience for visitors and potential buyers.`,
       `Winner: Cannes Cyber-Lion, One Show, Belding Bowl`,
     ],
-    features: [
-      ``,
-    ],
   },
   levis: {
     title: `Levi's 25 Year Anthology`,
@@ -821,15 +800,11 @@ export const projects = {
     hero: projectAssets.levis.hero,
     images: projectAssets.levis.images,
     videos: projectAssets.levis.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
       `A touch-screen and web-based display of all Levi's broadcast and print ads since FCB's
       awarding of the account, as well as metric-results information.`,
-    ],
-    features: [
-      ``,
     ],
   },
   marriott: {
@@ -841,7 +816,6 @@ export const projects = {
     hero: projectAssets.marriott.hero,
     images: projectAssets.marriott.images,
     videos: projectAssets.marriott.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -856,9 +830,6 @@ export const projects = {
       between the rapidly-deployed cloud microservices and the front-end. I learned some very effective
       modern workflows that enable this, by the bright development minds at Accenture.`
     ],
-    features: [
-      ``,
-    ],
   },
   ritepro: {
     title: 'RitePro',
@@ -869,7 +840,6 @@ export const projects = {
     hero: projectAssets.ritepro.hero,
     images: projectAssets.ritepro.images,
     videos: projectAssets.ritepro.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -887,9 +857,6 @@ export const projects = {
       this interface, which I defined through a concise needs-assessment worksheet that the
       client was able to fill-out on their own time and thereby describe their user for me.`,
     ],
-    features: [
-      ``,
-    ],
   },
   samsung: {
     title: 'Samsung',
@@ -900,7 +867,6 @@ export const projects = {
     hero: projectAssets.samsung.hero,
     images: projectAssets.samsung.images,
     videos: projectAssets.samsung.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -912,9 +878,6 @@ export const projects = {
       of seperate assets into a single work of art, combined with interactivity, and it is
       projects like this got me hooked on the challenge of creating them for my career.`,
     ],
-    features: [
-      ``,
-    ],
   },
   shift2: {
     title: 'Nissan',
@@ -925,7 +888,6 @@ export const projects = {
     hero: projectAssets.shift2.hero,
     images: projectAssets.shift2.images,
     videos: projectAssets.shift2.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -949,9 +911,6 @@ export const projects = {
       everytime. `,
       `Winner: CommArts Award, Adobe Site of Week`
     ],
-    features: [
-      ``,
-    ],
   },
   stadia: {
     title: 'Google',
@@ -962,7 +921,6 @@ export const projects = {
     hero: projectAssets.stadia.hero,
     images: projectAssets.stadia.images,
     videos: projectAssets.stadia.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -983,20 +941,16 @@ export const projects = {
       learned a lot.`,
 
     ],
-    features: [
-      ``,
-    ],
   },
   tivo: {
     title: 'TiVo',
-    year: 2001,
+    year: 2000,
     subtitle: 'Website and Kiosk, U.S.Web/CKS',
     link: '/tivo/',
     role: 'Art Director',
     hero: projectAssets.tivo.hero,
     images: projectAssets.tivo.images,
     videos: projectAssets.tivo.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -1010,9 +964,6 @@ export const projects = {
       be able to reflect the navigation made in the HTML part of the website within that seperate frame.
       `,
     ],
-    features: [
-      ``,
-    ],
   },
   tombrady: {
     title: 'Intel Agency Inside',
@@ -1023,7 +974,6 @@ export const projects = {
     hero: projectAssets.tombrady.hero,
     images: projectAssets.tombrady.images,
     videos: projectAssets.tombrady.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -1043,9 +993,6 @@ export const projects = {
       towards what was now currently capable with cloud computing and light micro-services,
       to achieve great creative ideas such as this one. `,
     ],
-    features: [
-      ``,
-    ],
   },
   toyota: {
     title: 'Toyota',
@@ -1056,7 +1003,6 @@ export const projects = {
     hero: projectAssets.toyota.hero,
     images: projectAssets.toyota.images,
     videos: projectAssets.toyota.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -1080,9 +1026,6 @@ export const projects = {
        writing, animation, and coding were entirely done in a single building at Saatchi, and its hard to
        put into words, how much great work that produced in its resultant synergy.`
     ],
-    features: [
-      ``,
-    ],
   },
   usarmy: {
     title: 'U.S. Army',
@@ -1093,7 +1036,6 @@ export const projects = {
     hero: projectAssets.usarmy.hero,
     images: projectAssets.usarmy.images,
     videos: projectAssets.usarmy.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -1108,9 +1050,6 @@ export const projects = {
       images and videos that could be sorted, searched, and saved, allowing users to explore
       further in terms of compensation, requirements, and soldier testament videos. `,
     ],
-    features: [
-      ``,
-    ],
   },
   vodafone: {
     title: 'Vodafone',
@@ -1121,16 +1060,12 @@ export const projects = {
     hero: projectAssets.vodafone.hero,
     images: projectAssets.vodafone.images,
     videos: projectAssets.vodafone.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
       `A retail below-the-line concept for attracting consumers to participate
       in promotions and offers, and to give them a central mobile application to
       manage their information, and current events.`,
-    ],
-    features: [
-      ``,
     ],
   },
   warnerbros: {
@@ -1142,7 +1077,6 @@ export const projects = {
     hero: projectAssets.warnerbros.hero,
     images: projectAssets.warnerbros.images,
     videos: projectAssets.warnerbros.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -1152,9 +1086,6 @@ export const projects = {
       that could achieve this amount of large-data and store it. I designed the landing-page and media-browser
       and I also wrote the integration Lambdas that handled the data and user-role management. It was
       my first time writing 'back-end' logic, but it was in NodeJS and i felt really comfortable with it.`,
-    ],
-    features: [
-      ``,
     ],
   },
   yoroto: {
@@ -1166,7 +1097,6 @@ export const projects = {
     hero: projectAssets.yoroto.hero,
     images: projectAssets.yoroto.images,
     videos: projectAssets.yoroto.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -1179,9 +1109,6 @@ export const projects = {
       `Game design and code provided by Fuel, my site housed the game with downloadable content,
       and shareable videos and fused the different sections into a playful user experience.`,
     ],
-    features: [
-      ``,
-    ],
   },
   infsummer: {
     title: `Infiniti`,
@@ -1192,7 +1119,6 @@ export const projects = {
     hero: projectAssets.infsummer.hero,
     images: projectAssets.infsummer.images,
     videos: projectAssets.infsummer.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -1210,9 +1136,6 @@ export const projects = {
       It still works in javascript today, but im sure someone has probably made a
       library for it by now.`
     ],
-    features: [
-      ``,
-    ],
   },
   thride: {
     title: `Tony Hawk: RIDE`,
@@ -1223,7 +1146,6 @@ export const projects = {
     hero: projectAssets.thride.hero,
     images: projectAssets.thride.images,
     videos: projectAssets.thride.videos,
-    background: '#B1B1B1',
     githubLink: '',
     hostedLink: '',
     devDesc: [
@@ -1241,10 +1163,92 @@ export const projects = {
       this creatively took trial and error.`,
       `Winner: Gray Interactive Award, IGN`
     ],
-    features: [
-      ``,
+  },
+  diesel: {
+    title: `Diesel`,
+    year: 2012,
+    subtitle: 'Home Collection minisite, Anomaly Amsterdam',
+    link: '/diesel/',
+    role: 'Creative Tecnnologist',
+    hero: projectAssets.diesel.hero,
+    images: projectAssets.diesel.images,
+    videos: projectAssets.diesel.videos,
+    githubLink: '',
+    hostedLink: '',
+    devDesc: [
+      `Flipping through images based on mouse-position was a well-worn trick I had used a lot in Flash to create a kind
+      of 'Wachowski's Matrix' effect, but leaving a perfect design lock-up at any point in the pausing, so i exploited
+      the effect for automotive clients to great success. In 2011, I felt this trick was ready to be brought
+      into Javascript and HTML5 using Jquery, and using the scrolling action of Web2.0 popularity.`,
+      `Our concept required a strong art-direction for the photographers to achieve the assets we needed,
+      and to direct the shot, ensure the framing of subject matter.  `,
     ],
   },
+  dodgemotorsports: {
+    title: `Dodge Motorsports`,
+    year: 2010,
+    subtitle: 'Micro-site, The Armory',
+    link: '/dodgemotorsports/',
+    role: 'Creative Technologist',
+    hero: projectAssets.dodgemotorsports.hero,
+    images: projectAssets.dodgemotorsports.images,
+    videos: projectAssets.dodgemotorsports.videos,
+    githubLink: '',
+    hostedLink: '',
+    devDesc: [
+      `Dodge/Chrysler had recently been purchased by the Italian car-maker, Fiat. As a creative consultant, hired through
+      The Armory, My role was to collaborate with designers at Petrol Studios and create a minisite for racing enthusiasts and the driver-brands
+      of Dodge's sponsored team.`,
+      `The X-games' era was one of heavy-handed design styles to create aggressive visual noise and youth-angst, and in hindsight, resulted
+      in an easily out-dated look, full of data-heavy textures. We cant hide from our past work, but learn from it. I
+       still really like the inspired interactivity that we achieved for the driver's section where cells resized as you moused around,
+       but all in all, this represents all that was kind of wrong with Flash in its height of popularity and the cause for
+       its inevitable replacement with web-standards like HTML5.`
+    ],
+  },
+  raadnwin: {
+    title: `Holland Casino`,
+    year: 2013,
+    subtitle: 'Raad n Win Game, Quince Amsterdam',
+    link: '/raadnwin/',
+    role: 'Creative Technologist',
+    hero: projectAssets.raadnwin.hero,
+    images: projectAssets.raadnwin.images,
+    videos: projectAssets.raadnwin.videos,
+    githubLink: '',
+    hostedLink: '',
+    devDesc: [
+      `Holland Casino's twelve locations are spread out through the Benelux with really next-generation technology used
+      in ways that we just dont do in America, sadly. From 3D-projections to large touch-screen kiosks, contests, and
+      games are provided for the past decade by Quince and their masterful combination of digital touch-screens, refined custom cabinetry,
+      and secure data-services consumed by their custom user-interfaces built in-house. My role was to design the UI and
+      to develop it for delivery.`,
+      `Building anything in Europe requires support for a number of languages, and their respective special-characters,
+      as well as regional address rules. These were all built by me from scratch with custom data-validation logic, as
+      well as the tricky touch-keyboard. `,
+    ],
+  },
+  auria: {
+    title: `Auria`,
+    year: 2002,
+    subtitle: 'Bionic Ear, product demo',
+    link: '/auria/',
+    role: 'Art Director',
+    hero: projectAssets.auria.hero,
+    images: projectAssets.auria.images,
+    videos: projectAssets.auria.videos,
+    githubLink: '',
+    hostedLink: '',
+    devDesc: [
+      `This was a direct freelance project, one of my first, and it was to debut a new kind of hearing-assistance device
+      that could actually allow the completely deaf to hear again! Digital Imagery was still a dark-art at the time, and so
+      our product images really stink here, but this actually amazed people when we launched it. The flipping through images,
+      based on mouse-movement or clicks, is a well-worn tool that you will see in a lot of my projects, especially for automotive clients,
+      as I got access to better and better imagery, photography talent in LA, and 3D models from Armstrong-White that were
+      completely indistinguishable from real-world images.  It all started with this Auria project.`
+    ],
+  },
+
 };
 
 export const projectList = Object.values(projects);

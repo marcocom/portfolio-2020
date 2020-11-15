@@ -24,10 +24,10 @@ export const Button = ({ outline = 'false', backbtn = 'false', direction = 'righ
         backbtn={backbtn}
         outline={outline}
         to={to}
-        cover
+        swipe
         direction={direction}
-        bg={themeContext.color.primary}
-        duration={0.8}
+        bg={themeContext.color.bg}
+        duration={0.4}
       >
         <ButtonText text={text} />
       </StyledAniLink>

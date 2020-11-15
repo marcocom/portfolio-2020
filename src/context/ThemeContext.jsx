@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { useDarkMode } from '@src/hooks'
+import { useDarkMode } from '../hooks'
 
 const initialState = {
   theme: 'light',
@@ -11,7 +11,7 @@ const ThemeContext = React.createContext(initialState);
 
 export const useTheme = () => useContext(ThemeContext);
 
-export const ThemeProvider = ({ children }) => {
+export const MyThemeProvider = ({ children }) => {
   const [theme, toggleTheme, componentMounted] = useDarkMode();
 
   const state = {

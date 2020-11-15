@@ -1,8 +1,10 @@
-import React from 'react'
-import { ProjectDev, ProjectInfo, ProjectHeader, ProjectVideo, ProjectImages } from './'
-import { Button, Container, Text } from '@src/ui/components'
-import { media } from '@src/utils'
-import styled from 'styled-components'
+import React from 'react';
+import { ProjectDev, ProjectInfo, ProjectHeader, ProjectVideo } from './';
+import { Button, Container } from '@src/ui/components';
+import { media } from '@src/utils';
+import styled from 'styled-components';
+import { GlobalDispatchContext } from '@src/context';
+import { GlobalStateActions } from '@src/reducers/reduceGlobal'
 
 const ProjectContainer = styled.div`
   background: ${({ theme }) => theme.color.bg};
@@ -18,15 +20,13 @@ const InnerContainer = styled.div`
   }
 `;
 
-
-
 export const Project = ({ project }) => {
   const {
     title,
     subtitle,
     background,
-    description,
     hero,
+    link,
     images,
     githubLink,
     hostedLink,
@@ -37,7 +37,15 @@ export const Project = ({ project }) => {
   } = project;
 
 
-  // useEffect(() => window.scrollTo(0,0));
+  React.useEffect(() => window.scrollTo(0,0), []);
+
+  const dispatch = React.useContext(GlobalDispatchContext);
+
+  React.useEffect(() => dispatch({
+       type: GlobalStateActions.SET_PAGE,
+       payload: link.replace(/\/+/g, '')
+     }), []);
+
 
   return (
     <ProjectContainer>
@@ -50,7 +58,7 @@ export const Project = ({ project }) => {
                      year={year}/>
       <Container>
         <InnerContainer>
-          {videos.length &&
+          { videos.length > 0 &&
           <ProjectVideo videos={videos} />
           }
           <ProjectDev devDesc={devDesc} features={features} />

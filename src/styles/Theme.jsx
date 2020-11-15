@@ -15,10 +15,10 @@ const theme = {
     body: fonts.body.join(', '),
   },
   hoverTransition: `
-  color 200ms ease-out,
-  border 200ms ease-out,
-  background 200ms ease-out,
-  background-color 200ms ease-out
+  color 1000ms ease-in,
+  border 1000ms ease-in,
+  background 2000ms ease-out,
+  background-color 2000ms ease-out
   `,
 };
 
@@ -27,7 +27,7 @@ const lightTheme = {
     text: '#0e0e0e',
     textSecondary: '#777777',
     bg: '#ffffff',
-    imgBg: '#f6f6f6',
+    imgBg: '#e9e9e9',
     bgCard: '#FFFFFF',
     primary: '#0F97DB',
     primaryDarkened: '#0d8bca',

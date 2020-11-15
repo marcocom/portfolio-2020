@@ -11,17 +11,17 @@ const StyledAboutContact = styled.section`
 `;
 
 const AboutContactList = styled.ul`
-  display: flex;
-  flex-direction: row;
+  display: block;
+  text-align: center;
 
-  margin: 0 auto;
-
+  margin: 20px auto;
+  width: 260px;
   list-style: none;
-  flex-grow: inherit;
+& li {
+    display: inline-block;
 
   & a {
     text-decoration: none;
-    display: inline-block;
     margin-bottom: 30px;
     position: relative;
 
@@ -41,10 +41,12 @@ const AboutContactList = styled.ul`
     &:focus {
       & span,
       & svg {
-        color: ${({ theme }) => theme.color.primary};
+        color: ${({theme}) => theme.color.primary};
       }
     }
   }
+}
+
 `;
 
 export const AboutContact = () => (

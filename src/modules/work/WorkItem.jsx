@@ -46,7 +46,7 @@ const StyledWorkItem = styled.article`
     //background: ${(props) => props.background};
     border-radius: 3em;
     margin-top: 0;
-    margin-bottom: 20vh;
+    margin-bottom: 100px;
   }
   ${media.down.sm} {
     border-radius: unset;
@@ -54,7 +54,7 @@ const StyledWorkItem = styled.article`
 `;
 
 export const WorkItem = ({ project, index }) => {
-  const { title, subtitle, description, link, hero, year, background } = project;
+  const { title, subtitle, description, link, hero, year } = project;
 
   const elementRef = useRef(null);
   const [inView, entry] = useIntersectionObserver(elementRef, {threshold: 0});
@@ -67,9 +67,9 @@ export const WorkItem = ({ project, index }) => {
   */
 
   return (
-    <StyledWorkItem index={index} ref={elementRef}>
-      <WorkImage image={hero} title={title} inview={inView} />
-      <WorkCard title={title} subtitle={subtitle} description={description} link={link} year={year}/>
+    <StyledWorkItem index={index} ref={elementRef} id={link.replace(/\/+/g, '')}>
+      <WorkImage image={hero} title={title} inview={inView} link={link} />
+      <WorkCard title={title} subtitle={subtitle} description={description} link={link} year={year} />
     </StyledWorkItem>
   )
 };
