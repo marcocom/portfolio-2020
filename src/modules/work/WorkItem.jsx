@@ -54,7 +54,7 @@ const StyledWorkItem = styled.article`
 `;
 
 export const WorkItem = ({ project, index }) => {
-  const { title, subtitle, description, link, hero, year, background } = project;
+  const { title, subtitle, description, link, hero, year } = project;
 
   const elementRef = useRef(null);
   const [inView, entry] = useIntersectionObserver(elementRef, {threshold: 0});

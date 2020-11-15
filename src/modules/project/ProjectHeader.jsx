@@ -23,6 +23,7 @@ const ColorSection = styled.div`
   }
 
   & .carousel {
+    width: 100%;
     max-width: 1100px;
     & .slide {
       background: ${({theme}) => theme.color.imgBg} !important;
