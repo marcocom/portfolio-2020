@@ -8,6 +8,10 @@ const StyledWorkCard = styled(Card)`
   position: relative;
   display: block;
   margin: 0 10px;
+  & h4 {
+    text-align: left;
+  }
+
   ${media.down.lg} {
     align-self: flex-start;
     margin: -100px auto -80px;
@@ -15,7 +19,7 @@ const StyledWorkCard = styled(Card)`
   }
 `;
 
-export const WorkCard = ({ title, subtitle, description, link, year }) => {
+export const WorkCard = ({ title, subtitle, description, link, year, role }) => {
   const btnAction = (e) => {
     console.log('this works');
   };
@@ -25,7 +29,7 @@ export const WorkCard = ({ title, subtitle, description, link, year }) => {
         <Text type='heading' card>{title}</Text>
         <Text type='subheading' card>{subtitle}</Text>
         <Text card>{description}</Text>
-        <Button outline='true' to={link} text='See More' />
+        <Button outline='true' to={link} text='Learn More' />
       </StyledWorkCard>
     );
 };

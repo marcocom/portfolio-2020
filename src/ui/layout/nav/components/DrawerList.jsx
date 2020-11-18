@@ -27,8 +27,8 @@ export const DrawerList = ({ setDrawerOpen }) => {
   };
   return (
     <NavList>
-      <DrawerNavLink to='/' direction='right' name='Home' icon={<IoMdSubway />} />
-      <DrawerNavLink to='/mywork' direction='right' name='My Work' icon={<IoMdFolder />} />
+      <DrawerNavLink to='/' direction='down' name='Home' icon={<IoMdSubway />} />
+      <DrawerNavLink to='/mywork' direction='up' name='My Work' icon={<IoMdFolder />} />
       <DrawerNavLink to='/about/' direction='left' name='About' icon={<IoMdPerson />} />
       <DrawerNavLink
         href='mailto:marcocom@gmail.com'

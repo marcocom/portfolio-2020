@@ -26,6 +26,7 @@ export const Project = ({ project }) => {
     subtitle,
     background,
     hero,
+    role,
     link,
     images,
     githubLink,
@@ -61,7 +62,7 @@ export const Project = ({ project }) => {
           { videos.length > 0 &&
           <ProjectVideo videos={videos} />
           }
-          <ProjectDev devDesc={devDesc} features={features} />
+          <ProjectDev devDesc={devDesc} role={role} features={features} />
           <ProjectInfo githubLink={githubLink} hostedLink={hostedLink} hero={hero} />
         </InnerContainer>
       </Container>

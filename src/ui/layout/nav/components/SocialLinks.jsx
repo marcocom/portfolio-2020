@@ -8,25 +8,32 @@ const SocialLink = styled.a`
   justify-content: center;
 
   height: 60px;
-  transition: ${({ theme }) => theme.hoverTransition};
+  //transition: ${({ theme }) => theme.hoverTransition};
   padding: 0 15px;
   font-size: 22px;
 
   &:hover {
-    color: ${({ theme }) => theme.color.textSecondary};
+    color: ${({ theme }) => theme.color.primary};
   }
 `;
 
 export const SocialLinks = () => (
-  <>
-    <SocialLink href='https://github.com/marcocom' target='_blank' rel='noopener noreferrer'>
+<>
+  <li>
+    <SocialLink
+      href='https://github.com/marcocom'
+      target='_blank'
+      rel='noopener noreferrer'>
       <FaGithub />
     </SocialLink>
+  </li>
+  <li>
     <SocialLink
       href='https://www.linkedin.com/in/marcocom/'
       target='_blank'
       rel='noopener noreferrer'>
       <FaLinkedin />
     </SocialLink>
-  </>
+  </li>
+</>
 );

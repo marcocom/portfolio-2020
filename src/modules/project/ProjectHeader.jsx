@@ -22,9 +22,16 @@ const ColorSection = styled.div`
     padding: 0;
   }
 
-  & .carousel {
+  & .carousel-root {
     width: 100%;
     max-width: 1100px;
+
+    ${media.down.sm} {
+      width: 100vw;
+      max-width: 100%;
+    }
+  }
+  & .carousel {
     & .slide {
       background: ${({theme}) => theme.color.imgBg} !important;
     }
@@ -43,9 +50,10 @@ const StyledText = styled.div`
     padding: 10px 0 0 20px;
     display: inline-block;
     line-height: 1.1;
-    margin: 0 10px 0 0;
+    margin: 0 auto;
     ${media.down.sm} {
       font-size: 1.2em;
+      padding: 0 10px;
     }
   }
 `;
@@ -72,7 +80,7 @@ const getConfigurableProps = () => ({
 export const ProjectHeader = ({background, title, subtitle, images, year}) => (
     <StyledHeader>
       <StyledText>
-        <Text type='heading'>{title} :: {subtitle} :: {year}</Text>
+        <Text type='heading'>{title} {subtitle} {year}</Text>
       </StyledText>
       <ColorSection>
 

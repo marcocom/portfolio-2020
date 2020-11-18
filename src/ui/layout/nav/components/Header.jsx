@@ -9,21 +9,20 @@ const StyledHeader = styled.header`
   background-color: ${({ theme }) => theme.color.bg};
   position: fixed;
   z-index: 10;
-  overflow: hidden;
   transition: ${({ theme }) => theme.hoverTransition};
 `;
 
 const HeaderContainer = styled.div`
   width: 100%;
-  padding: 0 20px;
+  padding: 0 10px 0 20px;
   height: 100%;
-
+/*
   ${media.down.lg} {
     padding: 0 90px 0 20px;
   }
   ${media.down.md} {
     padding: 0 10px 0 10px;
-  }
+  }*/
 `;
 
 export const Header = ({ children }) => (

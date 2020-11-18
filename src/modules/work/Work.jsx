@@ -10,14 +10,15 @@ const StyledWork = styled.section`
   width: 100%;
   background: ${({ theme }) => theme.color.bg};
   transition: ${({ theme }) => theme.hoverTransition};
+  text-align: center;
 
+  & button {
+    position: relative;
+    margin:-3px auto 5px;
+
+  }
 `;
 
-const StyleSubHeading = styled.div`
-  font-size: .7em;
-  text-transform: lowercase;
-  margin:2px 0 10px;
-`;
 
 const scrollDetails = {
   behavior: 'auto',
@@ -38,17 +39,17 @@ export const Work = () => {
       // console.log(`lastPage:${lastPage} ref:`, lastEl);
       lastEl && setTimeout(() => lastEl.scrollIntoView(scrollDetails), 1000);
       // reset lastPage value
-      dispatch({ type: GlobalStateActions.CLEAR_PAGE });
+      dispatch({ type: GlobalStateActions.SET_PAGE, payload: 'mywork' });
     }
   }, []);
 
   return (
     <StyledWork ref={scrollRef}>
-      {!drawerVisible && <SortButton/> }
       <Text type='page-heading'>past projects</Text>
-      <StyleSubHeading>
+      <SortButton/>
+      {/*<StyleSubHeading>
         <Text type='page-subheading'>Listed chronologically</Text>
-      </StyleSubHeading>
+      </StyleSubHeading>*/}
       <Container>
         <WorkList/>
       </Container>

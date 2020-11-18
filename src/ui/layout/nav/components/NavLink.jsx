@@ -1,8 +1,9 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import styled, { css, ThemeContext } from 'styled-components'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import { media } from '@src/utils'
+import {GlobalStateContext} from '@src/context';
 
 const styles = css`
   text-decoration: none;
@@ -11,7 +12,7 @@ const styles = css`
   padding: 0 20px;
   position: relative;
   color: ${({ theme }) => theme.color.text};
-  transition: ${({ theme }) => theme.hoverTransition};
+  //transition: ${({ theme }) => theme.hoverTransition};
 
   ${media.down.lg} {
     padding: 0 12px;
@@ -32,12 +33,13 @@ const styles = css`
   }
 
   &:hover {
-    color: ${({ theme }) => theme.color.textSecondary};
+    color: ${({ theme }) => theme.color.primary};
   }
 `;
 
 const StyledNavLink = styled(AniLink)`
   ${styles};
+  pointer-events: ${({disabled}) => disabled ? 'none' : 'initial'};
 `;
 
 const StyledNavAnchor = styled.a`
@@ -45,12 +47,19 @@ const StyledNavAnchor = styled.a`
 `;
 
 export const NavLink = ({ to, href, name, direction }) => {
-  const themeContext = useContext(ThemeContext);
+  const themeContext = React.useContext(ThemeContext);
+  const {lastPage} = React.useContext(GlobalStateContext);
+  const [isCurrent, setIsCurrent] = React.useState(false);
+
+  React.useEffect(() => {
+    if(href) return;
+    setIsCurrent(to.replace(/\/+/g, '') === lastPage);
+  }, [lastPage]);
 
   if (href) {
     return (
       <li>
-        <StyledNavAnchor href={href}>{name}</StyledNavAnchor>
+        <StyledNavAnchor href={href} target="_blank">{name}</StyledNavAnchor>
       </li>
     )
   }
@@ -63,6 +72,7 @@ export const NavLink = ({ to, href, name, direction }) => {
         bg={themeContext.color.primary}
         duration={0.8}
         activeClassName='nav_link--active'
+        disabled={isCurrent}
       >
         {name}
       </StyledNavLink>

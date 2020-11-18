@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { DarkModeButton, NavLink, SocialLinks } from './index'
+import { DarkModeButton, NavLink, SocialLinks } from './'
 import { media } from '@src/utils'
 
 const StyledNavList = styled.ul`
@@ -22,10 +22,10 @@ const StyledNavList = styled.ul`
 export const NavList = () => {
   return (
     <StyledNavList>
-      <NavLink to='/' name='Home' direction='right' />
-      <NavLink to='/mywork' name='My Work' direction='right'/>
+      <NavLink to='/' name='Home' direction='down' />
+      <NavLink to='/mywork' name='My Work' direction='up'/>
       <NavLink to='/about/' name='About' direction='left' />
-      <NavLink href='mailto:marcocom@gmail.com' name='Email' target='_blank' />
+      <NavLink href='mailto:marcocom@gmail.com' name='Email' />
       <SocialLinks />
       <DarkModeButton />
     </StyledNavList>

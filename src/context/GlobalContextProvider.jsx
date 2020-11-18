@@ -5,6 +5,7 @@ import {reducer, initialGlobalState} from '@src/reducers/reduceGlobal'
 export const GlobalStateContext = React.createContext();
 export const GlobalDispatchContext = React.createContext();
 
+
 export const GlobalContextProvider = (props) => {
   const [state, dispatch] = React.useReducer(reducer, initialGlobalState);
   return (
