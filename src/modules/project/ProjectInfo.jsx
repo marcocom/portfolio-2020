@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 const StyledProjectInfo = styled.section`
   width: 100%;
-  margin: 10px auto 0;
+  margin: 10px auto 20px;
 `;
 
 const Grid = styled.div`

@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import {GlobalDispatchContext} from '@src/context';
+import {GlobalStateActions} from '@src/reducers/reduceGlobal';
 
 import { Card, Text } from '@src/ui/components'
 import { media } from '@src/utils'
@@ -89,7 +91,10 @@ const AboutCard = styled(Card)`
   }
 `;
 
-export const AboutIntro = () => (
+export const AboutIntro = () => {
+  const dispatch = React.useContext(GlobalDispatchContext);
+  React.useEffect(() => dispatch({type: GlobalStateActions.SET_PAGE, payload:'about'}), []);
+  return (
   <StyledAboutIntro>
     <AboutCard>
       <h2>
@@ -113,5 +118,5 @@ export const AboutIntro = () => (
 
     </AboutCard>
   </StyledAboutIntro>
-);
+)};
 

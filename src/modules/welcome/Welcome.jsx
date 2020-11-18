@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 import { Button } from '@src/ui/components'
 import { media } from '@src/utils'
+import {GlobalDispatchContext} from '@src/context';
+import {GlobalStateActions} from '@src/reducers';
 
 const StyledHero = styled.div`
   width: 100%;
@@ -100,7 +102,12 @@ const BodyText = styled.h5`
 `;
 
 
-export const Welcome = () => (
+export const Welcome = () => {
+
+  const dispatch = React.useContext(GlobalDispatchContext);
+  React.useEffect(() => dispatch({type: GlobalStateActions.SET_PAGE, payload: ''}), []);
+
+  return (
   <StyledHero>
     <div>
       <Title>
@@ -110,15 +117,15 @@ export const Welcome = () => (
         <p><span>interactive art</span> and <span>technology</span> and <span>you</span> and <span>me</span></p>
       </SubTitle>
       <BodyText>
-        <p>My portfolio is a body of collected interactive works covering my twenty years as an artist and engineer in advertising and technology since 1998.</p>
+        <p>Welcome! My portfolio is a body of collected interactive works covering my twenty years as an artist and engineer in advertising and technology since 1998.</p>
         <p>From initial concept to final product, my work is the culmination of a lifetime of study, observation, and a great deal of trial and error.</p>
-        <p>Please enjoy, and thank you for your interest.</p>
+        <p>Please enjoy, and thank you for stopping by.</p>
         <br/>
         <p>
-          <i>This <a href='https://github.com/marcocom/portfolio-2020'>website's code</a> is built using <a href='https://reactjs.org'>ReactJS</a> with <a href="https://styled-components.com">Styled-Components</a> for light/dark theme support, and <a href='https://gatsbyjs.com'>Gatsby</a> for static-content deployables. I am adding sample images, as well as movie-clips to replace old website-demos, and refining functionality every day. Please excuse the mess.</i>
+          <i><a href='https://github.com/marcocom/portfolio-2020'>This website's code</a> is built using <a href='https://reactjs.org'>ReactJS</a> with <a href="https://styled-components.com">Styled-Components</a> for light/dark theme support, and <a href='https://gatsbyjs.com'>Gatsby</a> for static-content deployables. I am adding sample images, as well as movie-clips to replace old website-demos, and refining functionality every day. Please excuse the mess.</i>
         </p>
       </BodyText>
       <Button outline='true' text='See my work' to='/mywork' direction='up' />
     </div>
   </StyledHero>
-);
+)};

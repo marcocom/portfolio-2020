@@ -1,7 +1,10 @@
-import { useTheme } from '@src/context'
-import { GlobalStyle, Theme } from '@src/styles'
-import { Footer, Helmet, LoadingPage, Nav, Background } from '@src/ui/layout'
-import React from 'react'
+import { useTheme, GlobalDispatchContext } from '@src/context';
+import {GlobalStateActions} from '@src/reducers/reduceGlobal';
+
+
+import { GlobalStyle, Theme } from '@src/styles';
+import { Footer, Helmet, LoadingPage, Nav, Background } from '@src/ui/layout';
+import React from 'react';
 
 export const Layout = ({ pageTitle, children }) => {
   const { mounted, theme } = useTheme();

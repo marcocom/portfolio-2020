@@ -18,7 +18,7 @@ const PageContent = () => (
       <Text type='page-subheading' style={{ marginBottom: '60px' }}>
         This page doesn't exist.
       </Text>
-      <Button to='/' outline direction='up' text='Go Back' />
+      <Button to='/' outline direction='down' text='Go Back' />
     </NotFoundContainer>
   </Layout>
 );

@@ -1,3 +1,3 @@
 export * from './useDarkMode'
-export * from './useScrollChange'
+export * from './useFetchJson'
 export * from './useIntersectionAPI'

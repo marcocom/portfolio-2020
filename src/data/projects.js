@@ -38,11 +38,11 @@ const projectAssets = {
   codelite: {
     hero: '/heros/codelite.png',
     images: [
-      '/screenshots/code_elite1.jpg',
-      '/screenshots/code_elite2.jpg',
-      '/screenshots/code_elite3.jpg',
-      '/screenshots/code_elite4.jpg',
-      '/screenshots/code_elite5.jpg',
+      '/screenshots/cod_elite1.jpg',
+      '/screenshots/cod_elite2.jpg',
+      '/screenshots/cod_elite3.jpg',
+      '/screenshots/cod_elite4.jpg',
+      '/screenshots/cod_elite5.jpg',
     ],
     videos: [],
   },
@@ -377,8 +377,6 @@ const projectAssets = {
     ],
     videos: [],
   },
-
-
   diesel: {
     hero: '/heros/diesel.png',
     images: [
@@ -417,7 +415,7 @@ export const projects = {
   sixtymin: {
     title: '60 Minutes',
     year: 2009,
-    subtitle: 'Streaming video website, Code Particle',
+    subtitle: 'Streaming video website : Code Particle',
     link: '/sixtymin/',
     role: 'UI Developer',
     hero: projectAssets.sixtymin.hero,
@@ -427,10 +425,10 @@ export const projects = {
     hostedLink: '',
     devDesc: [
       `During the early era of 'Web 2.0', and mobile-first design and development, my common
-      work-challenge was to convert work, previously built in Flash, into javascript.
+      work-challenge was to convert rich-media websites, previously built in Flash, into HTML5 and javascript.
       Rich-media such as video, audio, and animated interactive elements,
       were desired by creatives, but javascript and HTML5 development still had very little
-      documentation, or libraries, to fulfill the experience users had grown accustomed to.`,
+      documentation, or libraries, to fulfill the experience users had grown accustomed to. `,
 
       `Code Particle was hired to build a web-application that could seamlessly present and
       playback videos uploaded to the CBS media servers, with complex client-side management
@@ -440,7 +438,7 @@ export const projects = {
   adidas: {
     title: 'Adidas',
     year: 1999,
-    subtitle: 'Original launch, U.S.Interactive',
+    subtitle: 'Original launch : U.S.Interactive',
     link: '/adidas/',
     role: 'Production Designer, Animator',
     hero: projectAssets.adidas.hero,
@@ -462,7 +460,7 @@ export const projects = {
   autodesk: {
     title: 'Autodesk',
     year: 2016,
-    subtitle: 'User Management, Next-Gen Partners, Accenture',
+    subtitle: 'User Management System, Next-Gen Partners : Accenture',
     link: '/autodesk/',
     role: 'UI Designer, Developer',
     hero: projectAssets.autodesk.hero,
@@ -484,9 +482,9 @@ export const projects = {
   codelite: {
     title: 'Call of Duty:Black Ops',
     year: 2011,
-    subtitle: 'Elite Player-metrics & Clan-management interface, Beachwood Studios',
+    subtitle: 'Elite Player-metrics & Clan-management interface : Beachwood Studios',
     link: '/codelite/',
-    role: 'UI Design Engineer',
+    role: 'UI Designer, Developer',
     hero: projectAssets.codelite.hero,
     images: projectAssets.codelite.images,
     videos: projectAssets.codelite.videos,
@@ -507,7 +505,7 @@ export const projects = {
   deluxe: {
     title: 'Deluxe.com',
     year: 2002,
-    subtitle: 'Website launch, CKS/marchFIRST',
+    subtitle: 'Website launch : U.S.Web/CKS',
     link: '/deluxe/',
     role: 'Art Director',
     hero: projectAssets.deluxe.hero,
@@ -529,9 +527,9 @@ export const projects = {
   disney: {
     title: 'Disney',
     year: 2019,
-    subtitle: 'Bespin Cloud Manager, RHC',
+    subtitle: 'Bespin Cloud Manager, Remote Health-Check : Accenture',
     link: '/disney/',
-    role: 'UX/UI Designer',
+    role: 'UX/UI Designer, Developer',
     hero: projectAssets.disney.hero,
     images: projectAssets.disney.images,
     videos: projectAssets.disney.videos,
@@ -554,7 +552,7 @@ export const projects = {
   dockers: {
     title: 'Dockers',
     year: 2000,
-    subtitle: 'Zen Reload Kiosk, CKS/marchFIRST',
+    subtitle: 'Zen Reload Kiosk : U.S.Web/CKS',
     link: '/dockers/',
     role: 'Designer, Animator',
     hero: projectAssets.dockers.hero,
@@ -581,7 +579,7 @@ export const projects = {
     hostedLink: '',
     devDesc: [
       `Big Block had an extraordinary 3D physics-engine that allowed them
-      to create realistic CGI for automotive advertisements and feature films. Our
+      to create realistic CGI for award-winning automotive advertisements and feature films. Our
       concept was to bring all five of Dodge's models into a single abstract world of
       obstacles. Rendering-time is expensive, and so the concept had to deliver as much
       story in pre-render gray-tone state, until the final reveal.`,
@@ -590,7 +588,7 @@ export const projects = {
   eggbank: {
     title: 'Egg Bank',
     year: 2001,
-    subtitle: 'Website redesign, CKS/marchFIRST',
+    subtitle: 'Website Fedesign : CKS/marchFIRST',
     link: '/eggbank/',
     role: 'Art Director',
     hero: projectAssets.eggbank.hero,
@@ -614,7 +612,7 @@ export const projects = {
   goodhome: {
     title: 'Good Home',
     year: 2001,
-    subtitle: 'Website redesign, CKS/marchFIRST',
+    subtitle: 'Website Launch : U.S.Web/CKS',
     link: '/goodhome/',
     role: 'Art Director',
     hero: projectAssets.goodhome.hero,
@@ -632,7 +630,7 @@ export const projects = {
   hsd: {
     title: 'Toyota Prius',
     year: 2006,
-    subtitle: 'Interactive Kiosk/mini-site, Saatchi & Saatchi',
+    subtitle: 'Interactive Kiosk/mini-site : Saatchi & Saatchi LA',
     link: '/hsd/',
     role: 'Multimedia Designer',
     hero: projectAssets.hsd.hero,
@@ -651,7 +649,7 @@ export const projects = {
   infiniti: {
     title: 'Infiniti.com',
     year: 2007,
-    subtitle: 'Website redesign, The Designory',
+    subtitle: 'Website Redesign : The Designory',
     link: '/infiniti/',
     role: 'Multimedia Director',
     hero: projectAssets.infiniti.hero,
@@ -716,14 +714,16 @@ export const projects = {
       sophisticated custom software package they had developed in house.`,
 
       `I was involved in look and feel establishment and concept for the site, with
-      special attention to the womens, mens, and features section of this very
-      large website.`,
+      special attention to the women's, men's, and features section of this very
+      large website. The design team at CKS had worked on the original apple-logo. They were were incredible at bringing
+      print-quality design to the early web, which at the time was stuck in a very utilitarian design-trend derived by Yahoo and Amazon,
+      and I, personally, took every opportunity to watch and learn from these brilliant creative minds.`,
     ],
   },
   kitbuilder: {
     title: 'DW Drums',
     year: 2009,
-    subtitle: 'Kitbuilder product configurator, Code Particle',
+    subtitle: 'Kitbuilder product configurator : Code Particle',
     link: '/kitbuilder/',
     role: 'UI Designer, Engineer',
     hero: projectAssets.kitbuilder.hero,
@@ -739,13 +739,14 @@ export const projects = {
       and Code Particle built it in HTML4 and Jquery!`,
       `I was engaged to bring my agency experience with graphics and multimedia to the small team,
       in exchange for a priceless chance to learn the early rich-media capabilities of HTML prior
-      to the popular frameworks (and unified browser engines) that support this so easily today. `,
+      to the popular frameworks (and unified browser engines) that support this so easily today. Code Particle was
+       miles ahead of what everyone else was doing in HTML5 at the time, and I assume they probably/hopefully still are.`,
     ],
   },
   kpn: {
     title: 'KPN Network, NL',
     year: 2013,
-    subtitle: 'POS Touchscreen Kiosk, Quince Amsterdam',
+    subtitle: 'POS Touchscreen Kiosk : Quince Amsterdam',
     link: '/kpn/',
     role: 'Creative Technologist',
     hero: projectAssets.kpn.hero,
@@ -768,7 +769,7 @@ export const projects = {
   landcruiser: {
     title: 'Land Cruiser Heritage',
     year: 2006,
-    subtitle: '50-year Heritage Kiosk/microsite, Saatchi & Saatchi',
+    subtitle: '50-year Heritage Kiosk/microsite : Saatchi & Saatchi LA',
     link: '/landcruiser/',
     role: 'Multimedia Director',
     hero: projectAssets.landcruiser.hero,
@@ -794,23 +795,24 @@ export const projects = {
   levis: {
     title: `Levi's 25 Year Anthology`,
     year: 2003,
-    subtitle: 'Kiosk, Foote Cone & Belding',
+    subtitle: 'Broadcast Advertising Kiosk : Freelance',
     link: '/levis/',
-    role: 'Multimedia Director',
+    role: 'Designer, Developer',
     hero: projectAssets.levis.hero,
     images: projectAssets.levis.images,
     videos: projectAssets.levis.videos,
     githubLink: '',
     hostedLink: '',
     devDesc: [
-      `A touch-screen and web-based display of all Levi's broadcast and print ads since FCB's
-      awarding of the account, as well as metric-results information.`,
+      `Foote,Cone & Belding hired me to create this touch-screen display of all Levi's broadcast and print ads since FCB's
+      awarding of the account in the 1950s (so... a lot of content), as well as metric-results information and reporting.
+      Having so much great photography to work with made this very easy for us to make a beautifully unified application.`,
     ],
   },
   marriott: {
     title: 'Marriott Hotels',
     year: 2018,
-    subtitle: 'Mobile app, Accenture Liquid Studio',
+    subtitle: 'Mobile Application : Accenture Liquid Studio',
     link: '/marriott/',
     role: 'UI Architect',
     hero: projectAssets.marriott.hero,
@@ -828,13 +830,14 @@ export const projects = {
       `Architecture of this app required Internet-of-things integration with Amazon web services in
       a very cool NodeJS-based workflow that shared code, entirely in Typescript, to ensure integrity
       between the rapidly-deployed cloud microservices and the front-end. I learned some very effective
-      modern workflows that enable this, by the bright development minds at Accenture.`
+      modern workflows that enable this, by the bright development minds at Accenture. Angular was used for
+      the front-end, with Ionic framework used for mobile-packaging and PWA modular features.`
     ],
   },
   ritepro: {
     title: 'RitePro',
     year: 2002,
-    subtitle: 'Product Information Manager',
+    subtitle: 'Product Information Management system : Freelance',
     link: '/ritepro/',
     role: 'UI Designer',
     hero: projectAssets.ritepro.hero,
@@ -861,9 +864,9 @@ export const projects = {
   samsung: {
     title: 'Samsung',
     year: 1999,
-    subtitle: 'Branding kiosk',
+    subtitle: 'Brand Kiosk : Freelance',
     link: '/samsung/',
-    role: 'Art Director',
+    role: 'Art Director, Animator',
     hero: projectAssets.samsung.hero,
     images: projectAssets.samsung.images,
     videos: projectAssets.samsung.videos,
@@ -882,7 +885,7 @@ export const projects = {
   shift2: {
     title: 'Nissan',
     year: 2008,
-    subtitle: 'SHIFT_2.0, The Designory',
+    subtitle: 'SHIFT_2.0 : The Designory / TBWA',
     link: '/shift2/',
     role: 'Multimedia Director',
     hero: projectAssets.shift2.hero,
@@ -915,7 +918,7 @@ export const projects = {
   stadia: {
     title: 'Google',
     year: 2019,
-    subtitle: 'Stadia game-streaming service, Accenture',
+    subtitle: 'Stadia Game-Streaming Service : Accenture',
     link: '/stadia/',
     role: 'Art Director',
     hero: projectAssets.stadia.hero,
@@ -945,7 +948,7 @@ export const projects = {
   tivo: {
     title: 'TiVo',
     year: 2000,
-    subtitle: 'Website and Kiosk, U.S.Web/CKS',
+    subtitle: 'Website and Kiosk : U.S.Web/CKS',
     link: '/tivo/',
     role: 'Art Director',
     hero: projectAssets.tivo.hero,
@@ -968,7 +971,7 @@ export const projects = {
   tombrady: {
     title: 'Intel Agency Inside',
     year: 2017,
-    subtitle: 'Superbowl Tom Brady App, Accenture',
+    subtitle: 'Superbowl Tom Brady App : Accenture',
     link: '/tombrady/',
     role: 'UI Engineer',
     hero: projectAssets.tombrady.hero,
@@ -997,9 +1000,9 @@ export const projects = {
   toyota: {
     title: 'Toyota',
     year: 2005,
-    subtitle: 'Website / minisites / banners, Saatchi & Saatchi',
+    subtitle: 'Website / minisites / banners : Saatchi & Saatchi LA',
     link: '/toyota/',
-    role: 'Multimedia Designer',
+    role: 'Multimedia Designer, Animator',
     hero: projectAssets.toyota.hero,
     images: projectAssets.toyota.images,
     videos: projectAssets.toyota.videos,
@@ -1030,16 +1033,16 @@ export const projects = {
   usarmy: {
     title: 'U.S. Army',
     year: 2008,
-    subtitle: 'The Army Experience Kiosk / Game, Ignited Minds',
+    subtitle: 'The Army Experience Kiosk / Game : Ignited Minds',
     link: '/usarmy/',
-    role: 'Art Director',
+    role: 'Designer, Developer',
     hero: projectAssets.usarmy.hero,
     images: projectAssets.usarmy.images,
     videos: projectAssets.usarmy.videos,
     githubLink: '',
     hostedLink: '',
     devDesc: [
-      `I was hired at Ignited Minds to help with their client who challenged us
+      `I was hired as a freelance consultant at Ignited Minds to help with their client who challenged us
       with engaging young people to consider a career in the Army, during an
       on-going and unpopular war in Iraq. However, they came prepared for this
       with some very suprisingly tech-savvy and cool ideas that involved a custom-built
@@ -1054,9 +1057,9 @@ export const projects = {
   vodafone: {
     title: 'Vodafone',
     year: 2014,
-    subtitle: 'Scan & Win App, Quince Amsterdam',
+    subtitle: 'Scan & Win Mobile Application : Quince Amsterdam',
     link: '/vodafone/',
-    role: 'Creative Technologist',
+    role: 'Art Director',
     hero: projectAssets.vodafone.hero,
     images: projectAssets.vodafone.images,
     videos: projectAssets.vodafone.videos,
@@ -1071,7 +1074,7 @@ export const projects = {
   warnerbros: {
     title: 'Warner Bros. Studios',
     year: 2018,
-    subtitle: 'Star Labs license-rights management system, Accenture',
+    subtitle: 'StarLabs License-rights Management System : Accenture',
     link: '/warnerbros/',
     role: 'UI Engineer, Designer',
     hero: projectAssets.warnerbros.hero,
@@ -1091,38 +1094,41 @@ export const projects = {
   yoroto: {
     title: `CiCi's Pizza`,
     year: 2008,
-    subtitle: 'Yo Roto! website, Deutsch',
+    subtitle: 'Yo Roto! website : Deutsch LA',
     link: '/yoroto/',
-    role: 'Art Director',
+    role: 'Animator, Developer',
     hero: projectAssets.yoroto.hero,
     images: projectAssets.yoroto.images,
     videos: projectAssets.yoroto.videos,
     githubLink: '',
     hostedLink: '',
     devDesc: [
+      `I spent about two years freelance-consulting about six different projects with Deutsch LA for their many clients
+      and even on their company website. Deutsch are masterful at viral-concepting and guerrilla-marketing ideas, and
+      this website was a really innovative campaign concept of theirs for a regional pizza-chain.`,
       `These viral YouTube videos depict an underground hero who works as a sign-spinner
       for the CiCis pizza company and pulls seemingly impossible gymnastic and break-dance
       moves and has generated a following.  My role was to create the destination website
       that is seeded in the endtag of the videos.  The site houses the videos for replay,
       and also presents the user with a game, inspired by GuitarHero, and a method to
       challenge their friends for hi-score. `,
-      `Game design and code provided by Fuel, my site housed the game with downloadable content,
-      and shareable videos and fused the different sections into a playful user experience.`,
+      `Game design provided by Fuel in Toronto, my code architecture housed the game with downloadable content,
+      and shareable videos and fused the different sections into a playful and seamless user experience.`,
     ],
   },
   infsummer: {
     title: `Infiniti`,
     year: 2008,
-    subtitle: 'Summer Event Kiosk',
+    subtitle: 'Summer Event Kiosk : The Designory',
     link: '/infsummer/',
-    role: 'Art Director',
+    role: 'Art Director, Developer',
     hero: projectAssets.infsummer.hero,
     images: projectAssets.infsummer.images,
     videos: projectAssets.infsummer.videos,
     githubLink: '',
     hostedLink: '',
     devDesc: [
-      `Infiniti asked that I impliment my 360-interactive logic for a kiosk
+      `Infiniti asked that I impliment my 360-interactive logic for a dealership kiosk
       and we came up with a nice implimentation that brings life to all five of
       their vehicles in a simple execution that we delivered very quickly.`,
       `In both HTML as well as Flash, moving through a series of images rapidly can
@@ -1138,11 +1144,11 @@ export const projects = {
     ],
   },
   thride: {
-    title: `Tony Hawk: RIDE`,
+    title: `Tony Hawk RIDE website : `,
     year: 2009,
-    subtitle: 'Game website, product demo',
+    subtitle: 'Game website, product demo : Freelance',
     link: '/thride/',
-    role: 'Art Director',
+    role: 'Animator, Developer',
     hero: projectAssets.thride.hero,
     images: projectAssets.thride.images,
     videos: projectAssets.thride.videos,
@@ -1153,23 +1159,30 @@ export const projects = {
       skateboard, as a human interface device to control your gameplay. It was pretty steep cost
       increase for a single game, and so we needed to create a website that could showcase
       the game, its peripheral controller, and encourage user-engagement through sharing on
-      social networks.`,
+      social networks. Streetwise Studios provided the writing and creative-direction, and I did concept and production in Flash.`,
+
+      `Streetwise Studios, now defunct, handled a lot of Activision game brand work in print and television, and was
+      hired to consult with them on their first interactive project. Handling a client like this can take a lot of practice
+      to engage in fully, whereby your client has powerful creative talent and capabilities, and a large vacuum of experience
+      in doing code-based production and the many pitfalls that a designer must mindful of avoiding with over-application of
+      shadowing, masking, animation, and other CPU or raster-intensive operations to achieve a unified work of art. `,
+
       `Skuemorphism was a bit over-applied, in retrospect, as the look required
       drop-shadowing on all elements to create realism, and as elements animated, that became
       very intensive. I remember struggling to keep animations smooth on low-end machines, and
-      having to invent a logic that would remove them when framerates were lagging for users. A
+      having to invent a logic that would remove the effect when monitored-framerates were lagging for users (a sorely missed feature of Flash today). A
       common design-challenge, in video-game brands of that era, was the publisher's desire to extend
       the look & feel from game to website, which often was too heavy. Learning how to negotiate
-      this creatively took trial and error.`,
+      this creatively took trial and error to overcome.`,
       `Winner: Gray Interactive Award, IGN`
     ],
   },
   diesel: {
     title: `Diesel`,
     year: 2012,
-    subtitle: 'Home Collection minisite, Anomaly Amsterdam',
+    subtitle: 'Home Collection minisite : Anomaly Amsterdam',
     link: '/diesel/',
-    role: 'Creative Tecnnologist',
+    role: 'Creative Technologist',
     hero: projectAssets.diesel.hero,
     images: projectAssets.diesel.images,
     videos: projectAssets.diesel.videos,
@@ -1187,9 +1200,9 @@ export const projects = {
   dodgemotorsports: {
     title: `Dodge Motorsports`,
     year: 2010,
-    subtitle: 'Micro-site, The Armory',
+    subtitle: 'Micro-site : The Armory',
     link: '/dodgemotorsports/',
-    role: 'Creative Technologist',
+    role: 'Flash Developer',
     hero: projectAssets.dodgemotorsports.hero,
     images: projectAssets.dodgemotorsports.images,
     videos: projectAssets.dodgemotorsports.videos,
@@ -1209,9 +1222,9 @@ export const projects = {
   raadnwin: {
     title: `Holland Casino`,
     year: 2013,
-    subtitle: 'Raad n Win Game, Quince Amsterdam',
+    subtitle: 'Raad n Win Game Kiosk : Quince Amsterdam',
     link: '/raadnwin/',
-    role: 'Creative Technologist',
+    role: 'Art Director, Flash Artist',
     hero: projectAssets.raadnwin.hero,
     images: projectAssets.raadnwin.images,
     videos: projectAssets.raadnwin.videos,
@@ -1231,9 +1244,9 @@ export const projects = {
   auria: {
     title: `Auria`,
     year: 2002,
-    subtitle: 'Bionic Ear, product demo',
+    subtitle: 'Bionic Ear, product demo : Freelance',
     link: '/auria/',
-    role: 'Art Director',
+    role: 'Art Director, Flash Artist',
     hero: projectAssets.auria.hero,
     images: projectAssets.auria.images,
     videos: projectAssets.auria.videos,

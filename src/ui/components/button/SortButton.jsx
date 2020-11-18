@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { IoMdArrowUp, IoMdArrowDown } from 'react-icons/io';
+import { IoMdArrowRoundUp, IoMdArrowRoundDown } from 'react-icons/io';
 import styled from 'styled-components';
 import { GlobalStateContext, GlobalDispatchContext } from '@src/context';
 import { GlobalStateActions } from '@src/reducers/reduceGlobal';
@@ -9,76 +9,71 @@ import { media } from '@src/utils'
 const StyledBtn = styled.button`
   border: none;
   background: none;
-  height: 60px;
-  width: 250px;
   transition: ${({ theme }) => theme.hoverTransition};
   padding: 0;
   cursor: pointer;
   outline: none;
-  display: block;
-  position: absolute;
-  right: 10px;
-  top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 
   & svg {
-  display: block;
-  float: right;
-  margin-right: 10px;
-    fill: ${({theme}) => theme.color.textSecondary};
+    display: block;
+    fill: ${({theme}) => theme.color.primary};
   }
 
   &:hover {
-    color: ${({ theme }) => theme.color.text};
-
+    .txt{
+      color: ${({theme}) => theme.color.text};
+    }
 
     & svg {
-      fill: ${({theme}) => theme.color.primary};
+      fill: ${({theme}) => theme.color.text};
     }
-    & .txt {
-      transform: translateY(0);
-      opacity: 1;
-    }
-    & .label {
-      transform: translateY(-15px);
-      opacity: 0;
-    }
-
-  }
-
-  & .txt,
-   & .label{
-    position: absolute;
-    width: 200px;
-    top: 20px;
-    right: 60px;
-    pointer-events: none;
-    text-align: right;
-    opacity: 1;
-    color: ${({ theme }) => theme.color.text};
-    transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
   }
 
   & .txt {
-    opacity: 0;
-    transform: translateY(15px);
+    position: relative;
+    top: 2px;
+    font-size: 1.3em;
+    width: auto;
+    text-align: center;
+    white-space: nowrap;
+    opacity: 1;
+    margin: 0 10px;
+    color: ${({ theme }) => theme.color.primaryDarkened};
+  }
+
+  & .txt {
+    text-transform: lowercase;
   }
 
   & .asc {
-    font-size: 40px;
-    display: ${({ sort }) => (sort === 'asc' ? 'none' : 'block')};
+    font-size: 24px;
+    display: ${({sort}) => (sort === 'desc' ? 'none' : 'block')};
   }
   & .desc {
-    font-size: 40px;
-    display: ${({ sort }) => (sort === 'desc' ? 'none' : 'block')};
+    font-size: 24px;
+    display: ${({sort}) => (sort === 'asc' ? 'none' : 'block')};
   }
 
   ${media.down.sm} {
-    right: calc(50% - 90px);
-    top: 0;
     //left: 50%;
-    transform: scale(0.75);
-    z-index: 11;
-    position: fixed;
+    //transform: scale(0.75);
+    & .txt {
+      font-size: 1em;
+      top: 4px;
+    }
+
+    &:hover {
+      & .txt {
+        color: ${({theme}) => theme.color.primary}; //needed for touch-release issue
+
+      }
+      & svg {
+        fill: ${({theme}) => theme.color.primary};
+      }
+    }
   }
 
 `;
@@ -94,9 +89,9 @@ export const SortButton = () => {
 
   return (
     <StyledBtn onClick={toggle} sort={workSorting}>
-      <IoMdArrowUp className='desc' /> <IoMdArrowDown className='asc' />
-      <span className="label">Sorting Order</span>
-      <span className="txt">{workSorting === 'asc' ? 'Ascending ' : 'Descending'} Years</span>
+      <IoMdArrowRoundUp className='asc'/> <IoMdArrowRoundDown className='desc'/>
+      <span className="txt">Sorted by: {workSorting === 'asc' ? 'Ascending ' : 'Descending'} years</span>
+      <IoMdArrowRoundUp className='asc' /> <IoMdArrowRoundDown className='desc' />
     </StyledBtn>
   )
 };

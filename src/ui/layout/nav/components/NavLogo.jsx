@@ -53,8 +53,8 @@ const NavLogoContainer = styled(AniLink)`
 export const NavLogo = () => {
   const themeContext = useContext(ThemeContext)
   return (
-    <NavLogoContainer to='/' cover direction='right' bg={themeContext.color.primary} duration={0.8}>
-      <img className='logo' src={logo} alt='Anthony Caron - Developer' />
+    <NavLogoContainer to='/' cover direction='down' bg={themeContext.color.primary}>
+      <img className='logo' src={logo} alt='Logo, Marco Comparato - Portfolio' />
     </NavLogoContainer>
   )
 };

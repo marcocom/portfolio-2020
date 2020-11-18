@@ -54,8 +54,7 @@ const StyledWorkItem = styled.article`
 `;
 
 export const WorkItem = ({ project, index }) => {
-  const { title, subtitle, description, link, hero, year } = project;
-
+  const { title, subtitle, description, link, hero, year, role } = project;
   const elementRef = useRef(null);
   const [inView, entry] = useIntersectionObserver(elementRef, {threshold: 0});
 
@@ -69,7 +68,7 @@ export const WorkItem = ({ project, index }) => {
   return (
     <StyledWorkItem index={index} ref={elementRef} id={link.replace(/\/+/g, '')}>
       <WorkImage image={hero} title={title} inview={inView} link={link} />
-      <WorkCard title={title} subtitle={subtitle} description={description} link={link} year={year} />
+      <WorkCard title={title} subtitle={subtitle} description={description} link={link} year={year} role={role} />
     </StyledWorkItem>
   )
 };
