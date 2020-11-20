@@ -26,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         margin: 0;
-        font-family: ${(props) => props.theme.font.body};
+        font-family: ${({theme}) => theme.font.body};
         background: ${({ theme }) => theme.color.bg};
         color: ${({ theme }) => theme.color.text};
         font-size: 16px;
@@ -111,7 +111,6 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         color: ${({ theme }) => theme.color.text};
         font-size: 1em;
-
     }
 
     h1,
@@ -119,7 +118,7 @@ export const GlobalStyle = createGlobalStyle`
     h3,
     p {
         margin: 0;
-
+        font-family: ${({theme}) => theme.font.body};
     }
 
 
