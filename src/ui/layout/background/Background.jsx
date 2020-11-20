@@ -31,7 +31,6 @@ const StyledBackground = styled.div`
     66% {opacity:0;}
     100% {
      opacity:1;
-
     }
   }
 
@@ -47,6 +46,5 @@ const StyledBackground = styled.div`
 
 export const Background = () => {
   const {theme} = useTheme();
-
   return <StyledBackground currentTheme={theme}/>;
 };

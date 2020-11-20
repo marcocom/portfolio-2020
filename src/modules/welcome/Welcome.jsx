@@ -3,7 +3,7 @@ import {useTheme} from '@src/context'
 import styled from 'styled-components';
 import { Button } from '@src/ui/components'
 import { media } from '@src/utils'
-import {GlobalDispatchContext} from '@src/context';
+import {GlobalDispatchContext, GlobalStateContext} from '@src/context';
 import {GlobalStateActions} from '@src/reducers';
 import {Background} from '@src/ui/layout';
 import gsap from 'gsap';
@@ -22,7 +22,7 @@ const StyledHero = styled.div`
   display: block;
   z-index: 2;
   position: absolute;
-  padding: 0 50px 0;
+  padding: 0 50px 50px;
   margin-top: 100px;
   //background: ${({ theme }) => theme.color.bg};
   text-align: center;
@@ -45,7 +45,6 @@ const Title = styled.h1`
   //color: #FFF;
   font-size: 3em;
   letter-spacing: .2em;
-
   margin-bottom: 5px;
   transition: ${({ theme }) => theme.hoverTransition};
 
@@ -74,9 +73,8 @@ const SubTitle = styled.h3`
   //color: #FFF;
   font-size: 2em;
   margin-bottom: 40px;
-
   //text-shadow: ${({currentTheme}) => currentTheme === 'light' ? 'rgba(0, 0, 0, .25) 0 0 6px' : 'none'};
-  text-shadow: rgba(0, 0, 0, .25) 0 0 4px;
+  text-shadow: rgba(0, 0, 0, .25) 0 0 2px;
 
   //animation
   /*
@@ -153,47 +151,65 @@ const BodyText = styled.h5`
     }
   }
 
+`;
+
+const StyledBtn = styled.div`
+
   & a {
     margin: 20px auto 40px;
     font-size: initial;
   }
 `;
 
-
 export const Welcome = () => {
 
-  const {theme} = useTheme();
+  const {theme , toggle} = useTheme();
+
+  const [isNewVisit, setNewVisit] = React.useState(false);
 
   const dispatch = React.useContext(GlobalDispatchContext);
-  React.useEffect(() => dispatch({type: GlobalStateActions.SET_PAGE, payload: ''}), []);
+  const {lastPage, themeSaved} = React.useContext(GlobalStateContext);
 
   const TitleRef = React.useRef(null);
   const SubTitleRef = React.useRef(null);
   const TextBoxRef = React.useRef(null);
 
+  const setPage = () => dispatch({type: GlobalStateActions.SET_PAGE, payload: ''});
+
+  const animCompleted = () => {
+    console.log(`Welcome : animCompleted lastPage:${lastPage} themeSaved:${themeSaved}`);
+    //does not fire when coming from inside the site or user-selected
+    (lastPage === '' || !lastPage) && !themeSaved && toggle();
+    setPage();
+  };
+
   React.useEffect(() => {
+    if(lastPage) {
+      setPage();
+      return;
+    }
+
     gsap.from(TitleRef.current, {
       delay: 0.5,
       duration: 0.5,
       opacity: 0,
       y: 10,
       ease: 'bounce.out',
-      immediateRender: false,
     });
-    gsap.from(SubTitleRef.current, {
-      delay: 1.5,
-      duration: 1.2,
-      opacity: 0,
-      ease: 'power3.in',
-      y: 10,
-      immediateRender: false,
-    });
+
     gsap.from(TextBoxRef.current, {
       delay: 1,
       duration: 0.6,
       ease: 'bounce.out',
       y: Math.round(window.innerHeight * .7),
-      immediateRender: false,
+    });
+    gsap.from(SubTitleRef.current, {
+      delay: 2,
+      duration: 1.2,
+      opacity: 0,
+      ease: 'power3.in',
+      y: 10,
+      onComplete: animCompleted, //<<<<<<<<< Theme toggle callout.
     });
   },[]);
 
@@ -210,7 +226,7 @@ export const Welcome = () => {
               <p>My portfolio is a body of collected interactive works covering my twenty years as an artist and engineer in advertising and technology since 1998.</p>
             <p>From initial concept to final product, my work is the culmination of a lifetime of study, observation, and a great deal of trial and error.</p>
             <p>Thanks for stopping by!</p>
-            <Button outline='true' text='view my work' to='/mywork' direction='up'/>
+            <StyledBtn><Button outline='true' text='view my work' to='/mywork' direction='up' className='cta-btn'/></StyledBtn>
             <p>
               <i><a href='https://github.com/marcocom/portfolio-2020'>This website's code</a> is built using <a href='https://reactjs.org'>ReactJS</a> with <a href="https://styled-components.com">Styled-Components</a> for light/dark theme support, and <a href='https://gatsbyjs.com'>Gatsby</a> for static-content deployables. I am adding more projects and refining functionality every day, so please excuse the mess.</i>
             </p>

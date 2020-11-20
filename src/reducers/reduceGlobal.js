@@ -6,10 +6,12 @@ export const GlobalStateActions = {
   SET_PROJECTS: 'SET_PROJECTS',
   TOGGLE_DRAWER: 'TOGGLE_DRAWER',
   SET_DRAWER: 'SET_DRAWER',
+  THEME_SAVED:'THEME_SAVED'
 };
 
 export const initialGlobalState = {
   workScrollPoint: 0,
+  themeSaved: false,
   lastPage: null,
   workSorting: 'asc',
   drawerVisible: false,
@@ -54,6 +56,11 @@ export const reducer = (state, action) => {
       return {
         ...state,
         drawerVisible: action.payload,
+      };
+    case GlobalStateActions.THEME_SAVED:
+      return {
+        ...state,
+        themeSaved: true,
       };
     default:
       return initialGlobalState;
