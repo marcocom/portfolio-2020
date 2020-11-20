@@ -3,14 +3,12 @@ import { ThemeProvider } from 'styled-components'
 // import { assetImages } from '@src/assets/images'
 
 const fonts = {
-  cursive: ['Rubik', 'Helvetica', 'serif'],
-  heading: ['Rubik', 'Helvetica', 'serif'],
-  body: ['Karla', 'Helvetica', 'sans-serif'],
+  heading: ['Rubik', 'Helvetica', 'sans-serif'],
+  body: ['Cooper Hewitt', 'Helvetica', 'sans-serif'],
 };
 
 const theme = {
   font: {
-    cursive: fonts.cursive.join(', '),
     heading: fonts.heading.join(', '),
     body: fonts.body.join(', '),
   },
@@ -31,7 +29,6 @@ const lightTheme = {
     bgCard: '#FFFFFF',
     primary: '#0F97DB',
     primaryDarkened: '#0d8bca',
-    // backgroundImage: assetImages.wood7,
   },
 };
 const darkTheme = {
@@ -43,7 +40,6 @@ const darkTheme = {
     imgBg: '#2e2e2e',
     primary: '#0F97DB',
     primaryDarkened: '#0d8bca',
-    // backgroundImage: assetImages.wood2,
   },
 };
 

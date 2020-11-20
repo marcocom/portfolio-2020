@@ -1,28 +1,15 @@
 import React from 'react';
-import styled from 'styled-components'
 
-import { AboutContact, AboutIntro, AboutSkills } from '@src/modules/about'
-import { Container } from '@src/ui/components'
+import { About } from '@src/modules/about'
 import { Layout } from '@src/ui/layout'
 
-const StyledAbout = styled.section`
-  width: 100%;
-  background: ${({ theme }) => theme.color.bg};
-  transition: ${({ theme }) => theme.hoverTransition};
-`;
 
 const PageContent = () => {
 
   // React.useEffect(() => window.scrollTo(0, 0));
   return (
-    <Layout pageTitle='About'>
-      <StyledAbout>
-        <Container>
-          <AboutIntro />
-          <AboutSkills />
-          <AboutContact />
-        </Container>
-      </StyledAbout>
+    <Layout pageTitle='About' >
+      <About />
     </Layout>
   )
 };

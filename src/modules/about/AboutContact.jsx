@@ -17,36 +17,34 @@ const AboutContactList = styled.ul`
   margin: 20px auto;
   width: 260px;
   list-style: none;
-& li {
-    display: inline-block;
+  & li {
+      display: inline-block;
+    & a {
+      text-decoration: none;
+      margin-bottom: 30px;
+      position: relative;
 
-  & a {
-    text-decoration: none;
-    margin-bottom: 30px;
-    position: relative;
-
-    & svg {
-      transition: color ease-in-out 250ms;
-      font-size: 3em;
-      margin-right: 0.5em;
-
-      ${media.down.sm} {
-        font-size: 2em;
-      }
-    }
-
-
-    &:hover,
-    &:active,
-    &:focus {
-      & span,
       & svg {
-        color: ${({theme}) => theme.color.primary};
+        transition: color ease-in-out 250ms;
+        font-size: 3em;
+        margin-right: 0.5em;
+
+        ${media.down.sm} {
+          font-size: 2em;
+        }
+      }
+
+
+      &:hover,
+      &:active,
+      &:focus {
+        & span,
+        & svg {
+          color: ${({theme}) => theme.color.primary};
+        }
       }
     }
   }
-}
-
 `;
 
 export const AboutContact = () => (

@@ -1,61 +1,108 @@
 import React from 'react'
-import styled from 'styled-components'
-
+import {useTheme} from '@src/context'
+import styled from 'styled-components';
 import { Button } from '@src/ui/components'
 import { media } from '@src/utils'
-import {GlobalDispatchContext} from '@src/context';
+import {GlobalDispatchContext, GlobalStateContext} from '@src/context';
 import {GlobalStateActions} from '@src/reducers';
+import {Background} from '@src/ui/layout';
+import gsap from 'gsap';
+
+const BackgroundWrap = styled.div`
+  display: block;
+  position: relative;
+  height: calc(100vh - 60px);
+  width: 100%;
+  overflow: hidden;
+`;
 
 const StyledHero = styled.div`
   width: 100%;
   height: calc(100vh - 60px);
-  padding: 0 50px 0;
-  background: ${({ theme }) => theme.color.bg};
+  display: block;
+  z-index: 2;
+  position: absolute;
+  padding: 0 50px 50px;
+  margin-top: 100px;
+  //background: ${({ theme }) => theme.color.bg};
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  //flex-direction: column;
+  //justify-content: space-evenly;
   transition: ${({ theme }) => theme.hoverTransition};
 
+
   ${media.down.sm} {
-    padding: 50px 20px 0;
+    padding: 12px 20px 0;
     margin-bottom: 60px;
   }
 `;
 
 const Title = styled.h1`
-  font-family: ${({ theme }) => theme.font.cursive};
+  font-family: ${({ theme }) => theme.font.body};
   font-weight: 200;
+  line-height: 1;
   color: ${({ theme }) => theme.color.text};
-  font-size: 3.5em;
-
-  margin-bottom: 15px;
+  //color: #FFF;
+  font-size: 3em;
+  letter-spacing: .2em;
+  margin-bottom: 5px;
   transition: ${({ theme }) => theme.hoverTransition};
+
+  //text-shadow: ${({currentTheme}) => currentTheme === 'light' ? 'rgba(0, 0, 0, .25) 0 0 6px' : 'none'};
+  text-shadow: rgba(0, 0, 0, .25) 0 0 4px;
 
   ${media.down.md} {
     font-size: 2.5em;
+  letter-spacing: .15em;
   }
   ${media.down.sm} {
     font-size: 2em;
+  letter-spacing: .1em;
   }
   ${media.down.xs} {
     font-size: 2em;
+  letter-spacing: .1em;
   }
 `;
 
 const SubTitle = styled.h3`
-  font-family: ${({ theme }) => theme.font.cursive};
+  font-family: ${({ theme }) => theme.font.body};
   font-weight: 400;
+  line-height: 1;
   color: ${({ theme }) => theme.color.text};
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  transition: ${({ theme }) => theme.hoverTransition};
+  //color: #FFF;
+  font-size: 2em;
+  margin-bottom: 40px;
+  //text-shadow: ${({currentTheme}) => currentTheme === 'light' ? 'rgba(0, 0, 0, .25) 0 0 6px' : 'none'};
+  text-shadow: rgba(0, 0, 0, .25) 0 0 2px;
+
+  //animation
+  /*
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 2s ease-in ;
+*/
+  /*
+
+  animation-name: fadein;
+  animation-iteration-count: 0;
+  animation-timing-function: ease-out;
+  animation-duration: 4s;
+
+  @keyframes fadein {
+    0% {opacity:0}
+    50% {opacity:0; transform:translateY(10px);}
+    100% {opacity:1; transform:translateY(0);}
+  }
+  */
+
+
 
   & span {
     color: ${({ theme }) => theme.color.primary};
-    font-family: ${({ theme }) => theme.font.cursive};
-    transition: ${({ theme }) => theme.hoverTransition};
-    font-weight: 700;
+    font-family: ${({ theme }) => theme.font.heading};
+    //transition: ${({ theme }) => theme.hoverTransition};
+    font-weight: 900;
   }
 
   ${media.down.md} {
@@ -64,18 +111,19 @@ const SubTitle = styled.h3`
   ${media.down.sm} {
     font-size: 1em;
   }
-  ${media.down.xs} {
-    font-size: 1em;
-  }
 `;
 
 const BodyText = styled.h5`
-  font-size: 1.4em;
+  font-size: 1.2em;
   display: block;
-  margin: 0 auto 80px;
+  margin: 0 auto;
   width: 100%;
   max-width: 600px;
+  background: ${({theme}) => theme.color.bg};
+  padding: 40px 30px 20px;
+  position: relative;
 
+  transition: ${({theme}) => theme.hoverTransition};
 
   ${media.down.md} {
     font-size: 1.2em;
@@ -89,43 +137,101 @@ const BodyText = styled.h5`
     margin-bottom: 40px;
   }
   & p {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     & i {
-      font-size: .8em;
+      font-size: .7em;
+      ${media.down.sm} {
+        font-size: .85em;
+      }
+      & a {
+        text-decoration: none;
+        color: ${({theme}) => theme.color.primary}
+      }
+
     }
   }
 
+`;
+
+const StyledBtn = styled.div`
+
   & a {
-    text-decoration: none;
-    color: ${({theme}) => theme.color.primary}
+    margin: 20px auto 40px;
+    font-size: initial;
   }
 `;
 
-
 export const Welcome = () => {
 
+  const {theme , toggle} = useTheme();
+
+  const [isNewVisit, setNewVisit] = React.useState(false);
+
   const dispatch = React.useContext(GlobalDispatchContext);
-  React.useEffect(() => dispatch({type: GlobalStateActions.SET_PAGE, payload: ''}), []);
+  const {lastPage, themeSaved} = React.useContext(GlobalStateContext);
+
+  const TitleRef = React.useRef(null);
+  const SubTitleRef = React.useRef(null);
+  const TextBoxRef = React.useRef(null);
+
+  const setPage = () => dispatch({type: GlobalStateActions.SET_PAGE, payload: ''});
+
+  const animCompleted = () => {
+    console.log(`Welcome : animCompleted lastPage:${lastPage} themeSaved:${themeSaved}`);
+    //does not fire when coming from inside the site or user-selected
+    (lastPage === '' || !lastPage) && !themeSaved && toggle();
+    setPage();
+  };
+
+  React.useEffect(() => {
+    if(lastPage) {
+      setPage();
+      return;
+    }
+
+    gsap.from(TitleRef.current, {
+      delay: 0.5,
+      duration: 0.5,
+      opacity: 0,
+      y: 10,
+      ease: 'bounce.out',
+    });
+
+    gsap.from(TextBoxRef.current, {
+      delay: 1,
+      duration: 0.6,
+      ease: 'bounce.out',
+      y: Math.round(window.innerHeight * .7),
+    });
+    gsap.from(SubTitleRef.current, {
+      delay: 2,
+      duration: 1.2,
+      opacity: 0,
+      ease: 'power3.in',
+      y: 10,
+      onComplete: animCompleted, //<<<<<<<<< Theme toggle callout.
+    });
+  },[]);
 
   return (
-  <StyledHero>
-    <div>
-      <Title>
-        <p>marco comparato</p>
-      </Title>
-      <SubTitle>
-        <p><span>interactive art</span> and <span>technology</span> and <span>you</span> and <span>me</span></p>
-      </SubTitle>
-      <BodyText>
-        <p>Welcome! My portfolio is a body of collected interactive works covering my twenty years as an artist and engineer in advertising and technology since 1998.</p>
-        <p>From initial concept to final product, my work is the culmination of a lifetime of study, observation, and a great deal of trial and error.</p>
-        <p>Please enjoy, and thank you for stopping by.</p>
-        <br/>
-        <p>
-          <i><a href='https://github.com/marcocom/portfolio-2020'>This website's code</a> is built using <a href='https://reactjs.org'>ReactJS</a> with <a href="https://styled-components.com">Styled-Components</a> for light/dark theme support, and <a href='https://gatsbyjs.com'>Gatsby</a> for static-content deployables. I am adding sample images, as well as movie-clips to replace old website-demos, and refining functionality every day. Please excuse the mess.</i>
-        </p>
-      </BodyText>
-      <Button outline='true' text='See my work' to='/mywork' direction='up' />
-    </div>
-  </StyledHero>
+    <BackgroundWrap>
+      <StyledHero>
+          <Title ref={TitleRef} currentTheme={theme}>
+            marco comparato
+          </Title>
+          <SubTitle ref={SubTitleRef} currentTheme={theme}>
+            <span>interactive art</span> and <span>technology</span> and <span>you</span> and <span>me</span>
+          </SubTitle>
+          <BodyText ref={TextBoxRef}>
+              <p>My portfolio is a body of collected interactive works covering my twenty years as an artist and engineer in advertising and technology since 1998.</p>
+            <p>From initial concept to final product, my work is the culmination of a lifetime of study, observation, and a great deal of trial and error.</p>
+            <p>Thanks for stopping by!</p>
+            <StyledBtn><Button outline='true' text='view my work' to='/mywork' direction='up' className='cta-btn'/></StyledBtn>
+            <p>
+              <i><a href='https://github.com/marcocom/portfolio-2020'>This website's code</a> is built using <a href='https://reactjs.org'>ReactJS</a> with <a href="https://styled-components.com">Styled-Components</a> for light/dark theme support, and <a href='https://gatsbyjs.com'>Gatsby</a> for static-content deployables. I am adding more projects and refining functionality every day, so please excuse the mess.</i>
+            </p>
+          </BodyText>
+      </StyledHero>
+      <Background />
+    </BackgroundWrap>
 )};

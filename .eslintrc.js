@@ -14,7 +14,7 @@ module.exports = {
   },
   rules: {
     // 'prettier/prettier': ['warn'],
-    'no-unused-vars': 'warn',
+    'no-unused-vars': 'off',
     // 'react/jsx-filename-extension': 'warn',
     'react/no-unescaped-entities': 'off',
     'react/prop-types': 'off',

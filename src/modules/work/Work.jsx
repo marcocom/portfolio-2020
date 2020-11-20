@@ -39,8 +39,8 @@ export const Work = () => {
       // console.log(`lastPage:${lastPage} ref:`, lastEl);
       lastEl && setTimeout(() => lastEl.scrollIntoView(scrollDetails), 1000);
       // reset lastPage value
-      dispatch({ type: GlobalStateActions.SET_PAGE, payload: 'mywork' });
     }
+    dispatch({type: GlobalStateActions.SET_PAGE, payload: 'mywork'});
   }, []);
 
   return (

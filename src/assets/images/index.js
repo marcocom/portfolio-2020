@@ -1,3 +1,5 @@
+/*
+
 import sky1 from './skies/sky1.jpg'
 import wood1 from './wood/wood1.jpg'
 import wood2 from './wood/wood2.jpg'
@@ -18,3 +20,4 @@ export const assetImages = {
   wood6,
   wood7,
 };
+*/

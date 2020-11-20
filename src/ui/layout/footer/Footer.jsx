@@ -5,15 +5,18 @@ import { media } from '@src/utils'
 
 const StyledFooter = styled.footer`
   margin: 0;
-  padding: 0;
   width: 100%;
-  background: ${({ theme }) => theme.color.bg};
+  background: transparent;
   transition: ${({ theme }) => theme.hoverTransition};
   display: flex;
   justify-content: space-evenly;
   padding: 1em;
-  color: ${({ theme }) => theme.color.textSecondary};
+  color: ${({ theme }) => theme.color.text};
   text-align: center;
+
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
 
   ${media.down.md} {
     flex-direction: column;
@@ -22,6 +25,8 @@ const StyledFooter = styled.footer`
 
 export const Footer = () => (
   <StyledFooter>
-    <span>© Marco Comparato {new Date().getFullYear()}</span>
+    <h5>
+      <span>© Marco Comparato {new Date().getFullYear()} &#8212; All rights reserved.</span>
+    </h5>
   </StyledFooter>
 );

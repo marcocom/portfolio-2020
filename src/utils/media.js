@@ -21,4 +21,8 @@ export const media = {
     lg: `@media (min-width: ${size.lg})`,
     xl: `@media (min-width: ${size.xl})`,
   },
+  orientation: {
+    portrait: `@media screen and (orientation: portrait)`,
+    landscape: `@media screen and (orientation: landscape)`,
+  }
 };

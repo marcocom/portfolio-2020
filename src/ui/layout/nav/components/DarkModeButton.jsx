@@ -2,6 +2,8 @@ import { useTheme } from '@src/context'
 import React from 'react'
 import { IoMdSunny, IoMdMoon } from 'react-icons/io'
 import styled from 'styled-components'
+import {GlobalDispatchContext} from '@src/context'
+import {GlobalStateActions} from '@src/reducers';
 
 const DarkModeBtn = styled.button`
   border: none;
@@ -13,26 +15,23 @@ const DarkModeBtn = styled.button`
   outline: none;
   position: relative;
 
-  &:hover {
-    color: ${({ theme }) => theme.color.textSecondary};
-
-    & span {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  & svg {
+    //fill: ${({theme}) => theme.color.primary};
   }
 
   & span {
     position: absolute;
-    width: 130px;
-    top: 20px;
-    left: 25px;
+    width: 200px;
+    top: 70px;
+    right: 15px;
+    text-align: right;
     pointer-events: none;
-    color: ${({ theme }) => theme.color.textSecondary};
-    transform: translateY(15px);
+    color: ${({ theme }) => theme.color.primary};
+    transform: translateY(10px);
     opacity: 0;
-    transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
+    transition: transform 1100ms ease-out, opacity 200ms ease-in-out;
   }
+
 
   & .sun {
     font-size: 22px;
@@ -42,14 +41,31 @@ const DarkModeBtn = styled.button`
     font-size: 22px;
     display: ${({ colorTheme }) => (colorTheme === 'dark' ? 'none' : 'block')};
   }
+  &:hover {
+    & svg {
+      fill: ${({theme}) => theme.color.primary};
+    }
+
+    & span {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 `;
 
 export const DarkModeButton = () => {
   const { theme, toggle } = useTheme();
+  const dispatch = React.useContext(GlobalDispatchContext);
+  const toggleTheme = () => {
+    toggle();
+    dispatch({type: GlobalStateActions.THEME_SAVED});
+  };
   return (
-    <DarkModeBtn onClick={toggle} colorTheme={theme}>
+    <li>
+    <DarkModeBtn onClick={toggleTheme} colorTheme={theme} >
       <IoMdSunny className='sun' /> <IoMdMoon className='moon' />
-      <span>{theme === 'light' ? 'Dark ' : 'Light '}Mode</span>
+      <span className='txt'>Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode</span>
     </DarkModeBtn>
+    </li>
   )
 };

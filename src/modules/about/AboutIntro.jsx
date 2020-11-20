@@ -26,31 +26,13 @@ const StyledAboutIntro = styled.section`
   }
 `;
 
-const AboutImage = styled.img`
-  max-width: 500px;
-  position: relative;
-  justify-self: flex-end;
-  grid-area: image;
-  right: -25px;
-
-  ${media.down.lg} {
-    max-width: 400px;
-    align-self: center;
-    right: 0;
-  }
-  ${media.down.md} {
-    justify-self: center;
-    max-width: 300px;
-  }
-`;
-
 const AboutCard = styled(Card)`
   width: 100%;
   max-width: 850px;
   justify-self: flex-start;
   position: relative;
   left: -25px;
-  top: 50px;
+  top: 70px;
   & h2 {
     font-size: 2.5em;
   }
@@ -59,7 +41,7 @@ const AboutCard = styled(Card)`
   }
 
   & h2, h6 {
-    font-family: ${({ theme }) => theme.font.cursive};
+    font-family: ${({ theme }) => theme.font.heading};
     font-weight: 400;
     color: ${({ theme }) => theme.color.text};
     margin: 6px 0 20px;
