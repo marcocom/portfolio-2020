@@ -213,13 +213,13 @@ const projectAssets = {
   marriott: {
     hero: '/heros/marriott.png',
     images: [
-      '/screenshots/marriott1.jpg',
-      '/screenshots/marriott2.jpg',
-      '/screenshots/marriott3.jpg',
-      '/screenshots/marriott4.jpg',
-      '/screenshots/marriott5.jpg',
-      '/screenshots/marriott6.jpg',
-      '/screenshots/marriott7.jpg',
+      '/screenshots/marriott1.png',
+      '/screenshots/marriott2.png',
+      '/screenshots/marriott3.png',
+      '/screenshots/marriott4.png',
+      '/screenshots/marriott5.png',
+      '/screenshots/marriott6.png',
+      '/screenshots/marriott7.png',
     ],
     videos: [],
   },
@@ -453,7 +453,7 @@ export const projects = {
       the world (and Adidas is popular world-wide)in a manner that internationalizes
       the company identity. `,
       `This site was built for 56k and its use of black & white
-      color pallette and video elements both keeps its data size down
+      color pallette and faux-video elements both keeps its data size down
       while also striking out the color and texture of the product when showcased.`,
     ],
   },
@@ -651,7 +651,7 @@ export const projects = {
     year: 2007,
     subtitle: 'Website Redesign : The Designory',
     link: '/infiniti/',
-    role: 'Multimedia Director',
+    role: 'Multimedia Designer',
     hero: projectAssets.infiniti.hero,
     images: projectAssets.infiniti.images,
     videos: projectAssets.infiniti.videos,
@@ -887,7 +887,7 @@ export const projects = {
     year: 2008,
     subtitle: 'SHIFT_2.0 : The Designory / TBWA',
     link: '/shift2/',
-    role: 'Multimedia Director',
+    role: 'Multimedia Designer',
     hero: projectAssets.shift2.hero,
     images: projectAssets.shift2.images,
     videos: projectAssets.shift2.videos,
@@ -920,7 +920,7 @@ export const projects = {
     year: 2019,
     subtitle: 'Stadia Game-Streaming Service : Accenture',
     link: '/stadia/',
-    role: 'Art Director',
+    role: 'UX Engineer',
     hero: projectAssets.stadia.hero,
     images: projectAssets.stadia.images,
     videos: projectAssets.stadia.videos,
@@ -1261,7 +1261,6 @@ export const projects = {
       completely indistinguishable from real-world images.  It all started with this Auria project.`
     ],
   },
-
 };
 
 export const projectList = Object.values(projects);
