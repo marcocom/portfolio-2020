@@ -167,14 +167,14 @@ export const Welcome = () => {
 
   const [isNewVisit, setNewVisit] = React.useState(false);
 
-  const dispatch = React.useContext(GlobalDispatchContext);
+  const setGlobalState = React.useContext(GlobalDispatchContext);
   const {lastPage, themeSaved} = React.useContext(GlobalStateContext);
 
   const TitleRef = React.useRef(null);
   const SubTitleRef = React.useRef(null);
   const TextBoxRef = React.useRef(null);
 
-  const setPage = () => dispatch({type: GlobalStateActions.SET_PAGE, payload: ''});
+  const setPage = () => setGlobalState({type: GlobalStateActions.SET_PAGE, payload: ''});
 
   const animCompleted = () => {
     console.log(`Welcome : animCompleted lastPage:${lastPage} themeSaved:${themeSaved}`);
@@ -189,27 +189,25 @@ export const Welcome = () => {
       return;
     }
 
-    gsap.from(TitleRef.current, {
+    const animIntro1 = gsap.timeline({onComplete: animCompleted})
+    .from(SubTitleRef.current, {
       delay: 0.5,
-      duration: 0.5,
+      duration: 0.75,
       opacity: 0,
-      y: 10,
+      y: 20,
       ease: 'bounce.out',
-    });
-
-    gsap.from(TextBoxRef.current, {
-      delay: 1,
-      duration: 0.6,
-      ease: 'bounce.out',
+    })
+    .from(TextBoxRef.current, {
+      duration: 0.4,
+      ease: 'power4.out',
       y: Math.round(window.innerHeight * .7),
-    });
-    gsap.from(SubTitleRef.current, {
-      delay: 2,
+    })
+    .from(TitleRef.current, {
+      delay: 1,
       duration: 1.2,
       opacity: 0,
       ease: 'power3.in',
       y: 10,
-      onComplete: animCompleted, //<<<<<<<<< Theme toggle callout.
     });
   },[]);
 

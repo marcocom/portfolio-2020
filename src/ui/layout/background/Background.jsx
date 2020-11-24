@@ -25,7 +25,7 @@ const StyledBackground = styled.div`
 
   //filter: saturate(0%);
 
-  animation: 3s ease 0s normal forwards 1 fadein;
+  animation: 2s ease 0s normal forwards 1 fadein;
   @keyframes fadein {
     0% {opacity:0;}
     66% {opacity:0;}
