@@ -1,20 +1,21 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 import {GlobalDispatchContext} from '@src/context';
 import {GlobalStateActions} from '@src/reducers/reduceGlobal';
 
-import { Card, Text } from '@src/ui/components'
-import { media } from '@src/utils'
+import { Card, Text } from '@src/ui/components';
+import { media } from '@src/utils';
+import gsap from 'gsap';
 
 const StyledAboutIntro = styled.section`
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: 1fr;
   align-items: flex-end;
-  margin: 30px auto 100px;
+  margin: 0 auto 100px;
   grid-template-areas: 'image card';
 
-  ${media.down.lg} {
+  ${media.up.lg} {
     margin: 30px auto 50px;
   }
 
@@ -27,7 +28,8 @@ const StyledAboutIntro = styled.section`
 `;
 
 const AboutCard = styled(Card)`
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
   max-width: 850px;
   justify-self: flex-start;
   position: relative;
@@ -75,11 +77,21 @@ const AboutCard = styled(Card)`
 
 export const AboutIntro = () => {
   const dispatch = React.useContext(GlobalDispatchContext);
-  React.useEffect(() => dispatch({type: GlobalStateActions.SET_PAGE, payload:'about'}), []);
+  const TitleAnim = React.useRef(null);
+  React.useEffect(() => {
+    dispatch({type: GlobalStateActions.SET_PAGE, payload: 'about'});
+    gsap.from(TitleAnim.current, {
+      x:10,
+      ease: 'power2.out',
+      delay: 0.5,
+      duration: 1.75,
+      opacity: 0,
+    });
+  }, []);
   return (
   <StyledAboutIntro>
     <AboutCard>
-      <h2>
+      <h2 ref={TitleAnim}>
         hello, i'm <span>marco</span>
       </h2>
         <h6>I am a digital artist, web designer, and front-end developer, specializing in the creation of rich, interactive user-experiences. </h6>

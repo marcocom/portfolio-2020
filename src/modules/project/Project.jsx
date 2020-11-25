@@ -20,6 +20,8 @@ const InnerContainer = styled.div`
   }
 `;
 
+
+
 export const Project = ({ project }) => {
   const {
     title,
@@ -50,7 +52,7 @@ export const Project = ({ project }) => {
 
   return (
     <ProjectContainer>
-      <Button to='/mywork' text='<< Back' outline='false' direction='left' backbtn='true'/>
+      <Button to='/mywork' text='<< Back' hovertext='My Work' outline='false' direction='left' backbtn='true'/>
       <ProjectHeader background={background}
                      title={title}
                      subtitle={subtitle}
@@ -66,7 +68,7 @@ export const Project = ({ project }) => {
           <ProjectInfo githubLink={githubLink} hostedLink={hostedLink} hero={hero} />
         </InnerContainer>
       </Container>
-      <Button to='/mywork' text='<< Back' outline='false' direction='left' backbtn='true'/>
+      <Button to='/mywork' text='<< Back' hovertext='My Work' outline='false' direction='left' backbtn='true'/>
     </ProjectContainer>
   )
 };

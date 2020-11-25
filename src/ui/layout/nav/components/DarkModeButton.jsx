@@ -26,7 +26,7 @@ const DarkModeBtn = styled.button`
     right: 15px;
     text-align: right;
     pointer-events: none;
-    color: ${({ theme }) => theme.color.primary};
+    color: ${({ theme, colorTheme }) => colorTheme === 'light' ? theme.color.primary : theme.color.text};
     transform: translateY(10px);
     opacity: 0;
     transition: transform 1100ms ease-out, opacity 200ms ease-in-out;

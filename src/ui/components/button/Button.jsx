@@ -16,7 +16,7 @@ const StyledAniLink = styled(AniLink)`
   ${({ backbtn }) => (backbtn === 'true' && BtnBackStyles)};
 `;
 
-export const Button = ({ outline = 'false', backbtn = 'false', direction = 'right', to, href, text, handleClick }) => {
+export const Button = ({ outline = 'false', backbtn = 'false', direction = 'right', hovertext = null, to, href, text, handleClick }) => {
   const themeContext = useContext(ThemeContext);
   if (to) {
     return (
@@ -29,7 +29,7 @@ export const Button = ({ outline = 'false', backbtn = 'false', direction = 'righ
         bg={themeContext.color.bg}
         duration={0.4}
       >
-        <ButtonText text={text} />
+        <ButtonText text={text} hovertext={hovertext}/>
       </StyledAniLink>
     )
   }
@@ -49,13 +49,17 @@ export const Button = ({ outline = 'false', backbtn = 'false', direction = 'righ
   )
 };
 
-const ButtonText = ({ text }) => (
+const ButtonText = ({ text, hovertext = null }) => (
   <>
     <div className='btn_text--default'>
       <span>{text}</span>
     </div>
     <div className='btn_text--hidden'>
-      <span>{text}</span>
+      { !hovertext ?
+        <span>{text}</span> :
+        <span>{hovertext}</span>
+      }
+
     </div>
   </>
 );

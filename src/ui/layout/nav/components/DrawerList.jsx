@@ -1,8 +1,8 @@
 import { useTheme } from '@src/context'
-import { DrawerNavLink } from '@src/ui/layout/nav/components'
+import { DrawerNavLink } from './'
 import React from 'react'
 import { FaGithub, FaLinkedin, FaRegEnvelope } from 'react-icons/fa'
-import { IoMdFolder, IoMdPerson, IoMdSunny, IoMdMoon, IoMdSubway } from 'react-icons/io'
+import { IoMdFolder, IoMdPerson, IoMdSunny, IoMdMoon } from 'react-icons/io'
 import styled from 'styled-components'
 
 const NavList = styled.ul`
@@ -25,9 +25,9 @@ export const DrawerList = ({ setDrawerOpen }) => {
     toggle();
     setDrawerOpen();
   };
+
   return (
     <NavList>
-      <DrawerNavLink to='/' direction='down' name='Home' icon={<IoMdSubway />} />
       <DrawerNavLink to='/mywork' direction='up' name='My Work' icon={<IoMdFolder />} />
       <DrawerNavLink to='/about/' direction='left' name='About' icon={<IoMdPerson />} />
       <DrawerNavLink

@@ -13,7 +13,7 @@ const NavListItem = styled.li`
 
   & a,
   & button {
-    font-size: 1.1em;
+    font-size: 0.9em;
     text-decoration: none;
     display: flex;
     justify-content: center;

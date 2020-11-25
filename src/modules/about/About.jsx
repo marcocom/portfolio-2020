@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 
-import {AboutContact, AboutIntro, AboutSkills} from '@src/modules/about'
+import {AboutIntro, AboutSkills} from './'
 import {Container} from '@src/ui/components'
 
 const StyledAbout = styled.section`
@@ -16,7 +16,7 @@ export const About = () => (
       <Container>
         <AboutIntro/>
         <AboutSkills/>
-        <AboutContact/>
+        {/*<AboutContact/>*/}
       </Container>
     </StyledAbout>
   );

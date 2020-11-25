@@ -19,7 +19,7 @@ const StyledProjectDev = styled.section`
 
 export const ProjectDev = ({ devDesc, role }) => (
   <StyledProjectDev>
-    <Text type='heading'>Introspective</Text>
+    <Text type='heading'>Retrospective</Text>
     <Text type='subheading' className='role-txt'>My Role: {role}</Text>
     {devDesc.map((paragraph) => (
       <Text key={`DevDesc-${paragraph}`}>{paragraph}</Text>

@@ -18,6 +18,9 @@ const theme = {
   background 2000ms ease-out,
   background-color 2000ms ease-out
   `,
+  fadeIn: `
+
+  `,
 };
 
 const lightTheme = {

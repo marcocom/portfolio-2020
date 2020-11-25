@@ -7,11 +7,15 @@ import { Text } from '@src/ui/components'
 import { media } from '@src/utils'
 
 const StyledAboutContact = styled.section`
-  width:
+  width: 100%;
+  display: block;
+  margin-top: 50px;
 `;
 
 const AboutContactList = styled.ul`
-  display: block;
+  display: flex;
+  flex-direction: row;
+  flex-basis: available;
   text-align: center;
 
   margin: 20px auto;
@@ -19,6 +23,7 @@ const AboutContactList = styled.ul`
   list-style: none;
   & li {
       display: inline-block;
+
     & a {
       text-decoration: none;
       margin-bottom: 30px;
@@ -50,7 +55,7 @@ const AboutContactList = styled.ul`
 export const AboutContact = () => (
   <StyledAboutContact>
     <Text type='heading' center>
-      reach out
+      Contact Me
     </Text>
     <AboutContactList>
       <li>

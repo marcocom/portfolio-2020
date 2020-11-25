@@ -585,30 +585,6 @@ export const projects = {
       story in pre-render gray-tone state, until the final reveal.`,
     ],
   },
-  eggbank: {
-    title: 'Egg Bank',
-    year: 2001,
-    subtitle: 'Website Fedesign : CKS/marchFIRST',
-    link: '/eggbank/',
-    role: 'Art Director',
-    hero: projectAssets.eggbank.hero,
-    images: projectAssets.eggbank.images,
-    videos: projectAssets.eggbank.videos,
-    githubLink: '',
-    hostedLink: '',
-    devDesc: [
-      `Egg Bank is a popular bank in London. A very open-minded client,
-      this banking firm sought to connect its identity to that of the generation-Z,
-      20-30-something market that are keeping their day to day finances and checking
-      accounts in a modest range and were looking to promote 'accessibility' and smaller,
-      more realistic investments by their customers.`,
-      `The creative director for this project was Holli-Marie O'Carroll and was a
-      large success both in the satisfaction of the client and in the impact results.
-      The largest challenge presented itself when it was learned that England has accessability
-      regulations that required consideration to the blind and therefore
-      struggled with limited javascript in commercial websites of the 2001 era.`,
-    ],
-  },
   goodhome: {
     title: 'Good Home',
     year: 2001,
@@ -1261,6 +1237,35 @@ export const projects = {
       completely indistinguishable from real-world images.  It all started with this Auria project.`
     ],
   },
+};
+
+const UNSEEN_PROJECTS = {
+
+  eggbank: {
+    title: 'Egg Bank',
+    year: 2001,
+    subtitle: 'Website Fedesign : CKS/marchFIRST',
+    link: '/eggbank/',
+    role: 'Art Director',
+    hero: projectAssets.eggbank.hero,
+    images: projectAssets.eggbank.images,
+    videos: projectAssets.eggbank.videos,
+    githubLink: '',
+    hostedLink: '',
+    devDesc: [
+      `Egg Bank is a popular bank in London. A very open-minded client,
+      this banking firm sought to connect its identity to that of the generation-Z,
+      20-30-something market that are keeping their day to day finances and checking
+      accounts in a modest range and were looking to promote 'accessibility' and smaller,
+      more realistic investments by their customers.`,
+      `The creative director for this project was Holli-Marie O'Carroll and was a
+      large success both in the satisfaction of the client and in the impact results.
+      The largest challenge presented itself when it was learned that England has accessability
+      regulations that required consideration to the blind and therefore
+      struggled with limited javascript in commercial websites of the 2001 era.`,
+    ],
+  },
+
 };
 
 export const projectList = Object.values(projects);

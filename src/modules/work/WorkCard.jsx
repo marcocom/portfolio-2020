@@ -29,7 +29,7 @@ export const WorkCard = ({ title, subtitle, description, link, year, role }) => 
         <Text type='heading' card>{title}</Text>
         <Text type='subheading' card>{subtitle}</Text>
         <Text card>{description}</Text>
-        <Button outline='true' to={link} text='Learn More' />
+        <Button outline='true' to={link} text='See Details' hovertext='See Images, Videos, and Retrospective' />
       </StyledWorkCard>
     );
 };
