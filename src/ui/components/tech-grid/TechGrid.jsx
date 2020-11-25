@@ -4,7 +4,7 @@ import { TechItem } from '@src/ui/components'
 import { media } from '@src/utils'
 
 const AboutGrid = styled.div`
-  width: 100%;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-gap: 20px;

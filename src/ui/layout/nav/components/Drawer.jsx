@@ -1,4 +1,4 @@
-import { DrawerList } from '@src/ui/layout/nav/components'
+import { DrawerList } from './'
 import { media } from '@src/utils'
 import React from 'react'
 import styled from 'styled-components'
@@ -6,29 +6,31 @@ import {GlobalDispatchContext} from '@src/context';
 import {GlobalStateActions} from '@src/reducers/reduceGlobal';
 
 const StyledDrawer = styled.aside`
-  position: fixed;
-  display: none;
+--navheight: 60px;
+  position: absolute;
   background-color: ${({ theme }) => theme.color.bg};
   border: ${({ theme }) => theme.color.primary} 8px solid;
-  top: 0;
+  top: var(--navheight);
   bottom: 0;
   left: 0;
-  right: 0;
+  width: 100vw;
+  height: calc(100vh - var(--navheight));
+  transform: translateX(100vw);
   z-index: 3;
-  opacity: 0;
+  //visibility: hidden;
   pointer-events: none;
-  //transition: 300ms opacity ease-in-out, ${({ theme }) => theme.hoverTransition};
+  transition: ${({ theme }) => theme.hoverTransition}, transform 1s ease-in-out;
   justify-content: center;
   align-items: center;
+    display: flex;
 
   &.drawer-open {
-    opacity: 1;
-    display: block;
+    //visibility: visible;
+    transform: translateX(0);
     pointer-events: all;
   }
 
   ${media.down.md} {
-    display: flex;
   }
 `;
 
@@ -37,6 +39,10 @@ const StyledNav = styled.nav`
   max-width: 500px;
   margin: 0 auto;
   padding: 0;
+
+  position: relative;
+  top: 50vh;
+  transform: translateY(-50vh);
 `;
 
 export const Drawer = ({ drawerOpen, setDrawerOpen }) => {

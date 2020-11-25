@@ -201,7 +201,7 @@ export const Welcome = () => {
       setPage();
       return;
     }
-
+    // GSAP animation. more reliable than CSS animation across browsers.
     const animIntro1 = gsap.timeline({onComplete: animCompleted})
     .from(SubTitleRef.current, {
       delay: 0.5,
@@ -220,7 +220,7 @@ export const Welcome = () => {
       duration: 1.8,
       opacity: 0,
       ease: 'power3.in',
-      y: -10,
+      x: 10,
     });
   },[]);
 
