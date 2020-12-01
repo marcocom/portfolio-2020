@@ -22,13 +22,15 @@ const oddStyles = css`
   grid-template-areas: 'card image';
 `;
 
-const StyledWorkItem = styled.article`
+const StyledWorkItem = styled.li`
   margin-bottom: 90px;
   width: 100%;
   display: grid;
   ${(props) => (props.index % 2 === 0 ? evenStyles : oddStyles)};
   align-items: center;
   border-radius: 2em;
+
+  box-shadow: ${({theme}) => theme.shadows.insetShadow} ;
   background: ${({theme}) => theme.color.imgBg};
 
   /*background: linear-gradient(

@@ -903,14 +903,13 @@ export const projects = {
     githubLink: '',
     hostedLink: '',
     devDesc: [
-      `In a rush to deliver this enormous project, I was brought aboard the Stadia team
+      `In a rush to deliver this enormous roll-out across multiple platforms, I was brought aboard the Stadia team
       at Google in Mountain View to work on the ChromeCast (Smart TV dongle) receiver front-end.
       Stadia streams gaming-experiences to users across any Chrome-enabled device, and the
       Chromecast is most underpowered of them by far. This required building our client and UI
       at a completely raw level, using Google's proprietary DART.js as our only framework and library. Performance was
       shrewdly achieved with pure CSS animations, requiring minimal repainting, while achieving
       a rich game-console feel in its opening-introductions, and game-menu system.`,
-
       `As a creative artist, and having very little true computer-science knowledge, I found it thrilling
       to have to learn so much Java, Blaze, and Linux, as well as device-peripherals like a
       game-controller, in order to do my work. Google has a very deep build process requiring nearly
@@ -1240,7 +1239,6 @@ export const projects = {
 };
 
 const UNSEEN_PROJECTS = {
-
   eggbank: {
     title: 'Egg Bank',
     year: 2001,

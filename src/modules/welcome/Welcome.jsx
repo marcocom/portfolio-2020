@@ -216,12 +216,12 @@ export const Welcome = () => {
       y: Math.round(window.innerHeight * .7),
     })
     .from(TitleRef.current, {
-      delay: 0.8,
       duration: 1.8,
       opacity: 0,
       ease: 'power3.in',
       x: 10,
     });
+
   },[]);
 
   return (

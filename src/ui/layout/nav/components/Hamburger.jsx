@@ -13,8 +13,10 @@ const StyledHamburger = styled.button`
   cursor: pointer;
   z-index: 5;
   outline: none;
+  margin-right: 10px;
 
   ${media.down.md} {
+  margin-right: 0;
     display: flex;
   }
 

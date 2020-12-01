@@ -8,7 +8,7 @@ const StyledHeader = styled.header`
   height: 60px;
   background-color: ${({ theme }) => theme.color.bg};
   position: fixed;
-  box-shadow: rgba(0,0,0,0.25) 0 0 6px;
+  box-shadow: ${({theme}) => theme.shadows.headerShadow};
   z-index: 10;
   transition: ${({ theme }) => theme.hoverTransition};
 `;

@@ -1,5 +1,5 @@
-import {css} from 'styled-components'
-import { media } from '@src/utils'
+import {css} from 'styled-components';
+import { media } from '@src/utils';
 
 
 const SharedBtnStyles = css`
@@ -102,10 +102,10 @@ export const BtnSolidStyles = css`
 export const BtnBackStyles = css`
 
   ${media.up.md}{
+    font-size: .8em;
     width: 100px;
     height: 30px;
     position: relative;
-
   }
 
 `;

@@ -1,9 +1,9 @@
-import { useTheme } from '@src/context'
-import { DrawerNavLink } from './'
-import React from 'react'
-import { FaGithub, FaLinkedin, FaRegEnvelope } from 'react-icons/fa'
-import { IoMdFolder, IoMdPerson, IoMdSunny, IoMdMoon } from 'react-icons/io'
-import styled from 'styled-components'
+import { useTheme, GlobalStateContext } from '@src/context';
+import { DrawerNavLink } from './';
+import React from 'react';
+import { FaGithub, FaLinkedin, FaRegEnvelope } from 'react-icons/fa';
+import { IoMdFolder, IoMdPerson, IoMdSunny, IoMdMoon } from 'react-icons/io';
+import styled from 'styled-components';
 
 const NavList = styled.ul`
   width: 100%;
@@ -12,7 +12,7 @@ const NavList = styled.ul`
   padding: 0;
   list-style: none;
   text-align: center;
-  display: flex;
+  display: ${({drawerVisible})=> (drawerVisible ? 'flex' : 'none')};
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -20,6 +20,7 @@ const NavList = styled.ul`
 
 export const DrawerList = ({ setDrawerOpen }) => {
   const { theme, toggle } = useTheme();
+  const {drawerVisible} = React.useContext(GlobalStateContext);
 
   const handleDarkMode = () => {
     toggle();
@@ -27,7 +28,7 @@ export const DrawerList = ({ setDrawerOpen }) => {
   };
 
   return (
-    <NavList>
+    <NavList drawerVisible={drawerVisible}>
       <DrawerNavLink to='/mywork' direction='up' name='My Work' icon={<IoMdFolder />} />
       <DrawerNavLink to='/about/' direction='left' name='About' icon={<IoMdPerson />} />
       <DrawerNavLink
