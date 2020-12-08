@@ -25,7 +25,7 @@ const StyledItem = styled.div`
 
     ${media.down.md} {
       filter: ${({colorTheme, invert}) => (colorTheme === 'dark' && invert ? 'invert(1)' : '')}
-        grayscale(0);
+        grayscale(100%);
     }
     ${media.down.xs} {
       height: 35px;
@@ -52,7 +52,7 @@ const StyledGrid = styled.div`
   }
   ${media.down.md} {
     grid-template-columns: repeat(6, 1fr);
-    margin: 40px auto 30px;
+    margin: 10px auto 30px;
   }
   ${media.down.sm} {
     grid-template-columns: repeat(5, 1fr);

@@ -3,15 +3,16 @@ import React from 'react'
 import { projectList } from '@src/data';
 import {IoMdSearch, IoMdClose} from 'react-icons/io';
 import { WorkItem } from './';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import { GlobalStateContext, GlobalDispatchContext } from '@src/context';
 import {GlobalStateActions} from '@src/reducers';
 import {SortButton} from '@src/ui/components';
 import {media} from '@src/utils';
+import AutoSuggest from 'react-autosuggest';
 
 
 
-const StyledSearchInput = styled.div`
+const StyledContainerDiv = styled.div`
   display: inline-flex;
   flex-direction: row;
   position: relative;
@@ -31,6 +32,26 @@ const StyledSearchInput = styled.div`
     color: ${({theme}) => theme.color.text};
     cursor: pointer;
   }
+  & input {
+    padding: 0 40px 0 0;
+    background: ${({theme}) => theme.color.bgCard};
+    display: block;
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: ${({theme}) => theme.shadows.insetShadow};
+    color: ${({theme}) => theme.color.primary};
+    font-size: 1em;
+    text-indent: 1em;
+    text-align: left;
+    pointer-events: all;
+    & :focus {
+      outline: none;
+      border: 1px solid ${({theme}) => theme.color.primary};
+    }
+  }
+
   & :hover, & :focus-within {
    & svg {
       color: ${({theme}) => theme.color.primary};
@@ -46,27 +67,11 @@ const StyledSearchInput = styled.div`
   }
 `;
 
-const StyledInput = styled.input`
-  padding: 0 40px 0 0;
-  background: ${({theme}) => theme.color.bgCard};
-  display: block;
-  width: 100%;
-  border-radius: 20px;
-  border: none;
-  box-shadow: ${({theme}) => theme.shadows.insetShadow};
-  color: ${({theme}) => theme.color.primary};
-  font-size: 1em;
-  text-indent: 1em;
-  text-align: left;
-  pointer-events: all;
-  & :focus {
-    outline: none;
-    border: 1px solid ${({theme}) => theme.color.primary};
-  }
-`;
+
+
+
 export const WorkList = () => {
   const { workSorting, searchFilterString } = React.useContext(GlobalStateContext);
-
   const dispatch = React.useContext(GlobalDispatchContext);
 
   const searchInputHandler = (e) => {
@@ -88,17 +93,28 @@ export const WorkList = () => {
       )
     )
     .sort((a, b) => (workSorting === 'asc' ? a.year - b.year : b.year - a.year));
-
   };
 
+  const inputProps = {
+    placeholder: "Search by Title, Description, Year",
+    value: searchFilterString,
+    onChange: searchInputHandler,
+  };
   return (
     <>
-      <StyledSearchInput>
-        <StyledInput onChange={searchInputHandler} max-length="20" value={searchFilterString} placeholder="Search by Title, Description, Year"/>
+      <StyledContainerDiv>
+        <input onChange={searchInputHandler} max-length="20"
+               type="text"
+               value={searchFilterString}
+               placeholder="Search by Title, Description, Year" />
+        {/*<AutoSuggest inputProps={inputProps}
+                     suggestions={projectList} alwaysRenderSuggestions={true} />*/}
         {
-          searchFilterString ? <IoMdClose onClick={searchCloseHandler} className="close-btn" /> : <IoMdSearch />
+          searchFilterString ?
+            <IoMdClose onClick={searchCloseHandler} className="close-btn" /> :
+            <IoMdSearch />
         }
-      </StyledSearchInput>
+      </StyledContainerDiv>
       <SortButton />
       {
         filterSortData().map((project, index) => (
