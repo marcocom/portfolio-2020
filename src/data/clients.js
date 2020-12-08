@@ -1,116 +1,147 @@
 import { clientLogos } from '@src/assets/client-logos'
-
+/*
+* meta: search-string to refine results of list
+* id: project elementId to scroll to. 'link' value of project schema
+* */
 export const clientList = [
   {
-    anchor: 'thride',
+    meta: 'activision',
+    id:  'thride',
     image: clientLogos.activision,
   },
   {
-    anchor: 'adidas',
+    meta: 'adidas',
+    id:  'adidas',
     image: clientLogos.adidas,
   },
   {
-    anchor: 'autodesk',
+    meta: 'autodesk',
+    id:  'autodesk',
     image: clientLogos.autodesk,
   },
   {
-    anchor: 'codelite',
+    meta: 'call of duty',
+    id:  'thride',
     image: clientLogos.codelite,
   },
   {
-    anchor: 'diesel',
+    meta: 'diesel',
+    id:  'diesel',
     image: clientLogos.diesel,
   },
   {
-    anchor: 'disney',
+    meta: 'disney',
+    id:  'disney',
     image: clientLogos.disney,
   },
   {
-    anchor: 'dockers',
+    meta: 'dockers',
+    id:  'dockers',
     image: clientLogos.dockers,
   },
   {
-    anchor: 'dodgesrt',
+    meta: 'dodge',
+    id:  'dodgesrt',
     image: clientLogos.dodgemotorsports,
   },
   {
-    anchor: 'raadnwin',
+    meta: 'casino',
+    id:  'raadnwin',
     image: clientLogos.raadnwin,
   },
   {
-    anchor: 'hsd',
+    meta: 'prius',
+    id:  'hsd',
     image: clientLogos.hsd,
   },
   {
-    anchor: 'infiniti',
+    meta: 'infiniti',
+    id:  'infiniti',
     image: clientLogos.infiniti,
   },
   {
-    anchor: 'tombrady',
+    meta: 'intel',
+    id:  'tombrady',
     image: clientLogos.intel,
   },
   {
-    anchor: 'jcpenney',
+    meta: 'jcpenney',
+    id:  'jcpenney',
     image: clientLogos.jcpenney,
   },
   {
-    anchor: 'kitbuilder',
+    meta: 'drums',
+    id:  'kitbuilder',
     image: clientLogos.kitbuilder,
   },
   {
-    anchor: 'kpn',
+    meta: 'kpn',
+    id:  'kpn',
     image: clientLogos.kpn,
   },
   {
-    anchor: 'landcruiser',
+    meta: 'heritage',
+    id:  'landcruiser',
     image: clientLogos.landcruiser,
   },
   {
-    anchor: 'levis',
+    meta: 'Levi',
+    id:  'levis',
     image: clientLogos.levis,
   },
   {
-    anchor: 'marriott',
+    meta: 'marriott',
+    id:  'marriott',
     image: clientLogos.marriott,
   },
   {
-    anchor: 'shift2',
+    meta: 'nissan',
+    id:  'shift2',
     image: clientLogos.nissan,
   },
   {
-    anchor: 'samsung',
+    meta: 'samsung',
+    id:  'samsung',
     image: clientLogos.samsung,
   },
   {
-    anchor: 'sixtymin',
+    meta: 'CBS',
+    id:  'sixtymin',
     image: clientLogos.sixtymin,
   },
   {
-    anchor: 'stadia',
+    meta: 'google',
+    id:  'stadia',
     image: clientLogos.google,
   },
   {
-    anchor: 'tivo',
+    meta: 'tivo',
+    id:  'tivo',
     image: clientLogos.tivo,
   },
   {
-    anchor: 'toyota',
+    meta: 'toyota',
+    id:  'toyota',
     image: clientLogos.toyota,
   },
   {
-    anchor: 'usarmy',
+    meta: 'army experience',
+    id:  'usarmy',
     image: clientLogos.usarmy,
   },
   {
-    anchor: 'vodafone',
+    meta: 'vodafone',
+    id:  'vodafone',
     image: clientLogos.vodafone,
   },
   {
-    anchor: 'warnerbros',
+    meta: 'Warner',
+    id:  'warnerbros',
     image: clientLogos.warner,
   },
   {
-    anchor: 'yoroto',
+    meta: 'Yo Roto!',
+    id:  'yoroto',
     image: clientLogos.yoroto,
   },
 ];

@@ -11,12 +11,6 @@ const StyledWork = styled.section`
   background: ${({ theme }) => theme.color.bg};
   transition: ${({ theme }) => theme.hoverTransition};
   text-align: center;
-
-  & button {
-    position: relative;
-    margin:-3px auto 5px;
-
-  }
 `;
 
 
@@ -39,6 +33,8 @@ export const Work = () => {
     el && setTimeout(() => el.scrollIntoView(scrollDetails), 1500);
   };
 
+  const searchResponse = (txt) => dispatch({type: GlobalStateActions.SEARCH_INPUT, payload: txt});
+
   React.useEffect(() => {
     lastPage && scrollIntoView(lastPage);
     dispatch({type: GlobalStateActions.SET_PAGE, payload: 'mywork'});
@@ -46,9 +42,8 @@ export const Work = () => {
 
   return (
     <StyledWork ref={scrollRef}>
-      <WorkClients scrollCall={scrollIntoView}/>
-      <Text type='page-heading'>past projects</Text>
-      <SortButton/>
+      <WorkClients searchCall={searchResponse} scrollCall={scrollIntoView} />
+      {/*<Text type='page-heading'>past projects</Text>*/}
       <Container>
         <WorkList/>
       </Container>

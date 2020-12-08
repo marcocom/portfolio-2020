@@ -745,7 +745,7 @@ export const projects = {
   landcruiser: {
     title: 'Land Cruiser Heritage',
     year: 2006,
-    subtitle: '50-year Heritage Kiosk/microsite : Saatchi & Saatchi LA',
+    subtitle: 'Toyota 50yr Anthology Kiosk / Microsite : Saatchi & Saatchi LA',
     link: '/landcruiser/',
     role: 'Multimedia Director',
     hero: projectAssets.landcruiser.hero,

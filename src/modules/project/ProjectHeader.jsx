@@ -8,9 +8,12 @@ import {Carousel} from 'react-responsive-carousel';
 const StyledHeader = styled.section`
   width: 100%;
   position: relative;
+  ${media.down.sm}{
+    margin-top: 10px
+  }
 `;
 const ColorSection = styled.div`
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 10px 50px;
   width: 100%;
   height: auto;

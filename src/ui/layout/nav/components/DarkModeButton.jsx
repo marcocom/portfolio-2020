@@ -2,7 +2,7 @@ import { useTheme } from '@src/context'
 import React from 'react'
 import { IoMdSunny, IoMdMoon } from 'react-icons/io'
 import styled from 'styled-components'
-import {GlobalDispatchContext} from '@src/context'
+import {GlobalDispatchContext, GlobalStateContext} from '@src/context'
 import {GlobalStateActions} from '@src/reducers';
 
 const DarkModeBtn = styled.button`
@@ -55,6 +55,7 @@ const DarkModeBtn = styled.button`
 
 export const DarkModeButton = () => {
   const { theme, toggle } = useTheme();
+  const {lastPage} = React.useContext(GlobalStateContext);
   const dispatch = React.useContext(GlobalDispatchContext);
   const toggleTheme = () => {
     toggle();
@@ -64,7 +65,9 @@ export const DarkModeButton = () => {
     <li>
     <DarkModeBtn onClick={toggleTheme} colorTheme={theme} >
       <IoMdSunny className='sun' /> <IoMdMoon className='moon' />
-      <span className='txt'>Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode</span>
+      { !lastPage &&
+        <span className='txt'>Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode</span>
+      }
     </DarkModeBtn>
     </li>
   )

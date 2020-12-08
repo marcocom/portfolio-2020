@@ -68,6 +68,9 @@ export const ProjectYear = styled.h1`
   top: -5px;
   right: 10px;
   user-select: none;
+  ${media.down.md} {
+    font-size: 4em;
+  }
 `;
 
 export const Hightlight = styled.span`

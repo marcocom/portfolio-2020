@@ -68,7 +68,7 @@ export const WorkItem = ({ project, index }) => {
   */
 
   return (
-    <StyledWorkItem index={index} ref={elementRef} id={link.replace(/\/+/g, '')}>
+    <StyledWorkItem index={index} ref={elementRef} id={link.replace(/\/+/g, '')} className="work-item" >
       <WorkImage image={hero} title={title} inview={inView} link={link} />
       <WorkCard title={title} subtitle={subtitle} description={description} link={link} year={year} role={role} />
     </StyledWorkItem>

@@ -7,7 +7,7 @@ import {GlobalStateContext} from '@src/context';
 
 const styles = css`
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 0.9em;
   display: block;
   padding: 0 20px;
   position: relative;

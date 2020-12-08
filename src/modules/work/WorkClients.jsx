@@ -65,20 +65,23 @@ const StyledGrid = styled.div`
   }
 `;
 
-export const WorkClients = ({scrollCall}) => {
+export const WorkClients = ({scrollCall, searchCall}) => {
   const {theme} = useTheme();
-  const clickHandler = (id) => {
-    console.log(id);
+  const clickHandler = (id, meta) => {
+    // console.log(id);
+    searchCall(meta);
     scrollCall(id);
   };
 
   return (
     <StyledGrid>
-      {clientList.map((client, index) => (
-        <StyledItem onClick={() => clickHandler(client.anchor)} key={index} colorTheme={theme} invert={true}>
-          <img src={client.image} alt={client.anchor}/>
-        </StyledItem>
-      ))}
+      {
+        clientList.map((client, index) => (
+          <StyledItem onClick={() => clickHandler(client.id, client.meta)} key={index} colorTheme={theme} invert={true}>
+            <img src={client.image} alt={client.id}/>
+          </StyledItem>
+        ))
+      }
     </StyledGrid>
   )
 };
