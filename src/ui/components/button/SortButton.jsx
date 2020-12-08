@@ -13,12 +13,16 @@ const StyledBtn = styled.button`
   padding: 0;
   cursor: pointer;
   outline: none;
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  position: relative;
+  margin: 6px auto 5px;
+  float: right;
 
   & svg {
     display: block;
+    margin-top: 3px;
     fill: ${({theme}) => theme.color.primary};
   }
 
@@ -60,6 +64,8 @@ const StyledBtn = styled.button`
   ${media.down.sm} {
     //left: 50%;
     //transform: scale(0.75);
+    display: flex;
+    float: none;
     & .txt {
       font-size: 1em;
       top: 4px;

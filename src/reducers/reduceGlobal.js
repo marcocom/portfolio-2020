@@ -6,7 +6,8 @@ export const GlobalStateActions = {
   SET_PROJECTS: 'SET_PROJECTS',
   TOGGLE_DRAWER: 'TOGGLE_DRAWER',
   SET_DRAWER: 'SET_DRAWER',
-  THEME_SAVED:'THEME_SAVED'
+  THEME_SAVED:'THEME_SAVED',
+  SEARCH_INPUT: 'SEARCH_INPUT',
 };
 
 export const initialGlobalState = {
@@ -16,50 +17,56 @@ export const initialGlobalState = {
   workSorting: 'asc',
   drawerVisible: false,
   projects: [],
+  searchFilterString: '',
 };
 
-export const reducer = (state, action) => {
+export const reducer = (store, action) => {
   console.log(`GLOBAL STATE Action:${action.type} payload:${action.payload || ''}`);
 
   switch (action.type) {
+    case GlobalStateActions.SEARCH_INPUT:
+      return {
+        ...store,
+        searchFilterString: action.payload //.replace(/ /ig, '')
+      };
     case GlobalStateActions.SET_SCROLL:
       return {
-        ...state,
+        ...store,
         workScrollPoint: action.payload
       };
     case GlobalStateActions.SET_PAGE:
       return {
-        ...state,
+        ...store,
         lastPage: action.payload
       };
     case GlobalStateActions.CLEAR_PAGE:
       return {
-        ...state,
+        ...store,
         lastPage: null
       };
     case GlobalStateActions.SET_PROJECTS:
       return {
-        ...state,
+        ...store,
         projects: action.payload
       };
     case GlobalStateActions.TOGGLE_SORTING:
       return {
-        ...state,
-        workSorting: state.workSorting === 'asc' ? 'desc' : 'asc',
+        ...store,
+        workSorting: store.workSorting === 'asc' ? 'desc' : 'asc',
       };
     case GlobalStateActions.TOGGLE_DRAWER:
       return {
-        ...state,
-        drawerVisible: !state.drawerVisible,
+        ...store,
+        drawerVisible: !store.drawerVisible,
       };
     case GlobalStateActions.SET_DRAWER:
       return {
-        ...state,
+        ...store,
         drawerVisible: action.payload,
       };
     case GlobalStateActions.THEME_SAVED:
       return {
-        ...state,
+        ...store,
         themeSaved: true,
       };
     default:

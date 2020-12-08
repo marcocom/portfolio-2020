@@ -8,33 +8,31 @@ import { media } from '@src/utils';
 import gsap from 'gsap';
 
 const StyledAboutIntro = styled.section`
-  display: grid;
+  /*display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: 1fr;
-  align-items: flex-end;
+  align-items: flex-end;*/
   margin: 0 auto 100px;
-  grid-template-areas: 'image card';
+  //grid-template-areas: 'image card';
 
   ${media.up.lg} {
     margin: 30px auto 50px;
   }
-
+/*
   ${media.down.md} {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: 'image' 'card';
     grid-gap: 25px;
-  }
+  }*/
 `;
 
 const AboutCard = styled(Card)`
   width: 95%;
-  margin: 0 auto;
+  margin: 20px auto;
   max-width: 850px;
-  justify-self: flex-start;
+  justify-self: center;
   position: relative;
-  left: -25px;
-  top: 70px;
   & h2 {
     font-size: 2.5em;
   }

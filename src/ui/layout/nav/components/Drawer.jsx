@@ -13,24 +13,27 @@ const StyledDrawer = styled.aside`
   top: var(--navheight);
   bottom: 0;
   left: 0;
-  width: 100vw;
+  width: calc(100vw - 15px);
+  //width: calc(100vw - 35px);
   height: calc(100vh - var(--navheight));
-  transform: translateX(100vw);
+  //transform: translateX(100vw);
   z-index: 3;
+  display: none;
   //visibility: hidden;
   pointer-events: none;
-  transition: ${({ theme }) => theme.hoverTransition}, transform 1s ease-in-out;
+  //transition: ${({ theme }) => theme.hoverTransition}, transform 1s ease-in-out;
   justify-content: center;
   align-items: center;
-    display: flex;
 
   &.drawer-open {
     //visibility: visible;
-    transform: translateX(0);
+    display: flex;
+    //transform: translateX(0);
     pointer-events: all;
   }
 
-  ${media.down.md} {
+  ${media.down.sm} {
+    width: 100vw;
   }
 `;
 

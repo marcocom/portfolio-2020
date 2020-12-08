@@ -1,7 +1,8 @@
-import React, { useContext } from 'react'
-import styled, { ThemeContext } from 'styled-components'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
-import { BtnSolidStyles, BtnOutlineStyles, BtnBackStyles } from './buttonStyles'
+import React from 'react';
+import styled, { ThemeContext } from 'styled-components';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import { BtnSolidStyles, BtnOutlineStyles, BtnBackStyles } from './buttonStyles';
+import {media} from '@src/utils';
 
 const StyledButton = styled.button`
   ${({ outline }) => (outline === 'true' ? BtnOutlineStyles : BtnSolidStyles)};
@@ -13,15 +14,24 @@ const StyledAnchor = styled.a`
 
 const StyledAniLink = styled(AniLink)`
   ${({ outline }) => (outline === 'true' ? BtnOutlineStyles : BtnSolidStyles)};
-  ${({ backbtn }) => (backbtn === 'true' && BtnBackStyles)};
+  ${({ backbtn }) => (backbtn !== 'false' && BtnBackStyles)};
+  ${media.up.md} {
+    &.top {
+      border-bottom-right-radius: 20px;
+    }
+    &.bottom {
+      border-top-right-radius: 20px;
+    }
+  }
 `;
 
 export const Button = ({ outline = 'false', backbtn = 'false', direction = 'right', hovertext = null, to, href, text, handleClick }) => {
-  const themeContext = useContext(ThemeContext);
+  const themeContext = React.useContext(ThemeContext);
   if (to) {
     return (
       <StyledAniLink
         backbtn={backbtn}
+        className={backbtn}
         outline={outline}
         to={to}
         swipe

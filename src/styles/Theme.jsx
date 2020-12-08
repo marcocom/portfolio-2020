@@ -18,9 +18,12 @@ const theme = {
   background 2000ms ease-out,
   background-color 2000ms ease-out
   `,
-  fadeIn: `
+  shadows: {
+    boxShadow: `4px 4px 8px 0 rgba(0, 0, 0, 0.15);`,
+    headerShadow: `0 0 6px rgba(0,0,0,0.25) ;`,
+    insetShadow: `inset 2px 2px 6px rgba(0,0,0,0.15) ;`
+  }
 
-  `,
 };
 
 const lightTheme = {

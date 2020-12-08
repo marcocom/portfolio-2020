@@ -52,7 +52,7 @@ export const Project = ({ project }) => {
 
   return (
     <ProjectContainer>
-      <Button to='/mywork' text='<< Back' hovertext='My Work' outline='false' direction='left' backbtn='true'/>
+      <Button to='/mywork' text='<< Back' hovertext='My Work' outline='false' direction='up' backbtn='top'/>
       <ProjectHeader background={background}
                      title={title}
                      subtitle={subtitle}
@@ -68,7 +68,7 @@ export const Project = ({ project }) => {
           <ProjectInfo githubLink={githubLink} hostedLink={hostedLink} hero={hero} />
         </InnerContainer>
       </Container>
-      <Button to='/mywork' text='<< Back' hovertext='My Work' outline='false' direction='left' backbtn='true'/>
+      <Button to='/mywork' text='<< Back' hovertext='My Work' outline='false' direction='up' backbtn='bottom'/>
     </ProjectContainer>
   )
 };

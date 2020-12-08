@@ -1,6 +1,7 @@
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
-import React, { useContext } from 'react'
-import styled, { ThemeContext } from 'styled-components'
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import React, { useContext } from 'react';
+import styled, { ThemeContext } from 'styled-components';
+import {GlobalStateContext} from '@src/context';
 
 const NavListItem = styled.li`
   display: block;
@@ -61,10 +62,19 @@ const NavListItem = styled.li`
 `;
 
 export const DrawerNavLink = ({ to, href, direction, name, icon, email, onClick }) => {
-  const themeContext = useContext(ThemeContext)
+  const themeContext = useContext(ThemeContext);
+  const {lastPage} = React.useContext(GlobalStateContext);
+  const [isCurrent, setIsCurrent] = React.useState(false);
 
   if (to) {
+
+    React.useEffect(() => {
+      if (href) return;
+      setIsCurrent(to.replace(/\/+/g, '') === lastPage);
+    }, [lastPage]);
+
     return (
+      !isCurrent &&
       <NavListItem>
         <AniLink
           to={to}

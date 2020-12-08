@@ -22,13 +22,15 @@ const oddStyles = css`
   grid-template-areas: 'card image';
 `;
 
-const StyledWorkItem = styled.article`
+const StyledWorkItem = styled.li`
   margin-bottom: 90px;
   width: 100%;
   display: grid;
   ${(props) => (props.index % 2 === 0 ? evenStyles : oddStyles)};
   align-items: center;
   border-radius: 2em;
+
+  box-shadow: ${({theme}) => theme.shadows.insetShadow} ;
   background: ${({theme}) => theme.color.imgBg};
 
   /*background: linear-gradient(
@@ -66,7 +68,7 @@ export const WorkItem = ({ project, index }) => {
   */
 
   return (
-    <StyledWorkItem index={index} ref={elementRef} id={link.replace(/\/+/g, '')}>
+    <StyledWorkItem index={index} ref={elementRef} id={link.replace(/\/+/g, '')} className="work-item" >
       <WorkImage image={hero} title={title} inview={inView} link={link} />
       <WorkCard title={title} subtitle={subtitle} description={description} link={link} year={year} role={role} />
     </StyledWorkItem>
