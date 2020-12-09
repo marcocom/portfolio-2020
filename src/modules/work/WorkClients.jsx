@@ -52,16 +52,18 @@ const StyledGrid = styled.div`
   }
   ${media.down.md} {
     grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
     margin: 10px auto 30px;
   }
   ${media.down.sm} {
+    grid-gap: 10px;
     grid-template-columns: repeat(5, 1fr);
   }
   ${media.down.xs} {
     grid-template-columns: repeat(4, 1fr);
   }
   @media only screen and (max-width: 400px) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 `;
 
