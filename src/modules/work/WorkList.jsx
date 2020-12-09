@@ -12,7 +12,7 @@ import AutoSuggest from 'react-autosuggest';
 
 
 
-const StyledContainerDiv = styled.div`
+const StyledSearchDiv = styled.div`
   display: inline-flex;
   flex-direction: row;
   position: relative;
@@ -46,6 +46,9 @@ const StyledContainerDiv = styled.div`
     text-indent: 1em;
     text-align: left;
     pointer-events: all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     & :focus {
       outline: none;
       border: 1px solid ${({theme}) => theme.color.primary};
@@ -67,7 +70,9 @@ const StyledContainerDiv = styled.div`
   }
 `;
 
-
+const StyledUL = styled.ul`
+  padding: 0;
+`;
 
 
 export const WorkList = () => {
@@ -102,7 +107,8 @@ export const WorkList = () => {
   };
   return (
     <>
-      <StyledContainerDiv>
+
+      <StyledSearchDiv>
         <input onChange={searchInputHandler} max-length="20"
                type="text"
                value={searchFilterString}
@@ -114,13 +120,15 @@ export const WorkList = () => {
             <IoMdClose onClick={searchCloseHandler} className="close-btn" /> :
             <IoMdSearch />
         }
-      </StyledContainerDiv>
+      </StyledSearchDiv>
       <SortButton />
+      <StyledUL>
       {
         filterSortData().map((project, index) => (
             <WorkItem project={project} index={index} key={project.title}/>
           ))
       }
+      </StyledUL>
     </>
   )
 };

@@ -22,8 +22,15 @@ const StyledBtn = styled.button`
 
   & svg {
     display: block;
-    margin-top: 3px;
+    margin-top: 1px;
     fill: ${({theme}) => theme.color.primary};
+
+    &.extra {
+
+      ${media.up.sm} {
+        display: none;
+      }
+    }
   }
 
   &:hover {
@@ -39,7 +46,7 @@ const StyledBtn = styled.button`
   & .txt {
     position: relative;
     top: 2px;
-    font-size: 1.3em;
+    font-size: 1.1em;
     width: auto;
     text-align: center;
     white-space: nowrap;
@@ -95,7 +102,7 @@ export const SortButton = () => {
 
   return (
     <StyledBtn onClick={toggle} sort={workSorting}>
-      <IoMdArrowRoundUp className='asc'/> <IoMdArrowRoundDown className='desc'/>
+      <IoMdArrowRoundUp className='asc extra'/> <IoMdArrowRoundDown className='desc extra'/>
       <span className="txt">Sorted by: {workSorting === 'asc' ? 'Ascending ' : 'Descending'} years</span>
       <IoMdArrowRoundUp className='asc' /> <IoMdArrowRoundDown className='desc' />
     </StyledBtn>
