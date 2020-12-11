@@ -21,7 +21,7 @@ export const initialGlobalState = {
 };
 
 export const reducer = (store, action) => {
-  console.log(`GLOBAL STATE Action:${action.type} payload:${action.payload || ''}`);
+  console.log(`GLOBAL STATE Action:${action.type} payload:${action.payload || 'NONE'}`);
 
   switch (action.type) {
     case GlobalStateActions.SEARCH_INPUT:

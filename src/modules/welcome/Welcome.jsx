@@ -192,7 +192,7 @@ export const Welcome = () => {
   const animCompleted = () => {
     console.log(`Welcome : animCompleted lastPage:${lastPage} themeSaved:${themeSaved}`);
     //does not fire when coming from inside the site or user-selected
-    (lastPage === '' || !lastPage) && !themeSaved && toggle();
+    (lastPage === '' || !lastPage) && !themeSaved && toggle(true);
     setPage();
   };
 
