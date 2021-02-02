@@ -65,8 +65,11 @@ const StyledSearchDiv = styled.div`
     display: flex;
     width: 96%;
     float: none;
-
     margin: 10px auto 5px;
+
+    & input {
+      border: 1px solid ${({theme}) => theme.color.primary};
+    }
   }
 `;
 
@@ -97,6 +100,9 @@ export const WorkList = () => {
         obj.year.toString() === searchFilterString
       )
     )
+    // alphebetical
+    // .sort((a, b) => (workSorting === 'asc' ? a.title - b.title : b.title - a.title));
+    // chronological
     .sort((a, b) => (workSorting === 'asc' ? a.year - b.year : b.year - a.year));
   };
 

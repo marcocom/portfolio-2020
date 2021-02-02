@@ -14,7 +14,7 @@ export const initialGlobalState = {
   workScrollPoint: 0,
   themeSaved: false,
   lastPage: null,
-  workSorting: 'asc',
+  workSorting: 'desc',
   drawerVisible: false,
   projects: [],
   searchFilterString: '',

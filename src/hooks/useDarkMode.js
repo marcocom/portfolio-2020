@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import {GlobalDispatchContext} from '@src/context'
+import React, { useEffect, useState } from 'react';
+import {GlobalDispatchContext} from '@src/context';
 import {GlobalStateActions} from '@src/reducers';
 
 export const useDarkMode = () => {
