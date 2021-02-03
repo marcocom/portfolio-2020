@@ -46,6 +46,9 @@ const StyledGrid = styled.div`
   grid-template-columns: repeat(9, 1fr);
   grid-gap: 30px;
   margin: 40px auto;
+  background: ${({theme}) => theme.color.bg};
+  transition: ${({theme}) => theme.hoverTransition};
+
 
   ${media.down.lg} {
     grid-template-columns: repeat(8, 1fr);

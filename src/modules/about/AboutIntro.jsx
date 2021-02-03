@@ -94,19 +94,19 @@ export const AboutIntro = () => {
       </h2>
         <h6>I am a digital artist, web designer, and front-end developer, specializing in the creation of rich, interactive user-experiences. </h6>
 
-        <h6>My creative career began at the world's first large-scale internet agency in 1998, at U.S.Interactive in Los Angeles, where we launched the first websites for Adidas, Lexus, Wide World of Disney, and the Smithsonian-Award winning, <cite>'StarBright'</cite>.
-          I then moved to San Francisco in 2001 where I worked in Cupertino, for U.S.Web/CKS for 2 years designing websites rich in animation, interactivity and multimedia &#8212; delivering the original launch sites for Levi's, Docker's, Williams-Sonoma, and JCPenney.</h6>
+        <h6>My creative career began in in Los Angeles, where we launched the first websites for Adidas, Lexus, Wide World of Disney, and the Smithsonian-Award winning, <cite>'StarBright'</cite>.
+          I then moved to San Francisco where I worked in Cupertino, for U.S.Web/CKS for 2 years designing websites rich in animation, interactivity and multimedia &#8212; delivering the original launch sites for Levi's, Docker's, Williams-Sonoma, and JCPenney.</h6>
 
-        <h6>In 2003, I moved to San Diego to do creative direction for a small firm in the real-estate brokerage market and later, moved back to Los Angeles to work at Saatchi & Saatchi and handle Toyota's main website, micro-sites, and digital media for the next 3 years, followed by another 5 years of freelance automotive client work for Nissan, Acura, Scion, and Chrysler/Dodge.</h6>
+        <h6>I moved back to Los Angeles to work at Saatchi & Saatchi and handle Toyota's main website, micro-sites, and digital media for the next 3 years, followed by another 5 years of freelance automotive client work for Nissan, Acura, Scion, Saturn, and Chrysler/Dodge.</h6>
 
-        <h6>I then moved into video-games for a few years, working with the U.S.Army's <cite>'America's Army'</cite> and <cite>'The Army Experience'</cite> game interfaces, <cite>'The Secret World'</cite>, <cite>'Tony Hawk RIDE'</cite>, <cite>'Darksiders'</cite>, <cite>'RedBull's Soap-Race'</cite> websites, and the in-game menus and clan features of <cite>'Call Of Duty'</cite> at Activision, and finally moving overseas to do some Holland Casino contest-games in Amsterdam.</h6>
+        <h6>After automotive, I moved into video-games for a few years, working with the U.S.Army's <cite>'America's Army'</cite> and <cite>'The Army Experience'</cite> game interfaces, <cite>'The Secret World'</cite>, <cite>'Tony Hawk RIDE'</cite>, <cite>'Darksiders'</cite>, <cite>'RedBull's Soap-Race'</cite> websites, and the in-game menus and clan features of <cite>'Call Of Duty'</cite> at Activision, and finally I lived overseas to do some Holland Casino contest-games and touch kiosks in Amsterdam.</h6>
 
-        <h6>Since 2014, I moved back from Europe to San Francisco, to work with Accenture, consulting their clients including Disney, Autodesk, Google, YouTube, Intel, Warner Bros Studios, Marriott Hotels, and PizzaHut. </h6>
+        <h6>Since 2014, I have moved back to San Francisco, to work with Accenture, consulting their clients including Disney, Autodesk, Google, YouTube, Intel, Warner Bros Studios, Marriott Hotels and Cisco. </h6>
 
-        <h6>My specialties include; Concepting, User Interface Design, Ad Media, Interactive Touch Displays, Front-end modern code development,
-          User-Centric Design and Prototype-driven discovery processes. I strive to always create intelligently unified solutions that deliver
+        <h6>My specialties include; Concepting, User Interface Design, Interactive Media, Touch Kiosk Displays, Front-end single-page application development,
+          Design Sprints and Prototype-driven discovery. I strive to always create intelligently unified solutions that deliver
           a brand's message in a playfully engaging and interactive way, defining a customer journey across multiple touch points to deliver a
-          cohesive product experience.</h6>
+          cohesive product experience. </h6>
 
     </AboutCard>
   </StyledAboutIntro>

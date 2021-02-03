@@ -8,6 +8,7 @@ import { GlobalStateActions } from '@src/reducers/reduceGlobal';
 
 const StyledWork = styled.section`
   width: 100%;
+  margin-top:30px;
   background: ${({ theme }) => theme.color.bg};
   transition: ${({ theme }) => theme.hoverTransition};
   text-align: center;
@@ -42,11 +43,9 @@ export const Work = () => {
 
   return (
     <StyledWork ref={scrollRef}>
-      <WorkClients searchCall={searchResponse} scrollCall={scrollIntoView} />
       {/*<Text type='page-heading'>past projects</Text>*/}
-      <Container>
-        <WorkList/>
-      </Container>
+      <Container> <WorkList/> </Container>
+      <WorkClients searchCall={searchResponse} scrollCall={scrollIntoView} />
     </StyledWork>
   )
 };

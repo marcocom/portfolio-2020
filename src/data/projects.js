@@ -482,7 +482,7 @@ export const projects = {
   codelite: {
     title: 'Call of Duty:Black Ops',
     year: 2011,
-    subtitle: 'Elite Player-metrics & Clan-management interface : Beachwood Studios',
+    subtitle: 'Elite Player-metrics & Clan-management interface : Activision',
     link: '/codelite/',
     role: 'UI Designer, Developer',
     hero: projectAssets.codelite.hero,
@@ -568,7 +568,7 @@ export const projects = {
   },
   dodgesrt: {
     title: 'Dodge SRT',
-    year: 2008,
+    year: 2010,
     subtitle: 'SRT Presentation Kiosk, Big Block',
     link: '/dodgesrt/',
     role: 'Creative Director',
@@ -605,7 +605,7 @@ export const projects = {
   },
   hsd: {
     title: 'Toyota Prius',
-    year: 2006,
+    year: 2005,
     subtitle: 'Interactive Kiosk/mini-site : Saatchi & Saatchi LA',
     link: '/hsd/',
     role: 'Multimedia Designer',
@@ -744,7 +744,7 @@ export const projects = {
   },
   landcruiser: {
     title: 'Land Cruiser Heritage',
-    year: 2006,
+    year: 2005,
     subtitle: 'Toyota 50yr Anthology Kiosk / Microsite : Saatchi & Saatchi LA',
     link: '/landcruiser/',
     role: 'Multimedia Director',
@@ -860,7 +860,7 @@ export const projects = {
   },
   shift2: {
     title: 'Nissan',
-    year: 2008,
+    year: 2007,
     subtitle: 'SHIFT_2.0 : The Designory / TBWA',
     link: '/shift2/',
     role: 'Multimedia Designer',
@@ -893,7 +893,7 @@ export const projects = {
   },
   stadia: {
     title: 'Google',
-    year: 2019,
+    year: 2020,
     subtitle: 'Stadia Game-Streaming Service : Accenture',
     link: '/stadia/',
     role: 'UX Engineer',
@@ -974,7 +974,7 @@ export const projects = {
   },
   toyota: {
     title: 'Toyota',
-    year: 2005,
+    year: 2004,
     subtitle: 'Website / minisites / banners : Saatchi & Saatchi LA',
     link: '/toyota/',
     role: 'Multimedia Designer, Animator',
@@ -1093,7 +1093,7 @@ export const projects = {
   },
   infsummer: {
     title: `Infiniti`,
-    year: 2008,
+    year: 2007,
     subtitle: 'Summer Event Kiosk : The Designory',
     link: '/infsummer/',
     role: 'Art Director, Developer',

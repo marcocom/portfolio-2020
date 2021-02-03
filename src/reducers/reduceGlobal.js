@@ -14,14 +14,14 @@ export const initialGlobalState = {
   workScrollPoint: 0,
   themeSaved: false,
   lastPage: null,
-  workSorting: 'asc',
+  workSorting: 'desc',
   drawerVisible: false,
   projects: [],
   searchFilterString: '',
 };
 
 export const reducer = (store, action) => {
-  console.log(`GLOBAL STATE Action:${action.type} payload:${action.payload || ''}`);
+  console.log(`GLOBAL STATE Action:${action.type} payload:${action.payload || 'NONE'}`);
 
   switch (action.type) {
     case GlobalStateActions.SEARCH_INPUT:
