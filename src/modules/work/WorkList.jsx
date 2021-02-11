@@ -136,8 +136,9 @@ export const WorkList = () => {
       <StyledUL>
       {
         filterSortData().map((project, index) => (
-            (project.year > 2010 || searchFilterString.length) && //removing everything before 2010 because this industry has decided to forego experience as a merit.
+            (project.year > 2010 || searchFilterString.length) ? //removing everything before 2010 because this industry has decided to forego experience as a merit.
             <WorkItem project={project} index={index} key={project.title}/>
+            : null
           ))
       }
       </StyledUL>

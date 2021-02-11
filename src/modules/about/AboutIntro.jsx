@@ -94,7 +94,7 @@ export const AboutIntro = () => {
       </h2>
         <h6>I am a digital artist, web designer, and front-end developer, specializing in the creation of rich, interactive user-experiences. </h6>
 
-        <h6>My creative career began in in Los Angeles, where we launched the first websites for Adidas, Lexus, Wide World of Disney, and the Smithsonian-Award winning, <cite>'StarBright'</cite>.
+        <h6>My creative career began at the world's first interactive agency in Los Angeles, where we launched the first websites for Adidas, Lexus, Wide World of Disney, and the Smithsonian-Award winning, <cite>'StarBright'</cite>.
           I then moved to San Francisco where I worked in Cupertino, for U.S.Web/CKS for 2 years designing websites rich in animation, interactivity and multimedia &#8212; delivering the original launch sites for Levi's, Docker's, Williams-Sonoma, and JCPenney.</h6>
 
         <h6>I moved back to Los Angeles to work at Saatchi & Saatchi and handle Toyota's main website, micro-sites, and digital media for the next 3 years, followed by another 5 years of freelance automotive client work for Nissan, Acura, Scion, Saturn, and Chrysler/Dodge.</h6>
