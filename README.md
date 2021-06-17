@@ -2,7 +2,7 @@
 This is a portfolio website .
 
 ## Hosting
-The site is hosted publicly at https://www.marcocomparato.com/.
+The site is hosted publicly at http://www.marcocomparato.com/ or (reedirects to...) https://marcocom.github.io.
 
 ## Local Installation
 This site is built with GatsbyJS, so you'll need to have the [Gatsby CLI](https://www.gatsbyjs.org/docs/gatsby-cli/) installed on your machine to run it locally.
