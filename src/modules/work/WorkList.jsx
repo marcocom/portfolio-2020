@@ -8,7 +8,6 @@ import { GlobalStateContext, GlobalDispatchContext } from '@src/context';
 import {GlobalStateActions} from '@src/reducers';
 import {SortButton} from '@src/ui/components';
 import {media} from '@src/utils';
-import AutoSuggest from 'react-autosuggest';
 
 const SORT_PROPERTY = 'year'; // requires change of the button-text for this in SortButton.
 
@@ -20,7 +19,6 @@ const StyledSearchDiv = styled.div`
   width: 350px;
   margin: 0 0 26px 0;
   float: left;
-
 
   & svg {
     height: 25px;
