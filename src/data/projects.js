@@ -482,7 +482,7 @@ export const projects = {
   codelite: {
     title: 'Call of Duty:Black Ops',
     year: 2011,
-    subtitle: 'Elite Player-metrics & Clan-management interface : Beachwood Studios',
+    subtitle: 'Elite Player-metrics & Clan-management interface : Activision',
     link: '/codelite/',
     role: 'UI Designer, Developer',
     hero: projectAssets.codelite.hero,
@@ -893,7 +893,7 @@ export const projects = {
   },
   stadia: {
     title: 'Google',
-    year: 2019,
+    year: 2020,
     subtitle: 'Stadia Game-Streaming Service : Accenture',
     link: '/stadia/',
     role: 'UX Engineer',
