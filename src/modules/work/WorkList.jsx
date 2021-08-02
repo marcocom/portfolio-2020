@@ -9,6 +9,8 @@ import {GlobalStateActions} from '@src/reducers';
 import {SortButton} from '@src/ui/components';
 import {media} from '@src/utils';
 
+const SORT_PROPERTY = 'year'; // requires change of the button-text for this in SortButton.
+
 const StyledSearchDiv = styled.div`
   display: inline-flex;
   flex-direction: row;
@@ -88,7 +90,7 @@ export const WorkList = () => {
   const filterSortData = () => {
     const tester = new RegExp(searchFilterString, 'ig');
 
-    return [...projectList]
+    const worklist = [...projectList]
     .filter(obj => !searchFilterString.length ? true : // if no search string exists, filter none.
       ( //filter conditions
         obj.title.match(tester) ||
@@ -96,10 +98,15 @@ export const WorkList = () => {
         obj.year.toString() === searchFilterString
       )
     )
+    .sort((a, b) => (workSorting === 'asc' ? a[SORT_PROPERTY] - b[SORT_PROPERTY] : b[SORT_PROPERTY] - a[SORT_PROPERTY]));
     // alphebetical
     // .sort((a, b) => (workSorting === 'asc' ? a.title - b.title : b.title - a.title));
     // chronological
-    .sort((a, b) => (workSorting === 'asc' ? a.year - b.year : b.year - a.year));
+    // .sort((a, b) => (workSorting === 'asc' ? a.year - b.year : b.year - a.year));
+
+    console.log('displayed project data:', worklist);
+
+    return worklist;
   };
 
   const inputProps = {
@@ -127,6 +134,7 @@ export const WorkList = () => {
       <StyledUL>
       {
         filterSortData().map((project, index) => (
+            (project.year > 2010 || searchFilterString.length) && //removing everything before 2010 because this industry has decided to forego experience as a merit.
             <WorkItem project={project} index={index} key={project.title}/>
           ))
       }
