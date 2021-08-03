@@ -77,13 +77,14 @@ const SubTitle = styled.h3`
   //text-shadow: ${({currentTheme}) => currentTheme === 'light' ? 'rgba(0, 0, 0, .25) 0 0 6px' : 'none'};
   text-shadow: rgba(0, 0, 0, .25) 0 0 2px;
 
-  //animation
-  /*
+
+  /* transition
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 2s ease-in ;
 */
-  /*
+
+  /* keyframes
 
   animation-name: fadein;
   animation-iteration-count: 0;
@@ -166,7 +167,6 @@ const BodyText = styled.h5`
 `;
 
 const StyledBtn = styled.div`
-
   & a {
     margin: 20px auto 40px;
     font-size: initial;
