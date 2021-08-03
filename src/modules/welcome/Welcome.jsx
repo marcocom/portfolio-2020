@@ -98,8 +98,6 @@ const SubTitle = styled.h3`
   }
   */
 
-
-
   & span {
     color: ${({ theme }) => theme.color.primary};
     font-family: ${({ theme }) => theme.font.heading};
