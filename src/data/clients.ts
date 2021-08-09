@@ -1,9 +1,7 @@
-import { clientLogos } from '@src/assets/client-logos'
-/*
-* meta: search-string to refine results of list
-* id: project elementId to scroll to. 'link' value of project schema
-* */
-export const clientList = [
+import {clientLogos} from '../assets/client-logos';
+import {ClientListData} from "./types";
+
+export const clientList: ClientListData[] = [
   {
     meta: 'activision',
     id:  'thride',

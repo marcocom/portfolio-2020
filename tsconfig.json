@@ -1,0 +1,74 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "skipLibCheck": true,
+    "strictBindCallApply": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "paths": {
+      "@reach/router/*": ["./node_modules/@gatsbyjs/reach-router/*"]
+    }
+  },
+  "exclude": ["peril/*", "examples/*"]
+}
+/*
+
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "src*/
+/*": [
+        "src*/
+/*"
+      ]
+    },
+    "types": [
+      "classnames",
+      "cypress",
+      "intl",
+      "node",
+      "node-fetch",
+      "reach__router",
+      "react-dom",
+      "react-helmet",
+      "react-redux",
+      "react-toastify",
+      "redux-actions",
+      "redux-debounced",
+      "showdown",
+      "uniqid",
+      "webpack",
+      "webpack-env"
+    ],
+    "module": "commonjs",
+    "target": "esnext",
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "es2017"
+    ],
+    "strict": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": false,
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "experimentalDecorators": true
+  },
+  "exclude": [
+    "node_modules",
+    "public",
+    ".cache"
+  ]
+}
+*/

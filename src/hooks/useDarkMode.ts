@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import {GlobalDispatchContext} from '@src/context';
-import {GlobalStateActions} from '@src/reducers';
+import {Context, useContext, useEffect, useState} from 'react';
+import {GlobalDispatchContext} from '../context';
+import {GlobalStateActions} from '../reducers';
+import {ThemeContextProps} from "../context/ContextTypes";
 
 export const useDarkMode = () => {
 
   const [theme, setTheme] = useState('light');
-  const dispatch = React.useContext(GlobalDispatchContext);
+  const dispatch = useContext(GlobalDispatchContext);
   const [componentMounted, setComponentMounted] = useState(false);
 
-  const saveToLocal = (mode = theme) => {
+  const saveToLocal = (mode: string = theme) => {
     window.localStorage.setItem('theme', mode);
   };
 

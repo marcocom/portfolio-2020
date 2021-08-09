@@ -1,5 +1,6 @@
+import {ProjectsList, ProjectAssets} from "./types";
 
-const projectAssets = {
+const projectAssets: ProjectAssets = {
   sixtymin: {
     hero: '/heros/60minutes.png',
     images: [
@@ -411,7 +412,7 @@ const projectAssets = {
   },
 };
 
-export const projects = {
+export const projects: ProjectsList = {
   sixtymin: {
     title: '60 Minutes',
     year: 2009,
@@ -1238,7 +1239,10 @@ export const projects = {
   },
 };
 
-const UNSEEN_PROJECTS = {
+export const projectList = Object.values(projects);
+
+/*
+const UNSEEN_PROJECTS: ProjectData = {
   eggbank: {
     title: 'Egg Bank',
     year: 2001,
@@ -1263,7 +1267,5 @@ const UNSEEN_PROJECTS = {
       struggled with limited javascript in commercial websites of the 2001 era.`,
     ],
   },
-
 };
-
-export const projectList = Object.values(projects);
+*/

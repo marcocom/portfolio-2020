@@ -1,6 +1,7 @@
 import {useCallback, useState} from 'react';
+import {CounterProps} from "./HooksTypes";
 
-export const useCounter = (initialState = 1) => {
+export const useCounter = (initialState = 1): CounterProps => {
   const [count, setCount] = useState(initialState);
 
   const reset = useCallback(() => setCount(initialState), [initialState]);
