@@ -1,7 +1,6 @@
-import {Context, useContext, useEffect, useState} from 'react';
+import {useContext, useEffect, useState} from 'react';
 import {GlobalDispatchContext} from '../context';
-import {GlobalStateActions} from '../reducers';
-import {ThemeContextProps} from "../context/ContextTypes";
+import {GlobalStateActions, DispatchAction} from '../reducers/types';
 
 export const useDarkMode = () => {
 
@@ -27,7 +26,7 @@ export const useDarkMode = () => {
 
     if (localTheme) {
       setTheme(localTheme);
-      dispatch({type: GlobalStateActions.THEME_SAVED});
+      dispatch({type: GlobalStateActions.THEME_SAVED} as DispatchAction);
     } else {
       setTheme(isOSInDarkMode ? 'light' : 'dark');  // reversed because homepage animation toggles this after anim.
     }

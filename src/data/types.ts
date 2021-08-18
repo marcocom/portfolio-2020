@@ -33,4 +33,4 @@ type ProjectData = {
 }
 export type ProjectsList = {
   [key: string]: ProjectData;
-}
+} | never[];
