@@ -7,7 +7,6 @@ const MISSING_CONTEXT_ERROR = "useContext called without a Provider";
  * ensures context is set up correctly.
  */
 
-/* eslint-disable-next-line @typescript-eslint/explicit-function-return-type */
 export function createContext<BaseContextType>(
   missingContextMessage = MISSING_CONTEXT_ERROR
 ): [

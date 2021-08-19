@@ -5,9 +5,6 @@ import {
 } from "./types";
 import {ProjectsList} from "../data/types";
 
-
-
-// export const reducer: Reducer<TState, DispatchAction> = (state = InitialState, action) => {
 export const reducer: (state: TState, action: DispatchActionType) => (TState) = (state = InitialState, action): TState => {
   console.log(`GLOBAL STATE Action:${action.type} payload:${action.payload}`);
 

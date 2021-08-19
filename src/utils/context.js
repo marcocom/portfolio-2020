@@ -4,7 +4,6 @@ const MISSING_CONTEXT_ERROR = "useContext called without a Provider";
  * Creates context with no defaultValue, and a useContext hook that
  * ensures context is set up correctly.
  */
-/* eslint-disable-next-line @typescript-eslint/explicit-function-return-type */
 export function createContext(missingContextMessage = MISSING_CONTEXT_ERROR) {
     const Context = React.createContext(undefined);
     function useContext() {

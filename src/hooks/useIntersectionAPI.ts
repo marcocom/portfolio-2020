@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {IntersectionProps} from "./HooksTypes";
+import {IntersectionProps} from "./types";
 
 const initialState: IntersectionProps = {
   inView: false,

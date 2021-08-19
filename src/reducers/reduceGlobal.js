@@ -1,5 +1,4 @@
 import { InitialState, GlobalStateActions } from "./types";
-// export const reducer: Reducer<TState, DispatchAction> = (state = InitialState, action) => {
 export const reducer = (state = InitialState, action) => {
     console.log(`GLOBAL STATE Action:${action.type} payload:${action.payload}`);
     switch (action.type) {

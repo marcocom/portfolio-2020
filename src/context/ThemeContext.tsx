@@ -1,6 +1,6 @@
-import React, {Context, createContext, useContext} from 'react'
+import React, {Context, createContext, ReactNode, useContext} from 'react'
 import {useDarkMode} from '../hooks'
-import {ThemeContextProps} from "./ContextTypes";
+import {ThemeContextProps} from "./types";
 
 const initialState: ThemeContextProps = {
   theme: 'light',
@@ -10,20 +10,21 @@ const initialState: ThemeContextProps = {
 
 const ThemeContext: Context<ThemeContextProps> = createContext(initialState);
 
-export const MyThemeProvider = ({ children }): JSX.Element => {
+type ThemeProviderProps = {children:ReactNode}
+export const MyThemeProvider = ({children}: ThemeProviderProps): JSX.Element => {
   const [theme, toggleTheme, componentMounted] = useDarkMode();
 
-  const state = {
+  const state: ThemeContextProps = {
     theme: theme,
     toggle: toggleTheme,
     mounted: componentMounted,
   };
 
   return (
-    <ThemeContext.Provider value={state as ThemeContextProps}>
+    <ThemeContext.Provider value={state}>
       {children}
     </ThemeContext.Provider>
   );
 };
 
-export const useTheme: ThemeContextProps = useContext(ThemeContext);
+export const useTheme = useContext(ThemeContext);

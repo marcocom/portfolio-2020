@@ -35,18 +35,18 @@ export enum GlobalStateActions {
 export type DispatchActionType =
   | { type: GlobalStateActions.SET_SCROLL; payload: Partial<TState["workScrollPoint"]> }
   | { type: GlobalStateActions.SET_PAGE; payload: Partial<TState["lastPage"]> }
-  | { type: GlobalStateActions.CLEAR_PAGE; payload?: undefined }
+  | { type: GlobalStateActions.CLEAR_PAGE }
   | { type: GlobalStateActions.TOGGLE_SORTING; payload: Partial<TState["workSorting"]> }
   | { type: GlobalStateActions.SET_PROJECTS; payload: Partial<TState["projects"]> }
   | { type: GlobalStateActions.TOGGLE_DRAWER; payload: Partial<TState["drawerVisible"]> }
   | { type: GlobalStateActions.SET_DRAWER; payload: Partial<TState["drawerVisible"]> }
-  | { type: GlobalStateActions.THEME_SAVED; payload: Partial<TState["themeSaved"]> }
+  | { type: GlobalStateActions.THEME_SAVED}
   | { type: GlobalStateActions.SEARCH_INPUT; payload: Partial<TState["searchFilterString"]> }
-  | { type: GlobalStateActions.NOOP; payload?: undefined };
+  | { type: GlobalStateActions.NOOP };
 
 export type DispatchAction = {
-  type: GlobalStateActions,
-  payload?: DispatchActionType,
+  type: DispatchActionType,
+  payload?: Dispatch<DispatchActionType>,
 }
 
 // type State<S> = S | undefined;

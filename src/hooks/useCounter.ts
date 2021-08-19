@@ -1,5 +1,5 @@
 import {useCallback, useState} from 'react';
-import {CounterProps} from "./HooksTypes";
+import {CounterProps} from "./types";
 
 export const useCounter = (initialState = 1): CounterProps => {
   const [count, setCount] = useState(initialState);

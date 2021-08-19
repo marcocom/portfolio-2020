@@ -1,6 +1,7 @@
-import { createGlobalStyle } from 'styled-components';
-import { media } from '../utils';
-export const GlobalStyle = createGlobalStyle `
+import {createGlobalStyle, DefaultTheme, GlobalStyleComponent} from 'styled-components'
+import { media } from '../utils'
+
+export const GlobalStyle = createGlobalStyle`
 
     /* Font Imports */
     /* @import url('https://fonts.googleapis.com/css?family=Karla:400,700|Rubik:400,700,900&display=swap'); */
@@ -25,7 +26,7 @@ export const GlobalStyle = createGlobalStyle `
 
     body {
         margin: 0;
-        font-family: ${({ theme }) => theme.font.body};
+        font-family: ${({theme}) => theme.font.body};
         background: ${({ theme }) => theme.color.bg};
         color: ${({ theme }) => theme.color.text};
         font-size: 16px;
@@ -117,7 +118,7 @@ export const GlobalStyle = createGlobalStyle `
     h3,
     p {
         margin: 0;
-        font-family: ${({ theme }) => theme.font.body};
+        font-family: ${({theme}) => theme.font.body};
     }
 
 
