@@ -1,5 +1,16 @@
 
 const projectAssets = {
+  neom: {
+    hero: '/heros/60minutes.png',
+    images: [
+      '/screenshots/60minutes1.jpg',
+      '/screenshots/60minutes2.jpg',
+      '/screenshots/60minutes3.jpg',
+      '/screenshots/60minutes4.jpg',
+      '/screenshots/60minutes5.jpg',
+    ],
+    videos: [],
+  },
   sixtymin: {
     hero: '/heros/60minutes.png',
     images: [
