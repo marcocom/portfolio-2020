@@ -111,7 +111,7 @@ export const WorkList = () => {
     <>
 
       <StyledSearchDiv>
-        <input onChange={searchInputHandler} max-length="20"
+        <input onChange={searchInputHandler} maxLength="20"
                type="text"
                value={searchFilterString}
                placeholder="Search by Title, Description, Year" />

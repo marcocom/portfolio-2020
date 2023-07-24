@@ -117,7 +117,7 @@ const tech = {
 
 const design = {
   photoshop: {
-    name: 'Abobe Photoshop',
+    name: 'Adobe Photoshop',
     image: techLogos.photoshop,
   },
   figma: {

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Text} from '@src/ui/components'
-import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player/vimeo';
 
 const VideoContainerStyle = styled.section`
   width: 100%;
@@ -47,13 +47,11 @@ const carouselProps = () => ({
   swipeScrollTolerance: 5,
 });
 const playerConfig = {
-  light: true,
-  playing: false,
-
   vimeo: {
     frameborder: 0,
     allowfullscreen: true,
     maxwidth: 600,
+    theme: 'light',
   }
 };
 const pluralize = (count) => count > 1 ? 's' : '';
@@ -63,7 +61,18 @@ export const ProjectVideo = ({ videos }) => (
     <Text type='heading'>{`Demo Video${pluralize(videos.length)}:`}</Text>
     <VideoListStyle>
       {
-        videos.map((video, i) => <li key={i}><ReactPlayer url={video} config={playerConfig}/></li>)
+        videos.map((video, i) => <li key={i}>
+          <ReactPlayer
+            url={video}
+            light={true}
+            playing={true}
+            stopOnUnmount={true}
+            playsinline={true}
+            controls={true}
+            width={'80vw'}
+            config={playerConfig}
+          />
+        </li>)
       }
     </VideoListStyle>
 
